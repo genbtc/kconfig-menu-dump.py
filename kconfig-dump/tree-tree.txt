@@ -1,0 +1,240 @@
+gentoo /usr/src/linux/kconfig-dump # tree
+.
+├── kconfig-tree.txt
+├── menuconfig-dump.txt
+└── menus
+    ├── 0001- General setup
+    │   ├── 0002- IRQ subsystem
+    │   │   └── menu.txt
+    │   ├── 0003- Timers subsystem
+    │   │   └── menu.txt
+    │   ├── 0004- CPU_Task time and stats accounting
+    │   │   └── menu.txt
+    │   ├── 0005- RCU Subsystem
+    │   │   └── menu.txt
+    │   ├── 0006- Scheduler features
+    │   │   └── menu.txt
+    │   ├── 0007- -_- Control Group support
+    │   │   ├── 0008- ___ CPU controller
+    │   │   │   └── menu.txt
+    │   │   └── menu.txt
+    │   ├── 0009- -_- Namespaces support
+    │   │   └── menu.txt
+    │   └── menu.txt
+    ├── 0010- Processor type and features
+    │   ├── 0011- Performance monitoring
+    │   │   └── menu.txt
+    │   └── menu.txt
+    ├── 0012- ___ Mitigations for CPU vulnerabilities
+    │   └── menu.txt
+    ├── 0013- Power management and ACPI options
+    │   ├── 0014- ___ ACPI _Advanced Configuration and Power Interface_ Support
+    │   │   └── menu.txt
+    │   ├── 0015- CPU Frequency scaling
+    │   │   └── menu.txt
+    │   ├── 0016- CPU Idle
+    │   │   └── menu.txt
+    │   └── menu.txt
+    ├── 0017- Bus options _PCI etc._
+    │   └── menu.txt
+    ├── 0018- Binary Emulations
+    │   └── menu.txt
+    ├── 0019- Firmware Drivers
+    │   ├── 0020- EFI _Extensible Firmware Interface_ Support
+    │   │   └── menu.txt
+    │   └── menu.txt
+    ├── 0021- ___ Virtualization
+    │   └── menu.txt
+    ├── 0022- General architecture-dependent options
+    │   ├── 0023- GCOV-based kernel profiling
+    │   │   └── menu.txt
+    │   ├── 0024- ___ GCC plugins
+    │   │   └── menu.txt
+    │   └── menu.txt
+    ├── 0025- ___ Enable loadable module support
+    │   └── menu.txt
+    ├── 0026- -_- Enable the block layer
+    │   ├── 0027- Partition Types
+    │   │   └── menu.txt
+    │   └── menu.txt
+    ├── 0028- IO Schedulers
+    │   └── menu.txt
+    ├── 0029- Executable file formats
+    │   └── menu.txt
+    ├── 0030- Memory Management options
+    │   └── menu.txt
+    ├── 0031- ___ Networking support
+    │   ├── 0032- Networking options
+    │   │   ├── 0033- ___ TCP_ advanced congestion control
+    │   │   │   └── menu.txt
+    │   │   ├── 0034- ___ The IPv6 protocol
+    │   │   │   └── menu.txt
+    │   │   ├── 0035- ___ Network packet filtering framework _Netfilter_
+    │   │   │   ├── 0036- Core Netfilter Configuration
+    │   │   │   │   └── menu.txt
+    │   │   │   ├── 0037- IP_ Netfilter Configuration
+    │   │   │   │   └── menu.txt
+    │   │   │   ├── 0038- IPv6_ Netfilter Configuration
+    │   │   │   │   └── menu.txt
+    │   │   │   └── menu.txt
+    │   │   └── menu.txt
+    │   ├── 0039- -_- Wireless
+    │   │   └── menu.txt
+    │   └── menu.txt
+    ├── 0040- Device Drivers
+    │   ├── 0041- ___ PCI support
+    │   │   ├── 0042- ___ Support for PCI Hotplug
+    │   │   │   └── menu.txt
+    │   │   ├── 0043- PCI controller drivers
+    │   │   │   ├── 0044- DesignWare PCI Core Support
+    │   │   │   │   └── menu.txt
+    │   │   │   └── menu.txt
+    │   │   ├── 0045- PCI Endpoint
+    │   │   │   └── menu.txt
+    │   │   ├── 0046- PCI switch controller drivers
+    │   │   │   └── menu.txt
+    │   │   └── menu.txt
+    │   ├── 0047- ___ PCCard _PCMCIA_CardBus_ support
+    │   │   └── menu.txt
+    │   ├── 0048- Generic Driver Options
+    │   │   ├── 0049- Firmware loader
+    │   │   │   └── menu.txt
+    │   │   └── menu.txt
+    │   ├── 0050- Bus devices
+    │   │   └── menu.txt
+    │   ├── 0051- ___ Connector - unified userspace _-_ kernelspace linker
+    │   │   └── menu.txt
+    │   ├── 0052- -_- Plug and Play support
+    │   │   └── menu.txt
+    │   ├── 0053- ___ Block devices
+    │   │   └── menu.txt
+    │   ├── 0054- NVME Support
+    │   │   └── menu.txt
+    │   ├── 0055- Misc devices
+    │   │   ├── 0056- EEPROM support
+    │   │   │   └── menu.txt
+    │   │   └── menu.txt
+    │   ├── 0057- SCSI device support
+    │   │   └── menu.txt
+    │   ├── 0058- ___ Serial ATA and Parallel ATA drivers _libata_
+    │   │   └── menu.txt
+    │   ├── 0059- ___ Multiple devices driver support _RAID and LVM_
+    │   │   └── menu.txt
+    │   ├── 0060- IEEE 1394 _FireWire_ support
+    │   │   └── menu.txt
+    │   ├── 0061- ___ Macintosh device drivers
+    │   │   └── menu.txt
+    │   ├── 0062- ___ Network device support
+    │   │   ├── 0063- ___ Ethernet driver support
+    │   │   │   └── menu.txt
+    │   │   ├── 0064- -_- PHY Device support and infrastructure
+    │   │   │   └── menu.txt
+    │   │   ├── 0065- -_- MDIO bus device drivers
+    │   │   │   └── menu.txt
+    │   │   ├── 0066- PCS device drivers
+    │   │   │   └── menu.txt
+    │   │   ├── 0067- ___ USB Network Adapters
+    │   │   │   └── menu.txt
+    │   │   ├── 0068- ___ Wireless LAN
+    │   │   │   └── menu.txt
+    │   │   └── menu.txt
+    │   ├── 0069- Input device support
+    │   │   ├── 0070- ___ Joysticks_Gamepads
+    │   │   │   └── menu.txt
+    │   │   ├── 0071- ___ Tablets
+    │   │   │   └── menu.txt
+    │   │   ├── 0072- ___ Touchscreens
+    │   │   │   └── menu.txt
+    │   │   ├── 0073- ___ Miscellaneous devices
+    │   │   │   └── menu.txt
+    │   │   ├── 0074- Hardware I_O ports
+    │   │   │   └── menu.txt
+    │   │   └── menu.txt
+    │   ├── 0075- Character devices
+    │   │   ├── 0076- ___ Hardware Random Number Generator Core support
+    │   │   │   └── menu.txt
+    │   │   └── menu.txt
+    │   ├── 0077- I2C support
+    │   │   └── menu.txt
+    │   ├── 0078- -_- PPS support
+    │   │   └── menu.txt
+    │   ├── 0079- PTP clock support
+    │   │   └── menu.txt
+    │   ├── 0080- -_- Power supply class support
+    │   │   └── menu.txt
+    │   ├── 0081- -_- Hardware Monitoring support
+    │   │   └── menu.txt
+    │   ├── 0082- -_- Thermal drivers
+    │   │   ├── 0083- Intel thermal drivers
+    │   │   │   ├── 0084- ACPI INT340X thermal drivers
+    │   │   │   │   └── menu.txt
+    │   │   │   └── menu.txt
+    │   │   └── menu.txt
+    │   ├── 0085- ___ Watchdog Timer Support
+    │   │   └── menu.txt
+    │   ├── 0086- Multifunction device drivers
+    │   │   └── menu.txt
+    │   └── menu.txt
+    ├── 0087- File systems
+    │   ├── 0088- Caches
+    │   │   └── menu.txt
+    │   ├── 0089- CD-ROM_DVD Filesystems
+    │   │   └── menu.txt
+    │   ├── 0090- DOS_FAT_EXFAT_NT Filesystems
+    │   │   └── menu.txt
+    │   ├── 0091- Pseudo filesystems
+    │   │   └── menu.txt
+    │   ├── 0092- ___ Miscellaneous filesystems
+    │   │   └── menu.txt
+    │   ├── 0093- ___ Network File Systems
+    │   │   └── menu.txt
+    │   ├── 0094- -_- Native language support
+    │   │   └── menu.txt
+    │   └── menu.txt
+    ├── 0095- Security options
+    │   ├── 0096- Kernel hardening options
+    │   │   ├── 0097- Memory initialization
+    │   │   │   └── menu.txt
+    │   │   └── menu.txt
+    │   └── menu.txt
+    ├── 0098- -_- Cryptographic API
+    │   └── menu.txt
+    ├── 0099- Library routines
+    │   ├── 0100- Crypto library routines
+    │   │   └── menu.txt
+    │   └── menu.txt
+    ├── 0101- Kernel hacking
+    │   ├── 0102- printk and dmesg options
+    │   │   └── menu.txt
+    │   ├── 0103- Compile-time checks and compiler options
+    │   │   └── menu.txt
+    │   ├── 0104- Generic Kernel Debugging Instruments
+    │   │   └── menu.txt
+    │   ├── 0105- Memory Debugging
+    │   │   └── menu.txt
+    │   ├── 0106- Debug Oops_ Lockups and Hangs
+    │   │   └── menu.txt
+    │   ├── 0107- Scheduler Debugging
+    │   │   └── menu.txt
+    │   ├── 0108- Lock Debugging _spinlocks_ mutexes_ etc..._
+    │   │   └── menu.txt
+    │   ├── 0109- Debug kernel data structures
+    │   │   └── menu.txt
+    │   ├── 0110- RCU Debugging
+    │   │   └── menu.txt
+    │   ├── 0111- ___ Tracers
+    │   │   └── menu.txt
+    │   ├── 0112- x86 Debugging
+    │   │   └── menu.txt
+    │   ├── 0113- Kernel Testing and Coverage
+    │   │   ├── 0114- ___ Runtime Testing
+    │   │   │   └── menu.txt
+    │   │   └── menu.txt
+    │   └── menu.txt
+    ├── 0115- Gentoo Linux
+    │   ├── 0116- Support for init systems_ system and service managers
+    │   │   └── menu.txt
+    │   └── menu.txt
+    └── menu.txt
+
+118 directories, 119 files
