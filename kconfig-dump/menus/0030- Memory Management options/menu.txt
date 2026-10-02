@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Memory Management options ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌─────────────────────────────────────────────────────────────── Memory Management options ───────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                           Memory model (Sparse Memory)  --->                                                                        │ │
+  │ │                                       -*- Sparse Memory virtual memmap                                                                              │ │
+  │ │                                       [ ] Allow for memory hot-add                                                                                  │ │
+  │ │                                       [*] Allow for memory compaction                                                                               │ │
+  │ │                                       [ ] Free page reporting                                                                                       │ │
+  │ │                                       -*- Page migration                                                                                            │ │
+  │ │                                       [*] Enable bounce buffers                                                                                     │ │
+  │ │                                       [ ] Enable KSM for page merging                                                                               │ │
+  │ │                                       (4096) Low address space to protect from user allocation                                                      │ │
+  │ │                                       [ ] Enable recovery from hardware memory errors                                                               │ │
+  │ │                                       [ ] Transparent Hugepage Support                                                                              │ │
+  │ │                                       [ ] Enable cleancache driver to cache clean pages if tmem is present                                          │ │
+  │ │                                       [ ] Enable frontswap to cache swap pages if tmem is present                                                   │ │
+  │ │                                       [ ] Contiguous Memory Allocator                                                                               │ │
+  │ │                                       < > Common API for compressed memory storage                                                                  │ │
+  │ │                                       < > Low (Up to 2x) density storage for compressed pages                                                       │ │
+  │ │                                       < > Memory allocator for compressed pages                                                                     │ │
+  │ │                                       [ ] Defer initialisation of struct pages to kthreads                                                          │ │
+  │ │                                       [ ] Enable idle page tracking                                                                                 │ │
+  │ │                                       [ ] Collect percpu memory statistics                                                                          │ │
+  │ │                                       [ ] Enable infrastructure for get_user_pages() and related calls benchmarking                                 │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

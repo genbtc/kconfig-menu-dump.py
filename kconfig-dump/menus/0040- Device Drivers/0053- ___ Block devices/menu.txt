@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Device Drivers → Block devices ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌───────────────────────────────────────────────────────────────────── Block devices ─────────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- Block devices                                                                                             │ │
+  │ │                                       < >   Null test block driver                                                                                  │ │
+  │ │                                       < >   Normal floppy disk support                                                                              │ │
+  │ │                                       < >   Block Device Driver for Micron PCIe SSDs                                                                │ │
+  │ │                                       < >   Micro Memory MM5415 Battery Backed RAM support                                                          │ │
+  │ │                                       <*>   Loopback device support                                                                                 │ │
+  │ │                                       (8)     Number of loop devices to pre-create at init time                                                     │ │
+  │ │                                       < >     Cryptoloop Support (DEPRECATED)                                                                       │ │
+  │ │                                       < >   DRBD Distributed Replicated Block Device support                                                        │ │
+  │ │                                       < >   Network block device support                                                                            │ │
+  │ │                                       < >   STEC S1120 Block Driver                                                                                 │ │
+  │ │                                       < >   RAM block device support                                                                                │ │
+  │ │                                       < >   Packet writing on CD/DVD media (DEPRECATED)                                                             │ │
+  │ │                                       < >   ATA over Ethernet support                                                                               │ │
+  │ │                                       < >   Rados block device (RBD)                                                                                │ │
+  │ │                                       < >   IBM Flash Adapter 900GB Full Height PCIe Device Driver                                                  │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

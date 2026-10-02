@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Device Drivers → Multifunction device drivers ──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌───────────────────────────────────────────────────────────── Multifunction device drivers ──────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       < > Cirrus Logic Madera codecs                                                                                │ │
+  │ │                                       < > Diolan DLN2 support                                                                                       │ │
+  │ │                                       < > HTC PASIC3 LED/DS1WM chip support                                                                         │ │
+  │ │                                       < > Intel Quark MFD I2C GPIO                                                                                  │ │
+  │ │                                       < > Intel ICH LPC                                                                                             │ │
+  │ │                                       < > Intel SCH LPC                                                                                             │ │
+  │ │                                       < > Intel Low Power Subsystem support in ACPI mode                                                            │ │
+  │ │                                       < > Intel Low Power Subsystem support in PCI mode                                                             │ │
+  │ │                                       < > Intel PMC Driver for Broxton                                                                              │ │
+  │ │                                       < > Janz CMOD-IO PCI MODULbus Carrier Board                                                                   │ │
+  │ │                                       < > Kontron module PLD device                                                                                 │ │
+  │ │                                       < > MediaTek MT6397 PMIC Support                                                                              │ │
+  │ │                                       < > Nano River Technologies Viperboard                                                                        │ │
+  │ │                                       < > RDC R-321x southbridge                                                                                    │ │
+  │ │                                       < > Silicon Motion SM501                                                                                      │ │
+  │ │                                       [ ] ST-Ericsson ABX500 Mixed Signal Circuit register functions                                                │ │
+  │ │                                       [ ] System Controller Register R/W Based on Regmap                                                            │ │
+  │ │                                       < > TQ-Systems IO controller TQMX86                                                                           │ │
+  │ │                                       < > VIA VX855/VX875 integrated south bridge                                                                   │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

@@ -1,0 +1,2149 @@
+================================================================================
+/
+================================================================================
+   0 General setup --->
+   1 64-bit kernel
+   2 Processor type and features --->
+   3 [*] Mitigations for CPU vulnerabilities --->
+   4 Power management and ACPI options --->
+   5 Bus options (PCI etc.) --->
+   6 Binary Emulations --->
+   7 Firmware Drivers --->
+   8 [*] Virtualization --->
+   9 General architecture-dependent options --->
+  10 [*] Enable loadable module support --->
+  11 -*- Enable the block layer --->
+  12 IO Schedulers --->
+  13 Executable file formats --->
+  14 Memory Management options --->
+  15 [*] Networking support --->
+  16 Device Drivers --->
+  17 File systems --->
+  18 Security options --->
+  19 -*- Cryptographic API --->
+  20 Library routines --->
+  21 Kernel hacking --->
+  22 Gentoo Linux --->
+
+================================================================================
+/General setup
+================================================================================
+   0 Compile also drivers which will not load
+   1 Local version - append to kernel release
+   2 Automatically append version information to the version string
+   3 Build ID Salt
+   4 Kernel compression mode (Gzip) --->
+   5 Default init path
+   6 ((none)) Default hostname
+   7 Support for paging of anonymous memory (swap)
+   8 System V IPC
+   9 POSIX Message Queues
+  10 General notification queue
+  11 Enable process_vm_readv/writev syscalls
+  12 uselib syscall
+  13 Auditing support
+  14 IRQ subsystem --->
+  15 Timers subsystem --->
+  16 Preemption Model (Voluntary Kernel Preemption (Desktop)) --->
+  17 CPU/Task time and stats accounting --->
+  18 CPU isolation
+  19 RCU Subsystem --->
+  20 Kernel .config support
+  21 Enable kernel headers through /sys/kernel/kheaders.tar.xz
+  22 Kernel log buffer size (16 => 64KB, 17 => 128KB)
+  23 CPU kernel log buffer size contribution (13 => 8 KB, 17 => 128KB)
+  24 Temporary per-CPU printk log buffer size (12 => 4KB, 13 => 8KB)
+  25 Scheduler features --->
+  26 Memory placement aware NUMA scheduler
+  27 -*- Control Group support --->
+  28 -*- Namespaces support --->
+  29 Checkpoint/restore support
+  30 Automatic process group scheduling
+  31 Enable deprecated sysfs features to support old userspace tools
+  32 Kernel->user space relay support (formerly relayfs)
+  33 Initial RAM filesystem and RAM disk (initramfs/initrd) support
+  34 Initramfs source file(s)
+  35 Support initial ramdisk/ramfs compressed using gzip
+  36 Support initial ramdisk/ramfs compressed using bzip2
+  37 Support initial ramdisk/ramfs compressed using LZMA
+  38 Support initial ramdisk/ramfs compressed using XZ
+  39 Support initial ramdisk/ramfs compressed using LZO
+  40 Support initial ramdisk/ramfs compressed using LZ4
+  41 Support initial ramdisk/ramfs compressed using ZSTD
+  42 Boot config support
+  43 Compiler optimization level (Optimize for performance (-O2)) --->
+  44 [ ] Configure standard kernel features (expert users) ----
+  45 Enable 16-bit UID system calls
+
+================================================================================
+/General setup/IRQ subsystem
+================================================================================
+   0 Expose irq internals in debugfs
+
+================================================================================
+/General setup/Timers subsystem
+================================================================================
+   0 Timer tick handling (Idle dynticks system (tickless idle)) --->
+   1 Old Idle dynticks config
+   2 High Resolution Timer Support
+
+================================================================================
+/General setup/CPU/Task time and stats accounting
+================================================================================
+   0 Cputime accounting (Simple tick based cputime accounting) --->
+   1 Fine granularity task level IRQ time accounting
+   2 BSD Process Accounting
+   3 BSD Process Accounting version 3 file format
+   4 Export task/process statistics through netlink
+   5 Enable per-task delay accounting
+   6 Enable extended accounting over taskstats
+   7 Enable per-task storage I/O accounting
+   8 Pressure stall information tracking
+
+================================================================================
+/General setup/RCU Subsystem
+================================================================================
+   0 Make expert-level adjustments to RCU configuration
+
+================================================================================
+/General setup/Scheduler features
+================================================================================
+   0 Enable utilization clamping for RT/FAIR tasks
+
+================================================================================
+/General setup/-*- Control Group support
+================================================================================
+   0 --- Control Group support
+   1 Memory controller
+   2 IO controller
+   3 [*]   CPU controller --->
+   4 PIDs controller
+   5 RDMA controller
+   6 Freezer controller
+   7 HugeTLB controller
+   8 Cpuset controller
+   9 Include legacy /proc/<pid>/cpuset file
+  10 Device controller
+  11 Simple CPU accounting controller
+  12 Perf controller
+  13 Debug controller
+
+================================================================================
+/General setup/-*- Control Group support/[*]   CPU controller
+================================================================================
+   0 --- CPU controller
+   1 Group scheduling for SCHED_OTHER
+   2 CPU bandwidth provisioning for FAIR_GROUP_SCHED
+   3 Group scheduling for SCHED_RR/FIFO
+
+================================================================================
+/General setup/-*- Namespaces support
+================================================================================
+   0 --- Namespaces support
+   1 UTS namespace
+   2 TIME namespace
+   3 IPC namespace
+   4 User namespace
+   5 Allow unprivileged users to create namespaces
+   6 PID Namespaces
+   7 Network namespace
+
+================================================================================
+/Processor type and features
+================================================================================
+   0 Symmetric multi-processing support
+   1 Enable MPS table
+   2 x86 CPU resource control support
+   3 Support for extended (non-PC) x86 platforms
+   4 ScaleMP vSMP
+   5 Goldfish (Virtual Platform)
+   6 Intel MID platform support
+   7 Intel Low Power Subsystem Support
+   8 AMD ACPI2Platform devices support
+   9 Intel SoC IOSF Sideband support for SoC platforms
+  10 Enable IOSF sideband access through debugfs
+  11 Single-depth WCHAN output
+  12 [ ] Linux guest support ----
+  13 Processor family (Generic-x86-64) --->
+  14 [ ] Supported processor vendors ----
+  15 Old AMD GART IOMMU support
+  16 Enable Maximum number of SMP Processors and NUMA Nodes
+  17 Maximum number of CPUs
+  18 Multi-core scheduler support
+  19 CPU core priorities scheduler support
+  20 Reroute for broken boot IRQs
+  21 Machine Check / overheating reporting
+  22 Support for deprecated /dev/mcelog character device
+  23 Intel MCE features
+  24 AMD MCE features
+  25 Machine check injector support
+  26 Performance monitoring --->
+  27 IOPERM and IOPL Emulation
+  28 Dell i8k legacy laptop support
+  29 CPU microcode loading support
+  30 Intel microcode loading support
+  31 AMD microcode loading support
+  32 Late microcode loading (DANGEROUS)
+  33 /dev/cpu/*/msr - Model-specific register support
+  34 /dev/cpu/*/cpuid - CPU information support
+  35 Enable 5-level page tables support
+  36 Enable statistic for Change Page Attribute
+  37 AMD Secure Memory Encryption (SME) support
+  38 NUMA Memory Allocation and Scheduler Support
+  39 Old style AMD Opteron NUMA detection
+  40 ACPI NUMA detection
+  41 NUMA emulation
+  42 Maximum NUMA Nodes (as a power of 2)
+  43 Support non-standard NVDIMMs and ADR protected memory
+  44 Check for low memory corruption
+  45 Set the default setting of memory_corruption_check
+
+================================================================================
+/Processor type and features/Performance monitoring
+================================================================================
+   0 Intel uncore performance events
+   1 Intel/AMD rapl performance events
+   2 Intel cstate performance events
+   3 AMD Processor Power Reporting Mechanism
+
+================================================================================
+/[*] Mitigations for CPU vulnerabilities
+================================================================================
+   0 --- Mitigations for CPU vulnerabilities
+   1 Remove the kernel mapping in user mode
+   2 Avoid speculative indirect branches in kernel
+   3 Enable return-thunks
+   4 Enable UNRET on kernel entry
+   5 Enable IBPB on kernel entry
+   6 Enable IBRS on kernel entry
+   7 Mitigate speculative RAS overflow on AMD
+   8 Mitigate Straight-Line-Speculation
+   9 Force GDS Mitigation
+  10 RFDS Mitigation
+  11 Enable Indirect Target Selection mitigation
+  12 Mitigate Transient Scheduler Attacks
+
+================================================================================
+/Power management and ACPI options
+================================================================================
+   0 Suspend to RAM and standby
+   1 Hibernation (aka 'suspend to disk')
+   2 Userspace snapshot device
+   3 Default resume partition
+   4 Opportunistic sleep
+   5 User space wakeup sources interface
+   6 Device power management core functionality
+   7 Power Management Debug Support
+   8 Extra PM attributes in sysfs for low-level debugging/testing
+   9 Test suspend/resume and wakealarm during bootup
+  10 Suspend/resume event tracing
+  11 Enable workqueue power-efficient mode by default
+  12 Energy Model for CPUs
+  13 [*] ACPI (Advanced Configuration and Power Interface) Support --->
+  14 [ ] SFI (Simple Firmware Interface) Support ----
+  15 CPU Frequency scaling --->
+  16 CPU Idle --->
+  17 Cpuidle Driver for Intel Processors
+
+================================================================================
+/Power management and ACPI options/[*] ACPI (Advanced Configuration and Power Interface) Support
+================================================================================
+   0 --- ACPI (Advanced Configuration and Power Interface) Support
+   1 AML debugger interface
+   2 ACPI Serial Port Console Redirection Support
+   3 Allow supported ACPI revision to be overridden
+   4 EC read/write access through /sys/kernel/debug/ec
+   5 AC Adapter
+   6 Battery
+   7 Button
+   8 Video
+   9 Fan
+  10 ACPI Time and Alarm (TAD) Device Support
+  11 Dock
+  12 Processor
+  13 Processor Aggregator
+  14 Thermal Zone
+  15 Allow upgrading ACPI tables via initrd
+  16 Debug Statements
+  17 PCI slot detection driver
+  18 Container and Module Devices
+  19 Smart Battery System
+  20 Hardware Error Device
+  21 Allow ACPI methods to be inserted/replaced at run time
+  22 Boottime Graphics Resource Table support
+  23 ACPI NVDIMM Firmware Interface Table (NFIT)
+  24 NUMA support
+  25 ACPI Heterogeneous Memory Attribute Table Support
+  26 ACPI Platform Error Interface (APEI)
+  27 [ ]   Intel DPTF (Dynamic Platform and Thermal Framework) Support ----
+  28 ACPI configfs support
+  29 [ ]   PMIC (Power Management Integrated Circuit) operation region support ----
+
+================================================================================
+/Power management and ACPI options/CPU Frequency scaling
+================================================================================
+   0 CPU Frequency scaling
+   1 CPU frequency transition statistics
+   2 Default CPUFreq governor (userspace) --->
+   3 'performance' governor
+   4 'powersave' governor
+   5 'userspace' governor for userspace frequency scaling
+   6 'ondemand' cpufreq policy governor
+   7 'conservative' cpufreq governor
+   8 'schedutil' cpufreq policy governor
+   9 Intel P state control
+  10 Processor Clocking Control interface driver
+  11 ACPI Processor P-States driver
+  12 Legacy cpb sysfs knob support for AMD CPUs
+  13 AMD Opteron/Athlon64 PowerNow!
+  14 AMD frequency sensitivity feedback powersave bias
+  15 Intel Enhanced SpeedStep (deprecated)
+  16 Intel Pentium 4 clock modulation
+
+================================================================================
+/Power management and ACPI options/CPU Idle
+================================================================================
+   0 CPU idle PM support
+   1 Ladder governor (for periodic timer tick)
+   2 Menu governor (for tickless system)
+   3 Timer events oriented (TEO) governor (for tickless systems)
+
+================================================================================
+/Bus options (PCI etc.)
+================================================================================
+   0 Support mmconfig PCI config space access
+   1 Mark VGA/VBE/EFI FB as generic system framebuffer
+
+================================================================================
+/Binary Emulations
+================================================================================
+   0 IA32 Emulation
+   1 x32 ABI for 64-bit mode
+
+================================================================================
+/Firmware Drivers
+================================================================================
+   0 BIOS Enhanced Disk Drive calls determine boot disk
+   1 Export DMI identification via sysfs to userspace
+   2 DMI table support in sysfs
+   3 QEMU fw_cfg device support in sysfs
+   4 [ ] Google Firmware Drivers ----
+   5 EFI (Extensible Firmware Interface) Support --->
+   6 Load custom ACPI SSDT overlay from an EFI variable
+   7 Tegra firmware driver ----
+
+================================================================================
+/Firmware Drivers/EFI (Extensible Firmware Interface) Support
+================================================================================
+   0 EFI Variable Support via sysfs
+   1 Export efi runtime maps to sysfs
+   2 Enable EFI fake memory map
+   3 EFI Bootloader Control
+   4 EFI capsule loader
+   5 EFI Runtime Service Tests Support
+   6 Apple Device Properties
+   7 Reset memory attack mitigation
+   8 EFI Runtime Configuration Interface Table Version 2 Support
+   9 Clear Busmaster bit on PCI bridges during ExitBootServices()
+
+================================================================================
+/[*] Virtualization
+================================================================================
+   0 --- Virtualization
+   1 Kernel-based Virtual Machine (KVM) support
+
+================================================================================
+/General architecture-dependent options
+================================================================================
+   0 OProfile system profiling
+   1 Kprobes
+   2 Optimize very unlikely/likely branches
+   3 Static key selftest
+   4 Static call selftest
+   5 Enable seccomp to safely execute untrusted bytecode
+   6 Stack Protector buffer overflow detection
+   7 Strong Stack Protector
+   8 Provide system calls for 32-bit time_t
+   9 Use a virtually-mapped stack
+  10 Locking event counts collection
+  11 GCOV-based kernel profiling --->
+  12 [*] GCC plugins --->
+
+================================================================================
+/General architecture-dependent options/GCOV-based kernel profiling
+================================================================================
+   0 Enable gcov-based kernel profiling
+
+================================================================================
+/General architecture-dependent options/[*] GCC plugins
+================================================================================
+   0 --- GCC plugins
+   1 Generate some entropy during boot and runtime
+   2 Randomize layout of sensitive kernel structures
+
+================================================================================
+/[*] Enable loadable module support
+================================================================================
+   0 --- Enable loadable module support
+   1 Forced module loading
+   2 Module unloading
+   3 Forced module unloading
+   4 Module versioning support
+   5 Source checksum for all modules
+   6 Module signature verification
+   7 Compress modules on installation
+   8 Allow loading of modules with missing namespace imports
+   9 Enable unused/obsolete exported symbols
+  10 Trim unused exported kernel symbols
+
+================================================================================
+/-*- Enable the block layer
+================================================================================
+   0 --- Enable the block layer
+   1 Block layer SG support v4
+   2 Block layer SG support v4 helper lib
+   3 Block layer data integrity support
+   4 Zoned block device support
+   5 Block device command line partition parser
+   6 Enable support for block device writeback throttling
+   7 Block layer debugging information in debugfs
+   8 Logic for interfacing with Opal enabled SEDs
+   9 Enable inline encryption support in block layer
+  10 Partition Types --->
+
+================================================================================
+/-*- Enable the block layer/Partition Types
+================================================================================
+   0 Advanced partition selection
+
+================================================================================
+/IO Schedulers
+================================================================================
+   0 MQ deadline I/O scheduler
+   1 Kyber I/O scheduler
+   2 BFQ I/O scheduler
+
+================================================================================
+/Executable file formats
+================================================================================
+   0 Kernel support for ELF binaries
+   1 Write ELF core dumps with partial segments
+   2 Kernel support for scripts starting with #!
+   3 Kernel support for MISC binaries
+
+================================================================================
+/Memory Management options
+================================================================================
+   0 Memory model (Sparse Memory) --->
+   1 Sparse Memory virtual memmap
+   2 Allow for memory hot-add
+   3 Allow for memory compaction
+   4 Free page reporting
+   5 Page migration
+   6 Enable bounce buffers
+   7 Enable KSM for page merging
+   8 Low address space to protect from user allocation
+   9 Enable recovery from hardware memory errors
+  10 Transparent Hugepage Support
+  11 Enable cleancache driver to cache clean pages if tmem is present
+  12 Enable frontswap to cache swap pages if tmem is present
+  13 Contiguous Memory Allocator
+  14 Common API for compressed memory storage
+  15 Low (Up to 2x) density storage for compressed pages
+  16 Memory allocator for compressed pages
+  17 Defer initialisation of struct pages to kthreads
+  18 Enable idle page tracking
+  19 Collect percpu memory statistics
+  20 Enable infrastructure for get_user_pages() and related calls benchmarking
+
+================================================================================
+/[*] Networking support
+================================================================================
+   0 --- Networking support
+   1 Networking options --->
+   2 [ ]   Amateur Radio support ----
+   3 < >   CAN bus subsystem support ----
+   4 < >   Bluetooth subsystem support ----
+   5 RxRPC session sockets
+   6 KCM sockets
+   7 -*-   Wireless --->
+   8 < >   WiMAX Wireless Broadband support ----
+   9 <*>   RF switch subsystem support ----
+  10 < >   Plan 9 Resource Sharing Support (9P2000) ----
+  11 < >   CAIF support ----
+  12 Ceph core library
+  13 < >   NFC subsystem support ----
+  14 < >   Packet-sampling netlink channel ----
+  15 < >   Inter-FE based on IETF ForCES InterFE LFB ----
+  16 Network light weight tunnels
+  17 Generic failover module
+  18 Netlink interface for ethtool
+
+================================================================================
+/[*] Networking support/Networking options
+================================================================================
+   0 Packet socket
+   1 Packet: sockets monitoring interface
+   2 Unix domain sockets
+   3 UNIX: socket monitoring interface
+   4 Transport Layer Security support
+   5 Transformation user configuration interface
+   6 Compatible ABI support
+   7 Transformation virtual interface
+   8 Transformation sub policy support
+   9 Transformation migrate database
+  10 Transformation statistics
+  11 PF_KEY sockets
+  12 TCP/IP networking
+  13 IP: multicasting
+  14 IP: advanced router
+  15 FIB TRIE statistics
+  16 IP: policy routing
+  17 IP: equal cost multipath
+  18 IP: verbose route monitoring
+  19 IP: kernel level autoconfiguration
+  20 IP: DHCP support
+  21 IP: BOOTP support
+  22 IP: RARP support
+  23 IP: tunneling
+  24 IP: GRE demultiplexer
+  25 IP: multicast routing
+  26 IP: multicast policy routing
+  27 IP: PIM-SM version 1 support
+  28 IP: PIM-SM version 2 support
+  29 IP: TCP syncookie support
+  30 Virtual (secure) IP: tunneling
+  31 IP: Foo (IP protocols) over UDP
+  32 IP: FOU encapsulation of IP tunnels
+  33 IP: AH transformation
+  34 IP: ESP transformation
+  35 IP: IPComp transformation
+  36 INET: socket monitoring interface
+  37 [*]   TCP: advanced congestion control --->
+  38 TCP: MD5 Signature Option support (RFC2385)
+  39 Enable TCP simultaneous connect
+  40 <*>   The IPv6 protocol --->
+  41 NetLabel subsystem support
+  42 MPTCP: Multipath TCP
+  43 Security Marking
+  44 Timestamping in PHY devices
+  45 [*] Network packet filtering framework (Netfilter) --->
+
+================================================================================
+/[*] Networking support/Networking options/[*]   TCP: advanced congestion control
+================================================================================
+   0 --- TCP: advanced congestion control
+   1 Binary Increase Congestion (BIC) control
+   2 CUBIC TCP
+   3 TCP Westwood+
+   4 H-TCP
+   5 High Speed TCP
+   6 TCP-Hybla congestion control algorithm
+   7 TCP Vegas
+   8 TCP NV
+   9 Scalable TCP
+  10 TCP Low Priority
+  11 TCP Veno
+  12 YeAH TCP
+  13 TCP Illinois
+  14 DataCenter TCP (DCTCP)
+  15 CAIA Delay-Gradient (CDG)
+  16 BBR TCP
+  17 Default TCP congestion control (Cubic) --->
+
+================================================================================
+/[*] Networking support/Networking options/<*>   The IPv6 protocol
+================================================================================
+   0 --- The IPv6 protocol
+   1 IPv6: Router Preference (RFC 4191) support
+   2 IPv6: Enable RFC 4429 Optimistic DAD
+   3 IPv6: AH transformation
+   4 IPv6: ESP transformation
+   5 IPv6: ESP transformation offload
+   6 IPv6: ESP in TCP encapsulation (RFC 8229)
+   7 IPv6: IPComp transformation
+   8 IPv6: Mobility
+   9 IPv6: Identifier Locator Addressing (ILA)
+  10 Virtual (secure) IPv6: tunneling
+  11 IPv6: IPv6-in-IPv4 tunnel (SIT driver)
+  12 IPv6: IPv6 Rapid Deployment (6RD)
+  13 IPv6: IP-in-IPv6 tunnel (RFC2473)
+  14 IPv6: Multiple Routing Tables
+  15 IPv6: multicast routing
+  16 IPv6: Segment Routing Header encapsulation support
+  17 IPv6: Segment Routing HMAC support
+  18 IPv6: RPL Source Routing Header support
+
+================================================================================
+/[*] Networking support/Networking options/[*] Network packet filtering framework (Netfilter)
+================================================================================
+   0 --- Network packet filtering framework (Netfilter)
+   1 Advanced netfilter configuration
+   2 Core Netfilter Configuration --->
+   3 < >   IP set support ----
+   4 < >   IP virtual server support ----
+   5 IP: Netfilter Configuration --->
+   6 IPv6: Netfilter Configuration --->
+   7 IPv4/IPV6 bridge connection tracking support
+
+================================================================================
+/[*] Networking support/Networking options/[*] Network packet filtering framework (Netfilter)/Core Netfilter Configuration
+================================================================================
+   0 Netfilter ingress support
+   1 Netfilter LOG over NFNETLINK interface
+   2 Netfilter connection tracking support
+   3 Netdev packet logging
+   4 Connection tracking security mark support
+   5 Supply CT list in procfs (OBSOLETE)
+   6 Connection tracking labels
+   7 FTP protocol support
+   8 IRC protocol support
+   9 NetBIOS name service protocol support
+  10 SIP protocol support
+  11 Connection tracking netlink interface
+  12 NFQUEUE and NFLOG integration with Connection Tracking
+  13 Netfilter nf_tables support
+  14 Netfilter Xtables support (required for ip_tables)
+  15 nfmark target and match support
+  16 "CONNSECMARK" target support
+  17 LOG target support
+  18 "NETMAP" target support
+  19 "NFLOG" target support
+  20 REDIRECT target support
+  21 "SECMARK" target support
+  22 "TCPMSS" target support
+  23 "addrtype" address type match support
+  24 "conntrack" connection tracking match support
+  25 IPsec "policy" match support
+  26 "state" match support
+
+================================================================================
+/[*] Networking support/Networking options/[*] Network packet filtering framework (Netfilter)/IP: Netfilter Configuration
+================================================================================
+   0 IPv4 socket lookup support
+   1 IPv4 tproxy support
+   2 Netfilter IPv4 packet duplication to alternate destination
+   3 ARP packet logging
+   4 IPv4 packet rejection
+   5 IP tables support (required for filtering/masq/NAT)
+   6 Packet filtering
+   7 REJECT target support
+   8 iptables NAT support
+   9 MASQUERADE target support
+  10 Packet mangling
+  11 raw table support (required for NOTRACK/TRACE)
+
+================================================================================
+/[*] Networking support/Networking options/[*] Network packet filtering framework (Netfilter)/IPv6: Netfilter Configuration
+================================================================================
+   0 IPv6 socket lookup support
+   1 IPv6 tproxy support
+   2 Netfilter IPv6 packet duplication to alternate destination
+   3 IPv6 packet rejection
+   4 IP6 tables support (required for filtering)
+   5 "ipv6header" IPv6 Extension Headers Match
+   6 Packet filtering
+   7 REJECT target support
+   8 Packet mangling
+   9 raw table support (required for TRACE)
+
+================================================================================
+/[*] Networking support/-*-   Wireless
+================================================================================
+   0 --- Wireless
+   1 cfg80211 - wireless configuration API
+   2 nl80211 testmode command
+   3 enable developer warnings
+   4 enable powersave by default
+   5 cfg80211 DebugFS entries
+   6 cfg80211 wireless extensions compatibility
+   7 Generic IEEE 802.11 Networking Stack (mac80211)
+   8 Default rate control algorithm (Minstrel) --->
+   9 Enable mac80211 mesh networking support
+  10 Enable LED triggers
+  11 Export mac80211 internals in DebugFS
+  12 Trace all mac80211 debug messages
+  13 [ ]   Select mac80211 debugging features ----
+
+================================================================================
+/Device Drivers
+================================================================================
+   0 [*] PCI support --->
+   1 <*> PCCard (PCMCIA/CardBus) support --->
+   2 < > RapidIO support ----
+   3 Generic Driver Options --->
+   4 Bus devices --->
+   5 <*> Connector - unified userspace <-> kernelspace linker --->
+   6 < > GNSS receiver support ----
+   7 < > Memory Technology Device (MTD) support ----
+   8 [ ] Device Tree and Open Firmware support ----
+   9 < > Parallel port support ----
+  10 -*- Plug and Play support --->
+  11 [*] Block devices --->
+  12 NVME Support --->
+  13 Misc devices --->
+  14 < > ATA/ATAPI/MFM/RLL support (DEPRECATED) ----
+  15 SCSI device support --->
+  16 <*> Serial ATA and Parallel ATA drivers (libata) --->
+  17 [*] Multiple devices driver support (RAID and LVM) --->
+  18 < > Generic Target Core Mod (TCM) and ConfigFS Infrastructure ----
+  19 [ ] Fusion MPT device support ----
+  20 IEEE 1394 (FireWire) support --->
+  21 [*] Macintosh device drivers --->
+  22 [*] Network device support --->
+  23 Input device support --->
+  24 Character devices --->
+  25 I2C support --->
+  26 < > I3C support ----
+  27 [ ] SPI support ----
+  28 < > SPMI support ----
+  29 < > HSI support ----
+  30 -*- PPS support --->
+  31 PTP clock support --->
+  32 [ ] Pin controllers ----
+  33 [ ] GPIO Support ----
+  34 < > Dallas's 1-wire support ----
+  35 [ ] Board level reset or power off ----
+  36 -*- Power supply class support --->
+  37 -*- Hardware Monitoring support --->
+  38 -*- Thermal drivers --->
+  39 [*] Watchdog Timer Support --->
+  40 < > Sonics Silicon Backplane support ----
+  41 < > Broadcom specific AMBA ----
+  42 Multifunction device drivers --->
+  43 [ ] Voltage and Current Regulator Support ----
+  44 < > Remote Controller support ----
+  45 [ ] HDMI CEC drivers ----
+
+================================================================================
+/Device Drivers/[*] PCI support
+================================================================================
+   0 --- PCI support
+   1 PCI Express Port Bus support
+   2 PCI Express Hotplug driver
+   3 PCI Express Advanced Error Reporting support
+   4 PCI Express ASPM control
+   5 Default ASPM policy (BIOS default) --->
+   6 PCI Express Precision Time Measurement support
+   7 Message Signaled Interrupts (MSI and MSI-X)
+   8 PCI Debugging
+   9 PCI Stub driver
+  10 PCI IOV support
+  11 PCI PRI support
+  12 PCI PASID support
+  13 [*]   Support for PCI Hotplug --->
+  14 PCI controller drivers --->
+  15 PCI Endpoint --->
+  16 PCI switch controller drivers --->
+
+================================================================================
+/Device Drivers/[*] PCI support/[*]   Support for PCI Hotplug
+================================================================================
+   0 --- Support for PCI Hotplug
+   1 ACPI PCI Hotplug driver
+   2 CompactPCI Hotplug driver
+   3 SHPC PCI Hotplug driver
+
+================================================================================
+/Device Drivers/[*] PCI support/PCI controller drivers
+================================================================================
+   0 Intel Volume Management Device Driver
+   1 DesignWare PCI Core Support --->
+   2 Mobiveil PCIe Core Support ----
+   3 Cadence PCIe controllers support ----
+
+================================================================================
+/Device Drivers/[*] PCI support/PCI controller drivers/DesignWare PCI Core Support
+================================================================================
+   0 Platform bus based DesignWare PCIe Controller - Host mode
+   1 MESON PCIe controller
+
+================================================================================
+/Device Drivers/[*] PCI support/PCI Endpoint
+================================================================================
+   0 PCI Endpoint Support
+
+================================================================================
+/Device Drivers/[*] PCI support/PCI switch controller drivers
+================================================================================
+   0 MicroSemi Switchtec PCIe Switch Management Driver
+
+================================================================================
+/Device Drivers/<*> PCCard (PCMCIA/CardBus) support
+================================================================================
+   0 --- PCCard (PCMCIA/CardBus) support
+   1 16-bit PCMCIA support
+   2 Load CIS updates from userspace
+   3 32-bit CardBus support
+   4 CardBus yenta-compatible bridge support
+   5 Cirrus PD6729 compatible bridge support
+   6 i82092 compatible bridge support
+
+================================================================================
+/Device Drivers/Generic Driver Options
+================================================================================
+   0 Support for uevent helper
+   1 Maintain a devtmpfs filesystem to mount at /dev
+   2 Automount devtmpfs at /dev, after the kernel mounted the rootfs
+   3 Select only drivers that don't need compile-time external firmware
+   4 Disable drivers features which enable custom firmware building
+   5 Firmware loader --->
+   6 Driver Core verbose debug messages
+   7 Managed device resources verbose debug messages
+   8 Test driver remove calls during probe (UNSTABLE)
+   9 Build kernel module to test asynchronous driver probing
+  10 Enable verbose DMA_FENCE_TRACE messages
+
+================================================================================
+/Device Drivers/Generic Driver Options/Firmware loader
+================================================================================
+   0 Firmware loading facility
+   1 Build named firmware blobs into the kernel binary
+   2 Enable the firmware sysfs fallback mechanism
+   3 Enable compressed firmware support
+   4 Enable firmware caching during suspend
+
+================================================================================
+/Device Drivers/Bus devices
+================================================================================
+   0 Modem Host Interface (MHI) bus
+
+================================================================================
+/Device Drivers/<*> Connector - unified userspace <-> kernelspace linker
+================================================================================
+   0 --- Connector - unified userspace <-> kernelspace linker
+   1 Report process events to userspace
+
+================================================================================
+/Device Drivers/-*- Plug and Play support
+================================================================================
+   0 --- Plug and Play support
+   1 PNP debugging messages
+
+================================================================================
+/Device Drivers/[*] Block devices
+================================================================================
+   0 --- Block devices
+   1 Null test block driver
+   2 Normal floppy disk support
+   3 Block Device Driver for Micron PCIe SSDs
+   4 Micro Memory MM5415 Battery Backed RAM support
+   5 Loopback device support
+   6 Number of loop devices to pre-create at init time
+   7 Cryptoloop Support (DEPRECATED)
+   8 DRBD Distributed Replicated Block Device support
+   9 Network block device support
+  10 STEC S1120 Block Driver
+  11 RAM block device support
+  12 Packet writing on CD/DVD media (DEPRECATED)
+  13 ATA over Ethernet support
+  14 Rados block device (RBD)
+  15 IBM Flash Adapter 900GB Full Height PCIe Device Driver
+
+================================================================================
+/Device Drivers/NVME Support
+================================================================================
+   0 NVM Express block device
+   1 NVM Express over Fabrics FC host driver
+   2 NVM Express over Fabrics TCP host driver
+
+================================================================================
+/Device Drivers/Misc devices
+================================================================================
+   0 Dummy IRQ handler
+   1 Device driver for IBM RSA service processor
+   2 Sensable PHANToM (PCI)
+   3 TI Flash Media interface support
+   4 Enclosure Services
+   5 Channel interface driver for the HP iLO processor
+   6 Generic on-chip SRAM driver
+   7 PCI Endpoint Test driver
+   8 Xilinx SDFEC 16
+   9 pvpanic device support
+  10 < > Silicon Labs C2 port support ----
+  11 EEPROM support --->
+  12 ENE CB710/720 Flash memory card reader support
+  13 Texas Instruments shared transport line discipline ----
+  14 Intel Management Engine Interface
+  15 ME Enabled Intel Chipsets
+  16 Intel Trusted Execution Environment with ME Interface
+  17 Intel HDCP2.2 services of ME Interface
+  18 VMware VMCI Driver
+  19 < > GenWQE PCIe Accelerator ----
+  20 Line Echo Canceller support
+  21 Alcor Micro/Alcor Link PCI-E card reader
+  22 Realtek PCI-E card reader
+  23 Realtek USB card reader
+  24 HabanaAI accelerators (habanalabs)
+  25 Accelerator Framework for User Land
+
+================================================================================
+/Device Drivers/Misc devices/EEPROM support
+================================================================================
+   0 EEPROM 93CX6 support
+
+================================================================================
+/Device Drivers/SCSI device support
+================================================================================
+   0 RAID Transport Class
+   1 SCSI device support
+   2 legacy /proc/scsi/ support
+   3 SCSI disk support
+   4 SCSI tape support
+   5 SCSI CDROM support
+   6 SCSI generic support
+   7 SCSI media changer support
+   8 Verbose SCSI error reporting (kernel size += 36K)
+   9 SCSI logging facility
+  10 Asynchronous SCSI scanning
+  11 SCSI Transports --->
+  12 [ ] SCSI low-level drivers ----
+  13 [ ] SCSI Device Handlers ----
+
+================================================================================
+/Device Drivers/<*> Serial ATA and Parallel ATA drivers (libata)
+================================================================================
+   0 --- Serial ATA and Parallel ATA drivers (libata)
+   1 Verbose ATA error reporting
+   2 ATA ACPI Support
+   3 SATA Zero Power Optical Disc Drive (ZPODD) support
+   4 SATA Port Multiplier support
+   5 AHCI SATA support
+   6 Default SATA Link Power Management policy for mobile chipsets
+   7 Platform AHCI SATA support
+   8 Initio 162x SATA support (Very Experimental)
+   9 ACard AHCI variant (ATP 8620)
+  10 Silicon Image 3124/3132 SATA support
+  11 ATA SFF support (for legacy IDE and PATA)
+  12 Pacific Digital ADMA support
+  13 Pacific Digital SATA QStor support
+  14 Promise SATA SX4 support (Experimental)
+  15 ATA BMDMA support
+  16 Intel ESB, ICH, PIIX3, PIIX4 PATA/SATA support
+  17 DesignWare Cores SATA support
+  18 Marvell SATA support
+  19 NVIDIA SATA support
+  20 Promise SATA TX2/TX4 support
+  21 Silicon Image SATA support
+  22 SiS 964/965/966/180 SATA support
+  23 ServerWorks Frodo / Apple K2 SATA support
+  24 ULi Electronics SATA support
+  25 VIA SATA support
+  26 VITESSE VSC-7174 / INTEL 31244 SATA support
+  27 ALi PATA support
+  28 AMD/NVidia PATA support
+  29 ARTOP 6210/6260 PATA support
+  30 ATI PATA support
+  31 ARTOP/Acard ATP867X PATA support
+  32 CMD64x PATA support
+  33 Cypress CY82C693 PATA support (Very Experimental)
+  34 EFAR SLC90E66 support
+  35 HPT 366/368 PATA support
+  36 HPT 370/370A/371/372/374/302 PATA support
+  37 HPT 371N/372N/302N PATA support
+  38 HPT 343/363 PATA support
+  39 IT8213 PATA support (Experimental)
+  40 IT8211/2 PATA support
+  41 JMicron PATA support
+
+================================================================================
+/Device Drivers/[*] Multiple devices driver support (RAID and LVM)
+================================================================================
+   0 --- Multiple devices driver support (RAID and LVM)
+   1 RAID support
+   2 Autodetect RAID arrays during kernel boot
+   3 Linear (append) mode
+   4 RAID-0 (striping) mode
+   5 RAID-1 (mirroring) mode
+   6 RAID-10 (mirrored striping) mode
+   7 RAID-4/RAID-5/RAID-6 mode
+   8 Multipath I/O support
+   9 Faulty test module for MD
+  10 Block device as cache
+  11 Device mapper support
+  12 Device mapper debugging support
+  13 Unstriped target
+  14 Crypt target support
+  15 Snapshot target
+  16 Thin provisioning target
+  17 Cache target (EXPERIMENTAL)
+  18 Writecache target
+  19 Emulated block size target (EXPERIMENTAL)
+  20 Era target (EXPERIMENTAL)
+  21 Clone target (EXPERIMENTAL)
+  22 Mirror target
+  23 Mirror userspace logging
+  24 RAID 1/4/5/6/10 target
+  25 Zero target
+  26 Multipath target
+  27 I/O delaying target
+  28 Bad sector simulation target
+  29 DM "dm-mod.create=" parameter support
+  30 DM uevents
+  31 Flakey target
+  32 Verity target support
+  33 Switch target support (EXPERIMENTAL)
+  34 Log writes target support
+  35 Integrity target support
+
+================================================================================
+/Device Drivers/IEEE 1394 (FireWire) support
+================================================================================
+   0 FireWire driver stack
+   1 Nosy - a FireWire traffic sniffer for PCILynx cards
+
+================================================================================
+/Device Drivers/[*] Macintosh device drivers
+================================================================================
+   0 --- Macintosh device drivers
+   1 Support for mouse button 2+3 emulation
+
+================================================================================
+/Device Drivers/[*] Network device support
+================================================================================
+   0 --- Network device support
+   1 Network core driver support
+   2 Bonding driver support
+   3 Dummy net driver support
+   4 WireGuard secure network tunnel
+   5 EQL (serial line load balancing) support
+   6 Fibre Channel driver support
+   7 < >     Ethernet team driver support ----
+   8 MAC-VLAN support
+   9 IP-VLAN support
+  10 Virtual eXtensible Local Area Network (VXLAN)
+  11 Generic Network Virtualization Encapsulation
+  12 Bare UDP Encapsulation
+  13 GPRS Tunneling Protocol datapath (GTP-U)
+  14 IEEE 802.1AE MAC-level encryption (MACsec)
+  15 Network console logging support
+  16 Universal TUN/TAP device driver support
+  17 Support for cross-endian vnet headers on little-endian kernels
+  18 Virtual ethernet pair device
+  19 Virtual netlink monitoring device
+  20 < >   ARCnet support ----
+  21 Distributed Switch Architecture drivers ----
+  22 [*]   Ethernet driver support --->
+  23 FDDI driver support
+  24 HIPPI driver support
+  25 General Instruments Surfboard 1000
+  26 -*-   PHY Device support and infrastructure --->
+  27 -*-   MDIO bus device drivers --->
+  28 PCS device drivers --->
+  29 PPP (point-to-point protocol) support
+  30 SLIP (serial line) support
+  31 <*>   USB Network Adapters --->
+  32 [*]   Wireless LAN --->
+  33 [ ]   Wan interfaces support ----
+  34 VMware VMXNET3 ethernet driver
+  35 FUJITSU Extended Socket Network Device driver
+  36 Simulated networking device
+  37 Failover driver
+  38 [ ]   ISDN support ----
+
+================================================================================
+/Device Drivers/[*] Network device support/[*]   Ethernet driver support
+================================================================================
+   0 --- Ethernet driver support
+   1 3Com devices
+   2 3Com 3c574 PCMCIA support
+   3 3Com 3c589 PCMCIA support
+   4 3c590/3c900 series (592/595/597) "Vortex/Boomerang" support
+   5 3cr990 series "Typhoon" support
+   6 Adaptec devices
+   7 Adaptec Starfire/DuraLAN support
+   8 Agere devices
+   9 Agere ET-1310 Gigabit Ethernet support
+  10 Alacritech devices
+  11 Alacritech Slicoss support
+  12 Alteon devices
+  13 Alteon AceNIC/3Com 3C985/NetGear GA620 Gigabit support
+  14 Altera Triple-Speed Ethernet MAC support
+  15 Amazon Devices
+  16 Elastic Network Adapter (ENA) support
+  17 AMD devices
+  18 AMD 8111 (new PCI LANCE) support
+  19 AMD PCnet32 PCI support
+  20 New Media PCMCIA support
+  21 AMD 10GbE Ethernet driver
+  22 aQuantia devices
+  23 aQuantia AQtion(tm) Support
+  24 ARC devices
+  25 Atheros devices
+  26 Atheros L2 Fast Ethernet support
+  27 Atheros/Attansic L1 Gigabit Ethernet support
+  28 Atheros L1E Gigabit Ethernet support
+  29 Atheros L1C Gigabit Ethernet support
+  30 Qualcomm Atheros AR816x/AR817x support
+  31 Aurora VLSI devices
+  32 Aurora AU-NB8800 support
+  33 Broadcom devices
+  34 Broadcom 440x/47xx ethernet support
+  35 Broadcom GENET internal MAC support
+  36 QLogic bnx2 support
+  37 QLogic CNIC support
+  38 Broadcom Tigon3 support
+  39 Broadcom Tigon3 HWMON support
+  40 Broadcom NetXtremeII 10Gb support
+  41 Broadcom SYSTEMPORT internal MAC support
+  42 Broadcom NetXtreme-C/E support
+  43 QLogic BR-series devices
+  44 QLogic BR-series 1010/1020/1860 10Gb Ethernet Driver support
+  45 Cadence devices
+
+================================================================================
+/Device Drivers/[*] Network device support/-*-   PHY Device support and infrastructure
+================================================================================
+   0 --- PHY Device support and infrastructure
+   1 Support LED triggers for tracking link state
+   2 MDIO Bus/PHY emulation with fixed speed/link PHYs
+   3 AMD PHYs
+   4 Analog Devices Industrial Ethernet PHYs
+   5 Aquantia PHYs
+   6 Asix PHYs
+   7 Broadcom 54XX PHYs
+   8 Broadcom BCM54140 PHY
+   9 Broadcom 7xxx SOCs internal PHYs
+  10 Broadcom BCM84881 PHY
+  11 Broadcom BCM8706 and BCM8727 PHYs
+  12 Cicada PHYs
+  13 Cortina EDC CDR 10G Ethernet PHY
+  14 Davicom PHYs
+  15 ICPlus PHYs
+  16 Intel LXT PHYs
+  17 Intel XWAY PHYs
+  18 LSI ET1011C PHY
+  19 Marvell Alaska PHYs
+  20 Marvell Alaska 10Gbit PHYs
+  21 Micrel PHYs
+  22 Microchip PHYs
+  23 Microchip T1 PHYs
+  24 Microsemi PHYs
+  25 National Semiconductor PHYs
+  26 NXP TJA11xx PHYs support
+  27 Quality Semiconductor PHYs
+  28 Realtek PHYs
+  29 Renesas PHYs
+  30 Rockchip Ethernet PHYs
+  31 SMSC PHYs
+  32 STMicroelectronics STe10Xp PHYs
+  33 Teranetics PHYs
+  34 Texas Instruments DP83822/825/826 PHYs
+  35 Texas Instruments DP83TC811 PHY
+  36 Texas Instruments DP83848 PHY
+  37 Texas Instruments DP83867 Gigabit PHY
+  38 Texas Instruments DP83869 Gigabit PHY
+  39 Vitesse PHYs
+  40 Xilinx GMII2RGMII converter driver
+
+================================================================================
+/Device Drivers/[*] Network device support/-*-   MDIO bus device drivers
+================================================================================
+   0 --- MDIO bus device drivers
+   1 Bitbanged MDIO buses
+   2 Broadcom UniMAC MDIO bus controller
+   3 Marvell USB to MDIO Adapter
+   4 Microsemi MIIM interface support
+   5 ThunderX SOCs MDIO buses
+
+================================================================================
+/Device Drivers/[*] Network device support/PCS device drivers
+================================================================================
+   0 Synopsys DesignWare XPCS controller
+
+================================================================================
+/Device Drivers/[*] Network device support/<*>   USB Network Adapters
+================================================================================
+   0 --- USB Network Adapters
+   1 USB CATC NetMate-based Ethernet device support
+   2 USB KLSI KL5USB101-based ethernet device support
+   3 USB Pegasus/Pegasus-II based ethernet device support
+   4 USB RTL8150 based ethernet device support
+   5 Realtek RTL8152/RTL8153 Based USB Ethernet Adapters
+   6 Microchip LAN78XX Based USB Ethernet Adapters
+   7 Multi-purpose USB Networking Framework
+   8 Option USB High Speed Mobile Devices
+   9 Apple iPhone USB Ethernet driver
+
+================================================================================
+/Device Drivers/[*] Network device support/[*]   Wireless LAN
+================================================================================
+   0 --- Wireless LAN
+   1 ADMtek devices
+   2 ADMtek ADM8211 support
+   3 Atheros/Qualcomm devices
+   4 Atheros wireless debugging
+   5 Atheros 5xxx wireless cards support
+   6 Atheros 5xxx PCI bus support
+   7 Atheros 802.11n wireless cards support
+   8 Atheros HTC based wireless cards support
+   9 Linux Community AR9170 802.11n USB support
+  10 Atheros mobile chipsets support
+  11 Atheros AR5523 wireless driver support
+  12 Wilocity 60g WiFi card wil6210 support
+  13 Atheros 802.11ac wireless cards support
+  14 Qualcomm Atheros WCN3660/3680 support
+  15 Atmel devices
+  16 Atmel at76c50x chipset  802.11b support
+  17 Atmel at76c503/at76c505/at76c505a USB cards
+  18 Broadcom devices
+  19 Broadcom 43xx wireless support (mac80211 stack)
+  20 Broadcom 43xx-legacy wireless support (mac80211 stack)
+  21 Broadcom IEEE802.11n PCIe SoftMAC WLAN driver
+  22 Broadcom FullMAC WLAN driver
+  23 Cisco devices
+  24 Cisco/Aironet 34X/35X/4500/4800 ISA and PCI cards
+  25 Cisco/Aironet 34X/35X/4500/4800 PCMCIA cards
+  26 Intel devices
+  27 Intel PRO/Wireless 2100 Network Connection
+  28 Intel PRO/Wireless 2200BG and 2915ABG Network Connection
+  29 Intel Wireless WiFi 4965AGN (iwl4965)
+  30 Intel PRO/Wireless 3945ABG/BG Network Connection (iwl3945)
+  31 Intel Wireless WiFi Next Gen AGN - Wireless-N/Advanced-N/Ultimate-N (iwlwifi)
+  32 Intersil devices
+  33 IEEE 802.11 for Host AP (Prism2/2.5/3 and WEP/TKIP/CCMP)
+  34 Hermes chipset 802.11b support (Orinoco/Prism2/Symbol)
+  35 Softmac Prism54 support
+  36 Intersil Prism GT/Duette/Indigo PCI/Cardbus (DEPRECATED)
+  37 Marvell devices
+  38 Marvell 8xxx Libertas WLAN driver support
+  39 Marvell 8xxx Libertas WLAN driver support with thin firmware
+  40 Marvell WiFi-Ex Driver
+  41 Marvell 88W8xxx PCI/PCIe Wireless support
+  42 MediaTek devices
+  43 MediaTek MT7601U (USB) support
+  44 MediaTek MT76x0U (USB) support
+  45 MediaTek MT76x0E (PCIe) support
+
+================================================================================
+/Device Drivers/Input device support
+================================================================================
+   0 Generic input layer (needed for keyboard, mouse, ...)
+   1 Export input device LEDs in sysfs
+   2 Support for memoryless force-feedback devices
+   3 Polled input device skeleton
+   4 Sparse keymap support library
+   5 Matrix keymap support library
+   6 Mouse interface
+   7 Joystick interface
+   8 Event interface
+   9 Event debugging
+  10 [*]   Keyboards --->
+  11 [*]   Mice --->
+  12 [*]   Joysticks/Gamepads --->
+  13 [*]   Tablets --->
+  14 [*]   Touchscreens --->
+  15 [*]   Miscellaneous devices --->
+  16 Synaptics RMI4 bus support
+  17 Hardware I/O ports --->
+
+================================================================================
+/Device Drivers/Input device support/[*]   Joysticks/Gamepads
+================================================================================
+   0 --- Keyboards
+   1 AT keyboard
+   2 DECstation/VAXstation LK201/LK401 keyboard
+   3 Newton keyboard
+   4 OpenCores Keyboard Controller
+   5 Samsung keypad support
+   6 Stowaway keyboard
+   7 Sun Type 4 and Type 5 keyboard
+   8 XT keyboard
+
+================================================================================
+/Device Drivers/Input device support/[*]   Tablets
+================================================================================
+   0 --- Mice
+   1 PS/2 mouse
+   2 Elantech PS/2 protocol extension
+   3 Sentelic Finger Sensing Pad PS/2 protocol extension
+   4 eGalax TouchKit PS/2 protocol extension
+   5 Serial mouse
+   6 Apple USB Touchpad support
+   7 Apple USB BCM5974 Multitouch trackpad support
+   8 DEC VSXXX-AA/GA mouse and VSXXX-AB tablet
+   9 Synaptics USB device support
+
+================================================================================
+/Device Drivers/Input device support/[*]   Touchscreens
+================================================================================
+   0 --- Joysticks/Gamepads
+   1 Classic PC analog joysticks and gamepads
+   2 Assassin 3D and MadCatz Panther devices
+   3 Logitech ADI digital joysticks and gamepads
+   4 Creative Labs Blaster Cobra gamepad
+   5 Genius Flight2000 Digital joysticks and gamepads
+   6 Gravis GrIP joysticks and gamepads
+   7 Gravis GrIP MultiPort
+   8 Guillemot joysticks and gamepads
+   9 InterAct digital joysticks and gamepads
+  10 Microsoft SideWinder digital joysticks and gamepads
+  11 ThrustMaster DirectConnect joysticks and gamepads
+  12 I-Force devices
+  13 Logitech WingMan Warrior joystick
+  14 LogiCad3d Magellan/SpaceMouse 6dof controllers
+  15 SpaceTec SpaceOrb/Avenger 6dof controllers
+  16 SpaceTec SpaceBall 6dof controllers
+  17 Gravis Stinger gamepad
+  18 Twiddler as a joystick
+  19 5-byte Zhenhua RC transmitter
+  20 Gameport data dumper
+  21 X-Box gamepad support
+  22 PhoenixRC Flight Controller Adapter
+  23 FlySky FS-iA6B RC Receiver
+
+================================================================================
+/Device Drivers/Input device support/[*]   Miscellaneous devices
+================================================================================
+   0 --- Tablets
+   1 Acecad Flair tablet support (USB)
+   2 Aiptek 6000U/8000U and Genius G_PEN tablet support (USB)
+   3 GTCO CalComp/InterWrite USB Support
+   4 Hanwang Art Master III tablet support (USB)
+   5 KB Gear JamStudio tablet support (USB)
+   6 Pegasus Mobile Notetaker Pen input tablet support
+   7 Wacom protocol 4 serial tablet support
+
+================================================================================
+/Device Drivers/Input device support/Hardware I/O ports
+================================================================================
+   0 --- Miscellaneous devices
+   1 Analog Devices AD714x Capacitance Touch Sensor
+   2 NI Ettus Research USRP E3xx Button support.
+   3 PC Speaker support
+   4 x86 Atlas button interface
+   5 ATI / Philips USB RF remote control
+   6 Keyspan DMR USB remote control
+   7 Griffin PowerMate and Contour Jog support
+   8 Yealink usb-p1k voip phone
+   9 C-Media CM109 USB I/O Controller
+  10 User level driver support
+  11 Analog Devices ADXL34x Three-Axis Digital Accelerometer
+  12 IMS Passenger Control Unit driver
+  13 VTI CMA3000 Tri-axis accelerometer
+  14 IdeaPad Laptop Slidebar
+
+================================================================================
+/Device Drivers/Character devices
+================================================================================
+   0 Enable TTY
+   1 Virtual terminal
+   2 Support for binding and unbinding console drivers
+   3 Legacy (BSD) PTY support
+   4 Allow legacy TIOCSTI usage
+   5 Automatically load TTY Line Disciplines
+   6 Serial drivers --->
+   7 Non-standard serial port support
+   8 Comtrol RocketPort support
+   9 Cyclades async mux support
+  10 Moxa Intellio support
+  11 Moxa SmartIO support v. 2.0
+  12 Microgate SyncLink card support
+  13 SyncLink Multiport support
+  14 SyncLink GT/AC support
+  15 Multi-Tech multiport card support
+  16 HDLC line discipline support
+  17 GSM MUX line discipline support (EXPERIMENTAL)
+  18 HSDPA Broadband Wireless Data Card - Globe Trotter
+  19 NULL TTY driver
+  20 Trace data sink for MIPI P1149.7 cJTAG standard
+  21 < > Serial device bus ----
+  22 Virtio console
+  23 < > IPMI top-level message handler ----
+  24 <*> Hardware Random Number Generator Core support --->
+  25 Applicom intelligent fieldbus card support
+  26 PCMCIA character devices --->
+  27 ACP Modem (Mwave) support
+  28 /dev/mem virtual device support
+  29 /dev/kmem virtual device support
+  30 /dev/nvram support
+  31 RAW driver (/dev/raw/rawN)
+  32 /dev/port character device
+  33 HPET - High Precision Event Timer
+  34 Allow mmap of HPET
+  35 Hangcheck timer
+  36 < > TPM Hardware Support ----
+  37 Telecom clock driver for ATCA SBC
+  38 Xillybus generic FPGA interface
+  39 Initialize RNG using CPU RNG instructions
+  40 Initialize RNG using bootloader-supplied seed
+
+================================================================================
+/Device Drivers/Character devices/<*> Hardware Random Number Generator Core support
+================================================================================
+   0 --- IPMI top-level message handler
+
+================================================================================
+/Device Drivers/I2C support
+================================================================================
+   0 I2C support
+
+================================================================================
+/Device Drivers/-*- PPS support
+================================================================================
+   0 --- PPS support
+   1 PPS debugging messages
+   2 Kernel timer client (Testing client, use for debug)
+   3 PPS line discipline
+   4 PPS client using GPIO
+
+================================================================================
+/Device Drivers/PTP clock support
+================================================================================
+   0 PTP clock support
+
+================================================================================
+/Device Drivers/-*- Power supply class support
+================================================================================
+   0 --- Power supply class support
+   1 Power supply debug
+   2 Expose power supply sensors as hwmon device
+   3 Generic PDA/phone power driver
+   4 Test power driver
+   5 DS2780 battery driver
+   6 DS2781 battery driver
+   7 BQ27xxx battery driver
+   8 MAX8903 Battery DC-DC Charger for USB and Adapter Power
+
+================================================================================
+/Device Drivers/-*- Hardware Monitoring support
+================================================================================
+   0 --- Hardware Monitoring support
+   1 Hardware Monitoring Chip debugging messages
+   2 Abit uGuru (rev 1 & 2)
+   3 Abit uGuru (rev 3)
+   4 Synaptics AS370 SoC hardware monitoring driver
+   5 Analog Devices FAN Control HDL Core driver
+   6 AMD Athlon64/FX or Opteron temperature sensor
+   7 AMD Family 10h+ temperature sensor
+   8 AMD Family 15h processor power
+   9 AMD RAPL MSR based Energy driver
+  10 Apple SMC (Motion sensor, light sensor, keyboard backlight)
+  11 ASPEED AST2400/AST2500 PWM and Fan tach driver
+  12 Corsair Commander Pro controller
+  13 Hard disk drives with temperature sensors
+  14 Dell laptop SMM BIOS hwmon driver
+  15 FB-DIMM AMB temperature sensor on Intel 5000 series chipsets
+  16 Fintek F71805F/FG, F71806F/FG and F71872F/FG
+  17 Fintek F71882FG and compatibles
+  18 Intel 5500/5520/X58 temperature sensor
+  19 Intel Core/Core2/Atom temperature sensor
+  20 ITE IT87xx and compatibles
+  21 Maxim MAX197 and compatibles
+  22 Moortec Semiconductor MR75203 PVT Controller
+  23 National Semiconductor PC87360 family
+  24 National Semiconductor PC87427
+  25 NTC thermistor support from Murata
+  26 Nuvoton NCT6683D
+  27 Nuvoton NCT6775F and compatibles
+  28 Nuvoton NPCM750 and compatible PWM and Fan controllers
+  29 Silicon Integrated Systems Corp. SiS5595
+  30 SMSC LPC47M10x and compatibles
+  31 SMSC LPC47B397-NC
+  32 SMSC SCH5627
+  33 SMSC SCH5636
+  34 VIA CPU temperature sensor
+  35 VIA686A
+  36 VIA VT1211
+  37 VIA VT8231
+  38 Winbond W83627HF, W83627THF, W83637HF, W83687THF, W83697HF
+  39 Winbond W83627EHF/EHG/DHG/UHG, W83667HG
+  40 APM X-Gene SoC hardware monitoring driver
+  41 ACPI 4.0 power meter
+  42 ASUS ATK0110
+
+================================================================================
+/Device Drivers/-*- Thermal drivers
+================================================================================
+   0 --- Thermal drivers
+   1 Thermal netlink management
+   2 Thermal state transition statistics
+   3 Emergency poweroff delay in milli-seconds
+   4 Expose thermal sensors as hwmon device
+   5 Enable writable trip points
+   6 Default Thermal governor (step_wise) --->
+   7 Fair-share thermal governor
+   8 Step_wise thermal governor
+   9 Bang Bang thermal governor
+  10 User_space thermal governor
+  11 Thermal emulation mode support
+  12 Intel thermal drivers --->
+
+================================================================================
+/Device Drivers/-*- Thermal drivers/Intel thermal drivers
+================================================================================
+   0 Intel PowerClamp idle injection driver
+   1 X86 package temperature thermal driver
+   2 Intel SoCs DTS thermal driver
+   3 ACPI INT340X thermal drivers --->
+   4 Intel PCH Thermal Reporting Driver
+
+================================================================================
+/Device Drivers/-*- Thermal drivers/Intel thermal drivers/ACPI INT340X thermal drivers
+================================================================================
+   0 ACPI INT340X thermal drivers
+
+================================================================================
+/Device Drivers/[*] Watchdog Timer Support
+================================================================================
+   0 --- Watchdog Timer Support
+   1 WatchDog Timer Driver Core
+   2 Disable watchdog shutdown on close
+   3 Update boot-enabled watchdog until userspace takes over
+   4 Timeout value for opening watchdog device
+   5 Read different watchdog information through sysfs
+   6 Software watchdog
+   7 ACPI Watchdog Action Table (WDAT)
+   8 Xilinx Watchdog timer
+   9 Cadence Watchdog Timer
+  10 Synopsys DesignWare watchdog
+  11 Max63xx watchdog
+  12 Acquire SBC Watchdog Timer
+  13 Advantech SBC Watchdog Timer
+  14 ALi M1535 PMU Watchdog Timer
+  15 ALi M7101 PMU Computer Watchdog
+  16 WinSystems EBC-C384 Watchdog Timer
+  17 Fintek F718xx, F818xx Super I/O Watchdog
+  18 AMD/ATI SP5100 TCO Timer/Watchdog
+  19 Compulab SBC-FITPC2 watchdog
+  20 Eurotech CPU-1220/1410 Watchdog Timer
+  21 IB700 SBC Watchdog Timer
+  22 IBM Automatic Server Restart
+  23 ICP Single Board Computer Watchdog Timer
+  24 Intel 6300ESB Timer/Watchdog
+  25 Intel Atom E6xx Watchdog
+  26 Intel TCO Timer/Watchdog
+  27 IT8712F (Smart Guardian) Watchdog Timer
+  28 IT87 Watchdog Timer
+  29 HP ProLiant iLO2+ Hardware Watchdog Timer
+  30 National Semiconductor PC87307/PC97307 (ala SC1200) Watchdog
+  31 NS PC87413 watchdog
+  32 nVidia TCO Timer/Watchdog
+  33 SBC-60XX Watchdog Timer
+  34 SMA CPU5 Watchdog
+  35 SMSC SCH311X Watchdog Timer
+  36 Winbond SMsC37B787 Watchdog Timer
+  37 TQ-Systems TQMX86 Watchdog Timer
+  38 VIA Watchdog Timer
+  39 Watchdog timer for W83627HF/W83627DHG and compatibles
+  40 W83877F (EMACS) Watchdog Timer
+  41 W83977F (PCM-5335) Watchdog Timer
+  42 ZF MachZ Watchdog
+  43 Winsystems SBC EPX-C3 watchdog
+
+================================================================================
+/Device Drivers/Multifunction device drivers
+================================================================================
+   0 Cirrus Logic Madera codecs
+   1 Diolan DLN2 support
+   2 HTC PASIC3 LED/DS1WM chip support
+   3 Intel Quark MFD I2C GPIO
+   4 Intel ICH LPC
+   5 Intel SCH LPC
+   6 Intel Low Power Subsystem support in ACPI mode
+   7 Intel Low Power Subsystem support in PCI mode
+   8 Intel PMC Driver for Broxton
+   9 Janz CMOD-IO PCI MODULbus Carrier Board
+  10 Kontron module PLD device
+  11 MediaTek MT6397 PMIC Support
+  12 Nano River Technologies Viperboard
+  13 RDC R-321x southbridge
+  14 Silicon Motion SM501
+  15 ST-Ericsson ABX500 Mixed Signal Circuit register functions
+  16 System Controller Register R/W Based on Regmap
+  17 TQ-Systems IO controller TQMX86
+  18 VIA VX855/VX875 integrated south bridge
+
+================================================================================
+/File systems
+================================================================================
+   0 Validate filesystem parameter description
+   1 Second extended fs support
+   2 The Extended 3 (ext3) filesystem
+   3 The Extended 4 (ext4) filesystem
+   4 Use ext4 for ext2 file systems
+   5 Ext4 POSIX Access Control Lists
+   6 Ext4 Security Labels
+   7 Ext4 debugging support
+   8 JBD2 (ext4) debugging support
+   9 Reiserfs support
+  10 JFS filesystem support
+  11 XFS filesystem support
+  12 GFS2 file system support
+  13 Btrfs filesystem support
+  14 NILFS2 file system support
+  15 F2FS filesystem support
+  16 Direct Access (DAX) support
+  17 Enable filesystem export operations for block IO
+  18 Enable POSIX file locking API
+  19 Enable Mandatory file locking
+  20 FS Encryption (Per-file encryption)
+  21 FS Verity (read-only file-based authenticity protection)
+  22 Dnotify support
+  23 Inotify support for userspace
+  24 Filesystem wide access notification
+  25 Quota support
+  26 Report quota messages through netlink interface
+  27 Print quota warnings to console (OBSOLETE)
+  28 Additional quota sanity checks
+  29 Old quota format support
+  30 Quota format vfsv0 and vfsv1 support
+  31 Old Kconfig name for Kernel automounter support
+  32 Kernel automounter support (supports v3, v4 and v5)
+  33 FUSE (Filesystem in Userspace) support
+  34 Overlay filesystem support
+  35 Caches --->
+  36 CD-ROM/DVD Filesystems --->
+  37 DOS/FAT/EXFAT/NT Filesystems --->
+  38 Pseudo filesystems --->
+  39 [*] Miscellaneous filesystems --->
+  40 [*] Network File Systems --->
+  41 -*- Native language support --->
+  42 UTF-8 normalization and casefolding support
+
+================================================================================
+/File systems/Caches
+================================================================================
+   0 General filesystem local caching manager
+
+================================================================================
+/File systems/CD-ROM/DVD Filesystems
+================================================================================
+   0 ISO 9660 CDROM file system support
+   1 Microsoft Joliet CDROM extensions
+   2 Transparent decompression extension
+   3 UDF file system support
+
+================================================================================
+/File systems/DOS/FAT/EXFAT/NT Filesystems
+================================================================================
+   0 MSDOS fs support
+   1 VFAT (Windows-95) fs support
+   2 Default codepage for FAT
+   3 Default iocharset for FAT
+   4 Enable FAT UTF-8 option by default
+   5 exFAT filesystem support
+   6 NTFS file system support
+
+================================================================================
+/File systems/Pseudo filesystems
+================================================================================
+   0 /proc file system support
+   1 /proc/kcore support
+   2 /proc/vmcore support
+   3 Include /proc/<pid>/task/<tid>/children file
+   4 Tmpfs virtual memory file system support (former shm fs)
+   5 Tmpfs POSIX Access Control Lists
+   6 Tmpfs extended attributes
+   7 Use 64-bit ino_t by default in tmpfs
+   8 HugeTLB file system support
+   9 Userspace-driven configuration filesystem
+  10 EFI Variable filesystem
+
+================================================================================
+/File systems/[*] Miscellaneous filesystems
+================================================================================
+   0 --- Miscellaneous filesystems
+   1 ORANGEFS (Powered by PVFS) support
+   2 ADFS file system support
+   3 Amiga FFS file system support
+   4 eCrypt filesystem layer support
+   5 Apple Macintosh file system support
+   6 Apple Extended HFS file system support
+   7 BeOS file system (BeFS) support (read only)
+   8 BFS file system support
+   9 EFS file system support (read only)
+  10 Compressed ROM file system support (cramfs)
+  11 SquashFS 4.0 - Squashed file system support
+  12 FreeVxFS file system support (VERITAS VxFS(TM) compatible)
+  13 Minix file system support
+  14 SonicBlue Optimized MPEG File System support
+  15 OS/2 HPFS file system support
+  16 QNX4 file system support (read only)
+  17 QNX6 file system support (read only)
+  18 ROM file system support
+  19 Persistent store support
+  20 System V/Xenix/V7/Coherent file system support
+  21 UFS file system support (read only)
+  22 EROFS filesystem support
+
+================================================================================
+/File systems/[*] Network File Systems
+================================================================================
+   0 --- Network File Systems
+   1 NFS client support
+   2 NFS client support for NFS version 2
+   3 NFS client support for NFS version 3
+   4 NFS client support for the NFSv3 ACL protocol extension
+   5 NFS client support for NFS version 4
+   6 Provide swap over NFS support
+   7 NFS client support for NFSv4.1
+   8 Root file system on NFS
+   9 Use the legacy NFS DNS resolver
+  10 NFS: Disable NFS UDP protocol support
+  11 NFS server support
+  12 RPC: Enable dprintk debugging
+  13 Ceph distributed file system
+  14 SMB3 and CIFS support (advanced network filesystem)
+  15 Coda file system support (advanced network fs)
+  16 Andrew File System support (AFS)
+
+================================================================================
+/File systems/-*- Native language support
+================================================================================
+   0 --- Native language support
+   1 Default NLS Option
+   2 Codepage 437 (United States, Canada)
+   3 Codepage 737 (Greek)
+   4 Codepage 775 (Baltic Rim)
+   5 Codepage 850 (Europe)
+   6 Codepage 852 (Central/Eastern Europe)
+   7 Codepage 855 (Cyrillic)
+   8 Codepage 857 (Turkish)
+   9 Codepage 860 (Portuguese)
+  10 Codepage 861 (Icelandic)
+  11 Codepage 862 (Hebrew)
+  12 Codepage 863 (Canadian French)
+  13 Codepage 864 (Arabic)
+  14 Codepage 865 (Norwegian, Danish)
+  15 Codepage 866 (Cyrillic/Russian)
+  16 Codepage 869 (Greek)
+  17 Simplified Chinese charset (CP936, GB2312)
+  18 Traditional Chinese charset (Big5)
+  19 Japanese charsets (Shift-JIS, EUC-JP)
+  20 Korean charset (CP949, EUC-KR)
+  21 Thai charset (CP874, TIS-620)
+  22 Hebrew charsets (ISO-8859-8, CP1255)
+  23 Windows CP1250 (Slavic/Central European Languages)
+  24 Windows CP1251 (Bulgarian, Belarusian)
+  25 ASCII (United States)
+  26 NLS ISO 8859-1  (Latin 1; Western European Languages)
+  27 NLS ISO 8859-2  (Latin 2; Slavic/Central European Languages)
+  28 NLS ISO 8859-3  (Latin 3; Esperanto, Galician, Maltese, Turkish)
+  29 NLS ISO 8859-4  (Latin 4; old Baltic charset)
+  30 NLS ISO 8859-5  (Cyrillic)
+  31 NLS ISO 8859-6  (Arabic)
+  32 NLS ISO 8859-7  (Modern Greek)
+  33 NLS ISO 8859-9  (Latin 5; Turkish)
+  34 NLS ISO 8859-13 (Latin 7; Baltic)
+  35 NLS ISO 8859-14 (Latin 8; Celtic)
+  36 NLS ISO 8859-15 (Latin 9; Western European Languages with Euro)
+  37 NLS KOI8-R (Russian)
+  38 NLS KOI8-U/RU (Ukrainian, Belarusian)
+  39 Codepage macroman
+  40 Codepage macceltic
+  41 Codepage maccenteuro
+  42 Codepage maccroatian
+  43 Codepage maccyrillic
+  44 Codepage macgaelic
+  45 Codepage macgreek
+
+================================================================================
+/Security options
+================================================================================
+   0 Enable access key retention support
+   1 Enable temporary caching of the last request_key() result
+   2 Enable register of persistent per-UID keyrings
+   3 ENCRYPTED KEYS
+   4 Diffie-Hellman operations on retained keys
+   5 Restrict unprivileged access to the kernel syslog
+   6 Restrict unprivileged use of performance events
+   7 Restrict unprivileged use of tiocsti command injection
+   8 Allow /proc/pid/mem access override (Traditional /proc/pid/mem behavior) --->
+   9 Enable different security models
+  10 Enable the securityfs filesystem
+  11 Socket and Networking Security Hooks
+  12 XFRM (IPSec) Networking Security Hooks
+  13 Security hooks for pathname based access control
+  14 Enable Intel(R) Trusted Execution Technology (Intel(R) TXT)
+  15 Low address space for LSM to protect from user allocation
+  16 Harden memory copies between kernel and userspace
+  17 Allow usercopy whitelist violations to fallback to object size
+  18 Harden common str/mem functions against buffer overflows
+  19 Force all usermode helper calls through a single binary
+  20 NSA SELinux Support
+  21 NSA SELinux boot parameter
+  22 NSA SELinux runtime disable
+  23 NSA SELinux Development Support
+  24 NSA SELinux AVC Statistics
+  25 NSA SELinux sidtab hashtable size
+  26 NSA SELinux SID to context string translation cache size
+  27 Simplified Mandatory Access Control Kernel Support
+  28 TOMOYO Linux Support
+  29 AppArmor support
+  30 Pin load of kernel files (modules, fw, etc) to one filesystem
+  31 Yama support
+  32 Gate setid transitions to limit CAP_SET{U/G}ID capabilities
+  33 Basic module for enforcing kernel lockdown
+  34 Integrity subsystem
+  35 Digital signature verification using multiple keyrings
+  36 Enables integrity auditing support
+  37 Integrity Measurement Architecture(IMA)
+  38 EVM support
+  39 First legacy 'major LSM' to be initialized (SELinux) --->
+  40 Ordered list of enabled LSMs
+  41 Kernel hardening options --->
+
+================================================================================
+/Security options/Kernel hardening options
+================================================================================
+   0 Memory initialization --->
+
+================================================================================
+/Security options/Kernel hardening options/Memory initialization
+================================================================================
+   0 Initialize kernel stack variables at function entry (zero-init everything (strongest and safest)) --->
+   1 Poison kernel stack before returning from syscalls
+   2 Enable heap memory zeroing on allocation by default
+   3 Enable heap memory zeroing on free by default
+   4 Verify sanitized pages
+   5 Verify sanitized SLAB allocations
+
+================================================================================
+/-*- Cryptographic API
+================================================================================
+   0 --- Cryptographic API
+   1 Cryptographic algorithm manager
+   2 Userspace cryptographic algorithm configuration
+   3 Disable run-time self tests
+   4 Null algorithms
+   5 Parallel crypto engine
+   6 Software async crypto daemon
+   7 Authenc support
+   8 Testing module
+   9 RSA algorithm
+  10 Diffie-Hellman algorithm
+  11 ECDH algorithm
+  12 EC-RDSA (GOST 34.10) algorithm
+  13 SM2 algorithm
+  14 Curve25519 algorithm
+  15 x86_64 accelerated Curve25519 scalar multiplication library
+  16 CCM support
+  17 GCM/GMAC support
+  18 ChaCha20-Poly1305 AEAD support
+  19 AEGIS-128 AEAD algorithm
+  20 AEGIS-128 AEAD algorithm (x86_64 AESNI+SSE2 implementation)
+  21 Sequence Number IV Generator
+  22 Encrypted Chain IV Generator
+  23 CBC support
+  24 CFB support
+  25 CTR support
+  26 CTS support
+  27 ECB support
+  28 LRW support
+  29 OFB support
+  30 PCBC support
+  31 XTS support
+  32 Key wrapping support
+  33 NHPoly1305 hash function (x86_64 SSE2 implementation)
+  34 NHPoly1305 hash function (x86_64 AVX2 implementation)
+  35 Adiantum support
+  36 ESSIV support for block encryption
+  37 CMAC support
+  38 HMAC support
+  39 XCBC support
+  40 VMAC support
+
+================================================================================
+/Library routines
+================================================================================
+   0 Generic bitfield packing and unpacking
+   1 CORDIC algorithm
+   2 Simple prime number generator for testing
+   3 Crypto library routines --->
+   4 CRC-CCITT functions
+   5 CRC16 functions
+   6 CRC calculation for the T10 Data Integrity Field
+   7 CRC ITU-T V.41 functions
+   8 CRC32/CRC32c functions
+   9 CRC32 perform self test on init
+  10 CRC32 implementation (Slice by 8 bytes) --->
+  11 CRC64 functions
+  12 CRC4 functions
+  13 CRC7 functions
+  14 CRC32c (Castagnoli, et al) Cyclic Redundancy-Check
+  15 CRC8 function
+  16 PRNG perform self test on init
+  17 XZ decompression support
+  18 XZ decompressor tester
+  19 Enable debugging of DMA-API usage
+  20 glob self-test on init
+  21 IRQ polling library
+  22 Select compiled-in fonts
+  23 Test string functions
+
+================================================================================
+/Library routines/Crypto library routines
+================================================================================
+   0 ChaCha library interface
+   1 Curve25519 scalar multiplication library
+   2 Poly1305 library interface
+   3 ChaCha20-Poly1305 AEAD support (8-byte nonce library version)
+
+================================================================================
+/Kernel hacking
+================================================================================
+   0 printk and dmesg options --->
+   1 Compile-time checks and compiler options --->
+   2 Generic Kernel Debugging Instruments --->
+   3 Kernel debugging
+   4 Miscellaneous debug code
+   5 Memory Debugging --->
+   6 Debug shared IRQ handlers
+   7 Debug Oops, Lockups and Hangs --->
+   8 Scheduler Debugging --->
+   9 Enable extra timekeeping sanity checking
+  10 Lock Debugging (spinlocks, mutexes, etc...) --->
+  11 Stack backtrace support
+  12 Warn for all uses of unseeded randomness
+  13 kobject debugging
+  14 Debug kernel data structures --->
+  15 Debug credential management
+  16 RCU Debugging --->
+  17 Force round-robin CPU selection for unbound work items
+  18 Force extended block device numbers and spread them
+  19 Enable CPU hotplug state control
+  20 Latency measuring infrastructure
+  21 [*] Tracers --->
+  22 Remote debugging over FireWire early on boot
+  23 [ ] Sample kernel code ----
+  24 x86 Debugging --->
+  25 Kernel Testing and Coverage --->
+
+================================================================================
+/Kernel hacking/printk and dmesg options
+================================================================================
+   0 Show timing information on printks
+   1 Show caller information on printks
+   2 Default console loglevel (1-15)
+   3 quiet console loglevel (1-15)
+   4 Default message log level (1-7)
+   5 Delay each boot printk message by N milliseconds
+   6 Enable dynamic printk() support
+   7 Enable core function of dynamic debug support
+   8 Support symbolic error names in printf
+
+================================================================================
+/Kernel hacking/Compile-time checks and compiler options
+================================================================================
+   0 Compile the kernel with debug info
+   1 Enable __must_check logic
+   2 Warn for stack frames larger than
+   3 Strip assembler-generated symbols during link
+   4 Generate readable assembler code
+   5 Install uapi headers to usr/include
+   6 Enable full Section mismatch analysis
+   7 Make section mismatch errors non-fatal
+   8 Enable verbose reporting of writable function pointers
+   9 Compile-time stack metadata validation
+  10 Force weak per-cpu definitions
+
+================================================================================
+/Kernel hacking/Generic Kernel Debugging Instruments
+================================================================================
+   0 Magic SysRq key
+   1 Enable magic SysRq key functions by default
+   2 Enable magic SysRq key over serial
+   3 Char sequence that enables magic SysRq over serial
+   4 Debug Filesystem
+   5 Debugfs default access (No access) --->
+   6 [ ] KGDB: kernel debugger ----
+   7 [ ] Undefined behaviour sanity checker ----
+   8 [ ] KCSAN: dynamic data race detector ----
+
+================================================================================
+/Kernel hacking/Memory Debugging
+================================================================================
+   0 Extend memmap on extra space for more information on page
+   1 Debug page memory allocations
+   2 Track page owner
+   3 Poison pages after freeing
+   4 Enable tracepoint to track down page reference manipulation
+   5 Testcase for the marking rodata read-only
+   6 Warn on W+X mappings at boot
+   7 Export kernel pagetable layout to userspace via debugfs
+   8 Debug object operations
+   9 SLUB debugging on by default
+  10 Enable SLUB performance statistics
+  11 Kernel memory leak detector
+  12 Stack utilization instrumentation
+  13 Detect stack corruption on calls to schedule()
+  14 Debug VM
+  15 Debug arch page table for semantics compliance
+  16 Debug VM translations
+  17 Debug access to per_cpu maps
+  18 [ ] KASAN: runtime memory debugger ----
+
+================================================================================
+/Kernel hacking/Debug Oops, Lockups and Hangs
+================================================================================
+   0 Panic on Oops
+   1 panic timeout
+   2 Detect Soft Lockups
+   3 Detect Hard Lockups
+   4 Detect Hung Tasks
+   5 Detect Workqueue Stalls
+   6 Test module to generate lockups
+
+================================================================================
+/Kernel hacking/Scheduler Debugging
+================================================================================
+   0 Collect scheduler debugging info
+   1 Collect scheduler statistics
+
+================================================================================
+/Kernel hacking/Lock Debugging (spinlocks, mutexes, etc...)
+================================================================================
+   0 Lock debugging: prove locking correctness
+   1 Lock usage statistics
+   2 RT Mutex debugging, deadlock detection
+   3 Spinlock and rw-lock debugging: basic checks
+   4 Mutex debugging: basic checks
+   5 Wait/wound mutex debugging: Slowpath testing
+   6 RW Semaphore debugging: basic checks
+   7 Lock debugging: detect incorrect freeing of live locks
+   8 Sleep inside atomic section checking
+   9 Locking API boot-time self-tests
+  10 torture tests for locking
+  11 Wait/wound mutex selftests
+  12 torture tests for smp_call_function*()
+  13 Debugging for csd_lock_wait(), called from smp_call_function*()
+
+================================================================================
+/Kernel hacking/Debug kernel data structures
+================================================================================
+   0 Debug linked list manipulation
+   1 Debug priority linked list manipulation
+   2 Debug SG table operations
+   3 Debug notifier call chains
+   4 Trigger a BUG when data corruption is detected
+
+================================================================================
+/Kernel hacking/RCU Debugging
+================================================================================
+   0 performance tests for RCU
+   1 torture tests for RCU
+   2 Scalability tests for read-side synchronization (RCU and others)
+   3 RCU CPU stall timeout in seconds
+   4 Enable tracing for RCU
+   5 Provide debugging asserts for adding NO_HZ support to an arch
+
+================================================================================
+/Kernel hacking/[*] Tracers
+================================================================================
+   0 --- Tracers
+   1 Boot-time Tracing support
+   2 Kernel Function Tracer
+   3 Trace max stack
+   4 Interrupts-off Latency Tracer
+   5 Scheduling Latency Tracer
+   6 Tracer to detect hardware latencies (like SMIs)
+   7 Memory mapped IO tracing
+   8 Trace syscalls
+   9 Create a snapshot trace buffer
+  10 Branch Profiling (No branch profiling) --->
+  11 Support for tracing block IO actions
+  12 Enable kprobes-based dynamic events
+  13 Enable uprobes-based dynamic events
+  14 Synthetic trace events
+  15 Histogram triggers
+  16 Trace event injection
+  17 Add tracepoint that benchmarks tracepoints
+  18 Ring buffer benchmark stress tester
+  19 Show eval mappings for trace events
+  20 Perform a startup test on ftrace
+  21 Ring buffer startup self test
+  22 Test module to create a preempt / IRQ disable delay thread to test latency tracers
+  23 Test module for in-kernel kprobe event generation
+
+================================================================================
+/Kernel hacking/x86 Debugging
+================================================================================
+   0 Enable verbose x86 bootup info messages
+   1 Early printk
+   2 Early printk via EHCI debug port
+   3 Early printk via the xHCI debug port
+   4 Dump the EFI pagetable
+   5 Set upper limit of TLB entries to flush one-by-one
+   6 x86 instruction decoder selftest
+   7 IO delay type (port 0x80 based port-IO delay [recommended]) --->
+   8 Debug boot parameters
+   9 CPA self-test code
+  10 Debug low-level entry code
+  11 NMI Selftest
+  12 Debug the x86 FPU code
+  13 ATOM Punit debug driver
+  14 Choose kernel unwinder (ORC unwinder) --->
+
+================================================================================
+/Kernel hacking/Kernel Testing and Coverage
+================================================================================
+   0 < > KUnit - Enable support for unit tests ----
+   1 Notifier error injection
+   2 Fault-injections of functions
+   3 Fault-injection framework
+   4 Code coverage for fuzzing
+   5 [*] Runtime Testing --->
+   6 Memtest
+
+================================================================================
+/Kernel hacking/Kernel Testing and Coverage/[*] Runtime Testing
+================================================================================
+   0 --- Runtime Testing
+   1 Linux Kernel Dump Test Tool Module
+   2 Linked list sorting test
+   3 Min heap test
+   4 Array-based sort test
+   5 Kprobes sanity tests
+   6 Self test for the backtrace code
+   7 Red-Black tree test
+   8 Reed-Solomon library test
+   9 Interval tree test
+  10 Per cpu operations test
+  11 Perform an atomic64_t self-test
+  12 Test functions located in the hexdump module at runtime
+  13 Test functions located in the string_helpers module at runtime
+  14 Test strscpy*() family of functions at runtime
+  15 Test kstrto*() family of functions at runtime
+  16 Test printf() family of functions at runtime
+  17 Test bitmap_*() family of functions at runtime
+  18 Test functions located in the uuid module at runtime
+  19 Test the XArray code at runtime
+  20 Test check_*_overflow() functions at runtime
+  21 Perform selftest on resizable hash table
+  22 Perform selftest on hash functions
+  23 Perform selftest on IDA functions
+  24 Test module loading with 'hello world' module
+  25 Test module for compilation of bitops operations
+  26 Test module for stress/performance analysis of vmalloc allocator
+  27 Test user/kernel boundary protections
+  28 Test BPF filter functionality
+  29 Test blackhole netdev functionality
+  30 Test find_bit functions
+  31 Test firmware loading via userspace interface
+  32 sysctl test driver
+  33 udelay test driver
+  34 Test static keys
+  35 kmod stress tester
+  36 Test memcat_p() helper function
+  37 Test level of stack variable initialization
+  38 Test heap/page initialization
+  39 Test freeing pages
+  40 Test floating point operations in kernel space
+
+================================================================================
+/Gentoo Linux
+================================================================================
+   0 Gentoo Linux support
+   1 Linux dynamic and persistent device naming (userspace devfs) support
+   2 Select options required by Portage features
+   3 Support for init systems, system and service managers --->
+   4 [ ] Kernel Self Protection Project ----
+   5 Print firmware information that the kernel attempts to load
+
+================================================================================
+/Gentoo Linux/Support for init systems, system and service managers
+================================================================================
+   0 OpenRC, runit and other script based systems and managers
+   1 systemd
+

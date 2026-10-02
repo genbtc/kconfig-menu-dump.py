@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Kernel hacking ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌──────────────────────────────────────────────────────────────────── Kernel hacking ─────────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                           printk and dmesg options  --->                                                                            │ │
+  │ │                                           Compile-time checks and compiler options  --->                                                            │ │
+  │ │                                           Generic Kernel Debugging Instruments  --->                                                                │ │
+  │ │                                       [*] Kernel debugging                                                                                          │ │
+  │ │                                       [*]   Miscellaneous debug code                                                                                │ │
+  │ │                                           Memory Debugging  --->                                                                                    │ │
+  │ │                                       [ ] Debug shared IRQ handlers                                                                                 │ │
+  │ │                                           Debug Oops, Lockups and Hangs  --->                                                                       │ │
+  │ │                                           Scheduler Debugging  --->                                                                                 │ │
+  │ │                                       [ ] Enable extra timekeeping sanity checking                                                                  │ │
+  │ │                                           Lock Debugging (spinlocks, mutexes, etc...)  --->                                                         │ │
+  │ │                                       -*- Stack backtrace support                                                                                   │ │
+  │ │                                       [ ] Warn for all uses of unseeded randomness                                                                  │ │
+  │ │                                       [ ] kobject debugging                                                                                         │ │
+  │ │                                           Debug kernel data structures  --->                                                                        │ │
+  │ │                                       [ ] Debug credential management                                                                               │ │
+  │ │                                           RCU Debugging  --->                                                                                       │ │
+  │ │                                       [ ] Force round-robin CPU selection for unbound work items                                                    │ │
+  │ │                                       [ ] Force extended block device numbers and spread them                                                       │ │
+  │ │                                       [ ] Enable CPU hotplug state control                                                                          │ │
+  │ │                                       [ ] Latency measuring infrastructure                                                                          │ │
+  │ │                                       [*] Tracers  --->                                                                                             │ │
+  │ │                                       [*] Remote debugging over FireWire early on boot                                                              │ │
+  │ │                                       [ ] Sample kernel code  ----                                                                                  │ │
+  │ │                                           x86 Debugging  --->                                                                                       │ │
+  │ │                                           Kernel Testing and Coverage  --->                                                                         │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

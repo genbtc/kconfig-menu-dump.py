@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Device Drivers → Hardware Monitoring support ───────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌────────────────────────────────────────────────────────────── Hardware Monitoring support ──────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- Hardware Monitoring support                                                                               │ │
+  │ │                                       [ ]   Hardware Monitoring Chip debugging messages                                                             │ │
+  │ │                                             *** Native drivers ***                                                                                  │ │
+  │ │                                       < >   Abit uGuru (rev 1 & 2)                                                                                  │ │
+  │ │                                       < >   Abit uGuru (rev 3)                                                                                      │ │
+  │ │                                       < >   Synaptics AS370 SoC hardware monitoring driver                                                          │ │
+  │ │                                       < >   Analog Devices FAN Control HDL Core driver                                                              │ │
+  │ │                                       < >   AMD Athlon64/FX or Opteron temperature sensor                                                           │ │
+  │ │                                       < >   AMD Family 10h+ temperature sensor                                                                      │ │
+  │ │                                       < >   AMD Family 15h processor power                                                                          │ │
+  │ │                                       < >   AMD RAPL MSR based Energy driver                                                                        │ │
+  │ │                                       < >   Apple SMC (Motion sensor, light sensor, keyboard backlight)                                             │ │
+  │ │                                       < >   ASPEED AST2400/AST2500 PWM and Fan tach driver                                                          │ │
+  │ │                                       < >   Corsair Commander Pro controller                                                                        │ │
+  │ │                                       < >   Hard disk drives with temperature sensors                                                               │ │
+  │ │                                       < >   Dell laptop SMM BIOS hwmon driver                                                                       │ │
+  │ │                                       < >   FB-DIMM AMB temperature sensor on Intel 5000 series chipsets                                            │ │
+  │ │                                       < >   Fintek F71805F/FG, F71806F/FG and F71872F/FG                                                            │ │
+  │ │                                       < >   Fintek F71882FG and compatibles                                                                         │ │
+  │ │                                       < >   Intel 5500/5520/X58 temperature sensor                                                                  │ │
+  │ │                                       < >   Intel Core/Core2/Atom temperature sensor                                                                │ │
+  │ │                                       < >   ITE IT87xx and compatibles                                                                              │ │
+  │ │                                       < >   Maxim MAX197 and compatibles                                                                            │ │
+  │ │                                       < >   Moortec Semiconductor MR75203 PVT Controller                                                            │ │
+  │ │                                       < >   National Semiconductor PC87360 family                                                                   │ │
+  │ │                                       < >   National Semiconductor PC87427                                                                          │ │
+  │ │                                       < >   NTC thermistor support from Murata                                                                      │ │
+  │ │                                       < >   Nuvoton NCT6683D                                                                                        │ │
+  │ │                                       < >   Nuvoton NCT6775F and compatibles                                                                        │ │
+  │ │                                       < >   Nuvoton NPCM750 and compatible PWM and Fan controllers                                                  │ │
+  │ │                                       < >   Silicon Integrated Systems Corp. SiS5595                                                                │ │
+  │ │                                       < >   SMSC LPC47M10x and compatibles                                                                          │ │
+  │ │                                       < >   SMSC LPC47B397-NC                                                                                       │ │
+  │ │                                       < >   SMSC SCH5627                                                                                            │ │
+  │ │                                       < >   SMSC SCH5636                                                                                            │ │
+  │ │                                       < >   VIA CPU temperature sensor                                                                              │ │
+  │ │                                       < >   VIA686A                                                                                                 │ │
+  │ │                                       < >   VIA VT1211                                                                                              │ │
+  │ │                                       < >   VIA VT8231                                                                                              │ │
+  │ │                                       < >   Winbond W83627HF, W83627THF, W83637HF, W83687THF, W83697HF                                              │ │
+  │ │                                       < >   Winbond W83627EHF/EHG/DHG/UHG, W83667HG                                                                 │ │
+  │ │                                       < >   APM X-Gene SoC hardware monitoring driver                                                               │ │
+  │ │                                             *** ACPI drivers ***                                                                                    │ │
+  │ │                                       < >   ACPI 4.0 power meter                                                                                    │ │
+  │ │                                       < >   ASUS ATK0110                                                                                            │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

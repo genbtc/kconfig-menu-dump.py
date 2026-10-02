@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Networking support → Networking options → Network packet filtering framework (Netfilter) → IP: Netfilter Configuration ─────────────────────────────────────
+  ┌────────────────────────────────────────────────────────────── IP: Netfilter Configuration ──────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       < > IPv4 socket lookup support                                                                                │ │
+  │ │                                       < > IPv4 tproxy support                                                                                       │ │
+  │ │                                       < > Netfilter IPv4 packet duplication to alternate destination                                                │ │
+  │ │                                       <M> ARP packet logging                                                                                        │ │
+  │ │                                       {M} IPv4 packet logging                                                                                       │ │
+  │ │                                       -*- IPv4 packet rejection                                                                                     │ │
+  │ │                                       <*> IP tables support (required for filtering/masq/NAT)                                                       │ │
+  │ │                                       <*>   Packet filtering                                                                                        │ │
+  │ │                                       <*>     REJECT target support                                                                                 │ │
+  │ │                                       <M>   iptables NAT support                                                                                    │ │
+  │ │                                       <M>     MASQUERADE target support                                                                             │ │
+  │ │                                       <*>   Packet mangling                                                                                         │ │
+  │ │                                       < >   raw table support (required for NOTRACK/TRACE)                                                          │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

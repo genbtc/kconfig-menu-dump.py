@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Mitigations for CPU vulnerabilities ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌────────────────────────────────────────────────────────── Mitigations for CPU vulnerabilities ──────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- Mitigations for CPU vulnerabilities                                                                       │ │
+  │ │                                       [*]   Remove the kernel mapping in user mode                                                                  │ │
+  │ │                                       [*]   Avoid speculative indirect branches in kernel                                                           │ │
+  │ │                                       [*]     Enable return-thunks                                                                                  │ │
+  │ │                                       [*]       Enable UNRET on kernel entry                                                                        │ │
+  │ │                                       [*]   Enable IBPB on kernel entry                                                                             │ │
+  │ │                                       [*]   Enable IBRS on kernel entry                                                                             │ │
+  │ │                                       [*]   Mitigate speculative RAS overflow on AMD                                                                │ │
+  │ │                                       [ ]   Mitigate Straight-Line-Speculation                                                                      │ │
+  │ │                                       [ ]   Force GDS Mitigation                                                                                    │ │
+  │ │                                       [*]   RFDS Mitigation                                                                                         │ │
+  │ │                                       [*]   Enable Indirect Target Selection mitigation                                                             │ │
+  │ │                                       [*]   Mitigate Transient Scheduler Attacks                                                                    │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

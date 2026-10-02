@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Device Drivers → Input device support → Miscellaneous devices ──────────────────────────────────────────────────────────────────────────────────────────────
+  ┌───────────────────────────────────────────────────────────────── Miscellaneous devices ─────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- Miscellaneous devices                                                                                     │ │
+  │ │                                       < >   Analog Devices AD714x Capacitance Touch Sensor                                                          │ │
+  │ │                                       < >   NI Ettus Research USRP E3xx Button support.                                                             │ │
+  │ │                                       < >   PC Speaker support                                                                                      │ │
+  │ │                                       < >   x86 Atlas button interface                                                                              │ │
+  │ │                                       < >   ATI / Philips USB RF remote control                                                                     │ │
+  │ │                                       < >   Keyspan DMR USB remote control                                                                          │ │
+  │ │                                       < >   Griffin PowerMate and Contour Jog support                                                               │ │
+  │ │                                       < >   Yealink usb-p1k voip phone                                                                              │ │
+  │ │                                       < >   C-Media CM109 USB I/O Controller                                                                        │ │
+  │ │                                       < >   User level driver support                                                                               │ │
+  │ │                                       < >   Analog Devices ADXL34x Three-Axis Digital Accelerometer                                                 │ │
+  │ │                                       < >   IMS Passenger Control Unit driver                                                                       │ │
+  │ │                                       < >   VTI CMA3000 Tri-axis accelerometer                                                                      │ │
+  │ │                                       < >   IdeaPad Laptop Slidebar                                                                                 │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

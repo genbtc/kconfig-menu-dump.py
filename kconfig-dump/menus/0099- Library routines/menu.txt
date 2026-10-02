@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Library routines ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌─────────────────────────────────────────────────────────────────── Library routines ────────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       [ ] Generic bitfield packing and unpacking                                                                    │ │
+  │ │                                       < > CORDIC algorithm                                                                                          │ │
+  │ │                                       < > Simple prime number generator for testing                                                                 │ │
+  │ │                                           Crypto library routines  --->                                                                             │ │
+  │ │                                       -*- CRC-CCITT functions                                                                                       │ │
+  │ │                                       -*- CRC16 functions                                                                                           │ │
+  │ │                                       < > CRC calculation for the T10 Data Integrity Field                                                          │ │
+  │ │                                       < > CRC ITU-T V.41 functions                                                                                  │ │
+  │ │                                       -*- CRC32/CRC32c functions                                                                                    │ │
+  │ │                                       < >   CRC32 perform self test on init                                                                         │ │
+  │ │                                             CRC32 implementation (Slice by 8 bytes)  --->                                                           │ │
+  │ │                                       < > CRC64 functions                                                                                           │ │
+  │ │                                       < > CRC4 functions                                                                                            │ │
+  │ │                                       < > CRC7 functions                                                                                            │ │
+  │ │                                       < > CRC32c (Castagnoli, et al) Cyclic Redundancy-Check                                                        │ │
+  │ │                                       < > CRC8 function                                                                                             │ │
+  │ │                                       [ ] PRNG perform self test on init                                                                            │ │
+  │ │                                       -*- XZ decompression support                                                                                  │ │
+  │ │                                       < > XZ decompressor tester                                                                                    │ │
+  │ │                                       [ ] Enable debugging of DMA-API usage                                                                         │ │
+  │ │                                       < > glob self-test on init                                                                                    │ │
+  │ │                                       [ ] IRQ polling library                                                                                       │ │
+  │ │                                       [ ] Select compiled-in fonts                                                                                  │ │
+  │ │                                       < > Test string functions                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

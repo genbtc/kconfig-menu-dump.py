@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Networking support → Networking options → Network packet filtering framework (Netfilter) → Core Netfilter Configuration ────────────────────────────────────
+  ┌───────────────────────────────────────────────────────────── Core Netfilter Configuration ──────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       [*] Netfilter ingress support                                                                                 │ │
+  │ │                                       -*- Netfilter LOG over NFNETLINK interface                                                                    │ │
+  │ │                                       <*> Netfilter connection tracking support                                                                     │ │
+  │ │                                       < > Netdev packet logging                                                                                     │ │
+  │ │                                       [*] Connection tracking security mark support                                                                 │ │
+  │ │                                       [ ] Supply CT list in procfs (OBSOLETE)                                                                       │ │
+  │ │                                       [ ] Connection tracking labels                                                                                │ │
+  │ │                                       <*> FTP protocol support                                                                                      │ │
+  │ │                                       <*> IRC protocol support                                                                                      │ │
+  │ │                                       < > NetBIOS name service protocol support                                                                     │ │
+  │ │                                       <*> SIP protocol support                                                                                      │ │
+  │ │                                       <*> Connection tracking netlink interface                                                                     │ │
+  │ │                                       [ ] NFQUEUE and NFLOG integration with Connection Tracking                                                    │ │
+  │ │                                       {*} Network Address Translation support                                                                       │ │
+  │ │                                       < > Netfilter nf_tables support                                                                               │ │
+  │ │                                       -*- Netfilter Xtables support (required for ip_tables)                                                        │ │
+  │ │                                             *** Xtables combined modules ***                                                                        │ │
+  │ │                                       <M>   nfmark target and match support                                                                         │ │
+  │ │                                             *** Xtables targets ***                                                                                 │ │
+  │ │                                       <*>   "CONNSECMARK" target support                                                                            │ │
+  │ │                                       <M>   LOG target support                                                                                      │ │
+  │ │                                       {M}   "SNAT and DNAT" targets support                                                                         │ │
+  │ │                                       < >   "NETMAP" target support                                                                                 │ │
+  │ │                                       <*>   "NFLOG" target support                                                                                  │ │
+  │ │                                       < >   REDIRECT target support                                                                                 │ │
+  │ │                                       {M}   MASQUERADE target support                                                                               │ │
+  │ │                                       <*>   "SECMARK" target support                                                                                │ │
+  │ │                                       <*>   "TCPMSS" target support                                                                                 │ │
+  │ │                                             *** Xtables matches ***                                                                                 │ │
+  │ │                                       <M>   "addrtype" address type match support                                                                   │ │
+  │ │                                       <*>   "conntrack" connection tracking match support                                                           │ │
+  │ │                                       <*>   IPsec "policy" match support                                                                            │ │
+  │ │                                       <*>   "state" match support                                                                                   │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

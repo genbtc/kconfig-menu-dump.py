@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Device Drivers → Character devices ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌─────────────────────────────────────────────────────────────────── Character devices ───────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       -*- Enable TTY                                                                                                │ │
+  │ │                                       -*-   Virtual terminal                                                                                        │ │
+  │ │                                       -*-     Support for binding and unbinding console drivers                                                     │ │
+  │ │                                       [ ]   Legacy (BSD) PTY support                                                                                │ │
+  │ │                                       [*]   Allow legacy TIOCSTI usage                                                                              │ │
+  │ │                                       [*]   Allow legacy TIOCSTI usage                                                                              │ │
+  │ │                                       [*]   Automatically load TTY Line Disciplines                                                                 │ │
+  │ │                                             Serial drivers  --->                                                                                    │ │
+  │ │                                       [*]   Non-standard serial port support                                                                        │ │
+  │ │                                       < >     Comtrol RocketPort support                                                                            │ │
+  │ │                                       < >     Cyclades async mux support                                                                            │ │
+  │ │                                       < >     Moxa Intellio support                                                                                 │ │
+  │ │                                       < >     Moxa SmartIO support v. 2.0                                                                           │ │
+  │ │                                       < >     Microgate SyncLink card support                                                                       │ │
+  │ │                                       < >     SyncLink Multiport support                                                                            │ │
+  │ │                                       < >     SyncLink GT/AC support                                                                                │ │
+  │ │                                       < >     Multi-Tech multiport card support                                                                     │ │
+  │ │                                       < >     HDLC line discipline support                                                                          │ │
+  │ │                                       < >   GSM MUX line discipline support (EXPERIMENTAL)                                                          │ │
+  │ │                                       < >   HSDPA Broadband Wireless Data Card - Globe Trotter                                                      │ │
+  │ │                                       < >   NULL TTY driver                                                                                         │ │
+  │ │                                       < >   Trace data sink for MIPI P1149.7 cJTAG standard                                                         │ │
+  │ │                                       < > Serial device bus  ----                                                                                   │ │
+  │ │                                       < > Virtio console                                                                                            │ │
+  │ │                                       < > IPMI top-level message handler  ----                                                                      │ │
+  │ │                                       <*> Hardware Random Number Generator Core support  --->                                                       │ │
+  │ │                                       < > Applicom intelligent fieldbus card support                                                                │ │
+  │ │                                           PCMCIA character devices  --->                                                                            │ │
+  │ │                                       < > ACP Modem (Mwave) support                                                                                 │ │
+  │ │                                       [ ] /dev/mem virtual device support                                                                           │ │
+  │ │                                       [ ] /dev/kmem virtual device support                                                                          │ │
+  │ │                                       <*> /dev/nvram support                                                                                        │ │
+  │ │                                       < > RAW driver (/dev/raw/rawN)                                                                                │ │
+  │ │                                       [ ] /dev/port character device                                                                                │ │
+  │ │                                       [*] HPET - High Precision Event Timer                                                                         │ │
+  │ │                                       [ ]   Allow mmap of HPET                                                                                      │ │
+  │ │                                       < > Hangcheck timer                                                                                           │ │
+  │ │                                       < > TPM Hardware Support  ----                                                                                │ │
+  │ │                                       < > Telecom clock driver for ATCA SBC                                                                         │ │
+  │ │                                       < > Xillybus generic FPGA interface                                                                           │ │
+  │ │                                       [*] Initialize RNG using CPU RNG instructions                                                                 │ │
+  │ │                                       [*] Initialize RNG using bootloader-supplied seed                                                             │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

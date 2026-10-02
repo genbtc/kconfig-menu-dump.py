@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Kernel hacking → Tracers ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌──────────────────────────────────────────────────────────────────────── Tracers ────────────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- Tracers                                                                                                   │ │
+  │ │                                       [ ]   Boot-time Tracing support                                                                               │ │
+  │ │                                       [ ]   Kernel Function Tracer                                                                                  │ │
+  │ │                                       [ ]   Trace max stack                                                                                         │ │
+  │ │                                       [ ]   Interrupts-off Latency Tracer                                                                           │ │
+  │ │                                       [ ]   Scheduling Latency Tracer                                                                               │ │
+  │ │                                       [ ]   Tracer to detect hardware latencies (like SMIs)                                                         │ │
+  │ │                                       [ ]   Memory mapped IO tracing                                                                                │ │
+  │ │                                       [ ]   Trace syscalls                                                                                          │ │
+  │ │                                       [ ]   Create a snapshot trace buffer                                                                          │ │
+  │ │                                             Branch Profiling (No branch profiling)  --->                                                            │ │
+  │ │                                       [*]   Support for tracing block IO actions                                                                    │ │
+  │ │                                       [*]   Enable kprobes-based dynamic events                                                                     │ │
+  │ │                                       [*]   Enable uprobes-based dynamic events                                                                     │ │
+  │ │                                       [ ]   Synthetic trace events                                                                                  │ │
+  │ │                                       [ ]   Histogram triggers                                                                                      │ │
+  │ │                                       [ ]   Trace event injection                                                                                   │ │
+  │ │                                       [ ]   Add tracepoint that benchmarks tracepoints                                                              │ │
+  │ │                                       < >   Ring buffer benchmark stress tester                                                                     │ │
+  │ │                                       [ ]   Show eval mappings for trace events                                                                     │ │
+  │ │                                       [ ]   Perform a startup test on ftrace                                                                        │ │
+  │ │                                       [ ]   Ring buffer startup self test                                                                           │ │
+  │ │                                       < >   Test module to create a preempt / IRQ disable delay thread to test latency tracers                      │ │
+  │ │                                       < >   Test module for in-kernel kprobe event generation                                                       │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

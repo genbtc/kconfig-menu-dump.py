@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → File systems → Miscellaneous filesystems ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌─────────────────────────────────────────────────────────────── Miscellaneous filesystems ───────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- Miscellaneous filesystems                                                                                 │ │
+  │ │                                       < >   ORANGEFS (Powered by PVFS) support                                                                      │ │
+  │ │                                       < >   ADFS file system support                                                                                │ │
+  │ │                                       < >   Amiga FFS file system support                                                                           │ │
+  │ │                                       < >   eCrypt filesystem layer support                                                                         │ │
+  │ │                                       < >   Apple Macintosh file system support                                                                     │ │
+  │ │                                       < >   Apple Extended HFS file system support                                                                  │ │
+  │ │                                       < >   BeOS file system (BeFS) support (read only)                                                             │ │
+  │ │                                       < >   BFS file system support                                                                                 │ │
+  │ │                                       < >   EFS file system support (read only)                                                                     │ │
+  │ │                                       < >   Compressed ROM file system support (cramfs)                                                             │ │
+  │ │                                       < >   SquashFS 4.0 - Squashed file system support                                                             │ │
+  │ │                                       < >   FreeVxFS file system support (VERITAS VxFS(TM) compatible)                                              │ │
+  │ │                                       < >   Minix file system support                                                                               │ │
+  │ │                                       < >   SonicBlue Optimized MPEG File System support                                                            │ │
+  │ │                                       < >   OS/2 HPFS file system support                                                                           │ │
+  │ │                                       < >   QNX4 file system support (read only)                                                                    │ │
+  │ │                                       < >   QNX6 file system support (read only)                                                                    │ │
+  │ │                                       < >   ROM file system support                                                                                 │ │
+  │ │                                       < >   Persistent store support                                                                                │ │
+  │ │                                       < >   System V/Xenix/V7/Coherent file system support                                                          │ │
+  │ │                                       < >   UFS file system support (read only)                                                                     │ │
+  │ │                                       < >   EROFS filesystem support                                                                                │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

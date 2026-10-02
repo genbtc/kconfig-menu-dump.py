@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Power management and ACPI options → CPU Frequency scaling ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌───────────────────────────────────────────────────────────────── CPU Frequency scaling ─────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       -*- CPU Frequency scaling                                                                                     │ │
+  │ │                                       [ ]   CPU frequency transition statistics                                                                     │ │
+  │ │                                             Default CPUFreq governor (userspace)  --->                                                              │ │
+  │ │                                       -*-   'performance' governor                                                                                  │ │
+  │ │                                       < >   'powersave' governor                                                                                    │ │
+  │ │                                       -*-   'userspace' governor for userspace frequency scaling                                                    │ │
+  │ │                                       <*>   'ondemand' cpufreq policy governor                                                                      │ │
+  │ │                                       < >   'conservative' cpufreq governor                                                                         │ │
+  │ │                                       -*-   'schedutil' cpufreq policy governor                                                                     │ │
+  │ │                                             *** CPU frequency scaling drivers ***                                                                   │ │
+  │ │                                       -*-   Intel P state control                                                                                   │ │
+  │ │                                       < >   Processor Clocking Control interface driver                                                             │ │
+  │ │                                       <*>   ACPI Processor P-States driver                                                                          │ │
+  │ │                                       [*]     Legacy cpb sysfs knob support for AMD CPUs                                                            │ │
+  │ │                                       < >   AMD Opteron/Athlon64 PowerNow!                                                                          │ │
+  │ │                                       < >   AMD frequency sensitivity feedback powersave bias                                                       │ │
+  │ │                                       < >   Intel Enhanced SpeedStep (deprecated)                                                                   │ │
+  │ │                                       < >   Intel Pentium 4 clock modulation                                                                        │ │
+  │ │                                             *** shared options ***                                                                                  │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

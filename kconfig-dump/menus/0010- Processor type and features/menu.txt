@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Processor type and features ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌────────────────────────────────────────────────────────────── Processor type and features ──────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       [*] Symmetric multi-processing support                                                                        │ │
+  │ │                                       [*] Enable MPS table                                                                                          │ │
+  │ │                                       [ ] x86 CPU resource control support                                                                          │ │
+  │ │                                       [*] Support for extended (non-PC) x86 platforms                                                               │ │
+  │ │                                       [ ] ScaleMP vSMP                                                                                              │ │
+  │ │                                       [ ] Goldfish (Virtual Platform)                                                                               │ │
+  │ │                                       [ ] Intel MID platform support                                                                                │ │
+  │ │                                       [ ] Intel Low Power Subsystem Support                                                                         │ │
+  │ │                                       [ ] AMD ACPI2Platform devices support                                                                         │ │
+  │ │                                       -*- Intel SoC IOSF Sideband support for SoC platforms                                                         │ │
+  │ │                                       [ ]   Enable IOSF sideband access through debugfs                                                             │ │
+  │ │                                       [*] Single-depth WCHAN output                                                                                 │ │
+  │ │                                       [ ] Linux guest support  ----                                                                                 │ │
+  │ │                                           Processor family (Generic-x86-64)  --->                                                                   │ │
+  │ │                                       [ ] Supported processor vendors  ----                                                                         │ │
+  │ │                                       [ ] Old AMD GART IOMMU support                                                                                │ │
+  │ │                                       [ ] Enable Maximum number of SMP Processors and NUMA Nodes                                                    │ │
+  │ │                                       (64) Maximum number of CPUs                                                                                   │ │
+  │ │                                       [*] Multi-core scheduler support                                                                              │ │
+  │ │                                       [*]   CPU core priorities scheduler support                                                                   │ │
+  │ │                                       [*] Reroute for broken boot IRQs                                                                              │ │
+  │ │                                       [*] Machine Check / overheating reporting                                                                     │ │
+  │ │                                       [ ]   Support for deprecated /dev/mcelog character device                                                     │ │
+  │ │                                       [*]   Intel MCE features                                                                                      │ │
+  │ │                                       [*]   AMD MCE features                                                                                        │ │
+  │ │                                       < > Machine check injector support                                                                            │ │
+  │ │                                           Performance monitoring  --->                                                                              │ │
+  │ │                                       [*] IOPERM and IOPL Emulation                                                                                 │ │
+  │ │                                       < > Dell i8k legacy laptop support                                                                            │ │
+  │ │                                       [*] CPU microcode loading support                                                                             │ │
+  │ │                                       [*]   Intel microcode loading support                                                                         │ │
+  │ │                                       [*]   AMD microcode loading support                                                                           │ │
+  │ │                                       [ ]   Late microcode loading (DANGEROUS)                                                                      │ │
+  │ │                                       <*> /dev/cpu/*/msr - Model-specific register support                                                          │ │
+  │ │                                       <*> /dev/cpu/*/cpuid - CPU information support                                                                │ │
+  │ │                                       [*] Enable 5-level page tables support                                                                        │ │
+  │ │                                       [ ] Enable statistic for Change Page Attribute                                                                │ │
+  │ │                                       [ ] AMD Secure Memory Encryption (SME) support                                                                │ │
+  │ │                                       [*] NUMA Memory Allocation and Scheduler Support                                                              │ │
+  │ │                                       [*]   Old style AMD Opteron NUMA detection                                                                    │ │
+  │ │                                       [*]   ACPI NUMA detection                                                                                     │ │
+  │ │                                       [ ]   NUMA emulation                                                                                          │ │
+  │ │                                       (6) Maximum NUMA Nodes (as a power of 2)                                                                      │ │
+  │ │                                       < > Support non-standard NVDIMMs and ADR protected memory                                                     │ │
+  │ │                                       [*] Check for low memory corruption                                                                           │ │
+  │ │                                       [*]   Set the default setting of memory_corruption_check                                                      │ │
+  │ └───────────────────────────────────────↓(+)──────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

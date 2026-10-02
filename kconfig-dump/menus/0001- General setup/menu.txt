@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → General setup ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌───────────────────────────────────────────────────────────────────── General setup ─────────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       [ ] Compile also drivers which will not load                                                                  │ │
+  │ │                                       ()  Local version - append to kernel release                                                                  │ │
+  │ │                                       [ ] Automatically append version information to the version string                                            │ │
+  │ │                                       ()  Build ID Salt                                                                                             │ │
+  │ │                                           Kernel compression mode (Gzip)  --->                                                                      │ │
+  │ │                                       ()  Default init path                                                                                         │ │
+  │ │                                       ((none)) Default hostname                                                                                     │ │
+  │ │                                       [*] Support for paging of anonymous memory (swap)                                                             │ │
+  │ │                                       -*- System V IPC                                                                                              │ │
+  │ │                                       [*] POSIX Message Queues                                                                                      │ │
+  │ │                                       [ ] General notification queue                                                                                │ │
+  │ │                                       [*] Enable process_vm_readv/writev syscalls                                                                   │ │
+  │ │                                       [*] uselib syscall                                                                                            │ │
+  │ │                                       [*] Auditing support                                                                                          │ │
+  │ │                                           IRQ subsystem  --->                                                                                       │ │
+  │ │                                           Timers subsystem  --->                                                                                    │ │
+  │ │                                           Preemption Model (Voluntary Kernel Preemption (Desktop))  --->                                            │ │
+  │ │                                           CPU/Task time and stats accounting  --->                                                                  │ │
+  │ │                                       [*] CPU isolation                                                                                             │ │
+  │ │                                           RCU Subsystem  --->                                                                                       │ │
+  │ │                                       < > Kernel .config support                                                                                    │ │
+  │ │                                       < > Enable kernel headers through /sys/kernel/kheaders.tar.xz                                                 │ │
+  │ │                                       (18) Kernel log buffer size (16 => 64KB, 17 => 128KB)                                                         │ │
+  │ │                                       (12) CPU kernel log buffer size contribution (13 => 8 KB, 17 => 128KB)                                        │ │
+  │ │                                       (13) Temporary per-CPU printk log buffer size (12 => 4KB, 13 => 8KB)                                          │ │
+  │ │                                           Scheduler features  --->                                                                                  │ │
+  │ │                                       [ ] Memory placement aware NUMA scheduler                                                                     │ │
+  │ │                                       -*- Control Group support  --->                                                                               │ │
+  │ │                                       -*- Namespaces support  --->                                                                                  │ │
+  │ │                                       [ ] Checkpoint/restore support                                                                                │ │
+  │ │                                       [ ] Automatic process group scheduling                                                                        │ │
+  │ │                                       [ ] Enable deprecated sysfs features to support old userspace tools                                           │ │
+  │ │                                       -*- Kernel->user space relay support (formerly relayfs)                                                       │ │
+  │ │                                       [*] Initial RAM filesystem and RAM disk (initramfs/initrd) support                                            │ │
+  │ │                                       ()    Initramfs source file(s)                                                                                │ │
+  │ │                                       [*]   Support initial ramdisk/ramfs compressed using gzip                                                     │ │
+  │ │                                       [*]   Support initial ramdisk/ramfs compressed using bzip2                                                    │ │
+  │ │                                       [*]   Support initial ramdisk/ramfs compressed using LZMA                                                     │ │
+  │ │                                       [*]   Support initial ramdisk/ramfs compressed using XZ                                                       │ │
+  │ │                                       [*]   Support initial ramdisk/ramfs compressed using LZO                                                      │ │
+  │ │                                       [*]   Support initial ramdisk/ramfs compressed using LZ4                                                      │ │
+  │ │                                       [*]   Support initial ramdisk/ramfs compressed using ZSTD                                                     │ │
+  │ │                                       [ ] Boot config support                                                                                       │ │
+  │ │                                           Compiler optimization level (Optimize for performance (-O2))  --->                                        │ │
+  │ │                                       [ ] Configure standard kernel features (expert users)  ----                                                   │ │
+  │ │                                       [ ] Enable 16-bit UID system calls                                                                            │ │
+  │ └───────────────────────────────────────↓(+)──────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

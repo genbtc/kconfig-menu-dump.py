@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Security options ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌─────────────────────────────────────────────────────────────────── Security options ────────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       -*- Enable access key retention support                                                                       │ │
+  │ │                                       [ ]   Enable temporary caching of the last request_key() result                                               │ │
+  │ │                                       [ ]   Enable register of persistent per-UID keyrings                                                          │ │
+  │ │                                       < >   ENCRYPTED KEYS                                                                                          │ │
+  │ │                                       [ ]   Diffie-Hellman operations on retained keys                                                              │ │
+  │ │                                       [*] Restrict unprivileged access to the kernel syslog                                                         │ │
+  │ │                                       [*] Restrict unprivileged use of performance events                                                           │ │
+  │ │                                       [*] Restrict unprivileged use of tiocsti command injection                                                    │ │
+  │ │                                           Allow /proc/pid/mem access override (Traditional /proc/pid/mem behavior)  --->                            │ │
+  │ │                                       [*] Enable different security models                                                                          │ │
+  │ │                                       [ ] Enable the securityfs filesystem                                                                          │ │
+  │ │                                       [*] Socket and Networking Security Hooks                                                                      │ │
+  │ │                                       [ ] XFRM (IPSec) Networking Security Hooks                                                                    │ │
+  │ │                                       [ ] Security hooks for pathname based access control                                                          │ │
+  │ │                                       [ ] Enable Intel(R) Trusted Execution Technology (Intel(R) TXT)                                               │ │
+  │ │                                       (65536) Low address space for LSM to protect from user allocation                                             │ │
+  │ │                                       [*] Harden memory copies between kernel and userspace                                                         │ │
+  │ │                                       [*]   Allow usercopy whitelist violations to fallback to object size                                          │ │
+  │ │                                       [*] Harden common str/mem functions against buffer overflows                                                  │ │
+  │ │                                       [ ] Force all usermode helper calls through a single binary                                                   │ │
+  │ │                                       [*] NSA SELinux Support                                                                                       │ │
+  │ │                                       [*]   NSA SELinux boot parameter                                                                              │ │
+  │ │                                       [*]   NSA SELinux runtime disable                                                                             │ │
+  │ │                                       [*]   NSA SELinux Development Support                                                                         │ │
+  │ │                                       [*]   NSA SELinux AVC Statistics                                                                              │ │
+  │ │                                       (9)   NSA SELinux sidtab hashtable size                                                                       │ │
+  │ │                                       (256) NSA SELinux SID to context string translation cache size                                                │ │
+  │ │                                       [ ] Simplified Mandatory Access Control Kernel Support                                                        │ │
+  │ │                                       [ ] TOMOYO Linux Support                                                                                      │ │
+  │ │                                       [ ] AppArmor support                                                                                          │ │
+  │ │                                       [ ] Pin load of kernel files (modules, fw, etc) to one filesystem                                             │ │
+  │ │                                       [*] Yama support                                                                                              │ │
+  │ │                                       [ ] Gate setid transitions to limit CAP_SET{U/G}ID capabilities                                               │ │
+  │ │                                       [ ] Basic module for enforcing kernel lockdown                                                                │ │
+  │ │                                       [*] Integrity subsystem                                                                                       │ │
+  │ │                                       [ ]   Digital signature verification using multiple keyrings                                                  │ │
+  │ │                                       [*]   Enables integrity auditing support                                                                      │ │
+  │ │                                       [ ]   Integrity Measurement Architecture(IMA)                                                                 │ │
+  │ │                                       [ ]   EVM support                                                                                             │ │
+  │ │                                           First legacy 'major LSM' to be initialized (SELinux)  --->                                                │ │
+  │ │                                       (lockdown,yama,loadpin,safesetid,integrity,selinux,smack,tomoyo,apparmor,bpf) Ordered list of enabled LSMs    │ │
+  │ │                                           Kernel hardening options  --->                                                                            │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Device Drivers → Watchdog Timer Support ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌──────────────────────────────────────────────────────────────── Watchdog Timer Support ─────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- Watchdog Timer Support                                                                                    │ │
+  │ │                                       < >   WatchDog Timer Driver Core                                                                              │ │
+  │ │                                       [ ]   Disable watchdog shutdown on close                                                                      │ │
+  │ │                                       [*]   Update boot-enabled watchdog until userspace takes over                                                 │ │
+  │ │                                       (0)   Timeout value for opening watchdog device                                                               │ │
+  │ │                                       [ ]   Read different watchdog information through sysfs                                                       │ │
+  │ │                                             *** Watchdog Pretimeout Governors ***                                                                   │ │
+  │ │                                             *** Watchdog Device Drivers ***                                                                         │ │
+  │ │                                       < >   Software watchdog                                                                                       │ │
+  │ │                                       < >   ACPI Watchdog Action Table (WDAT)                                                                       │ │
+  │ │                                       < >   Xilinx Watchdog timer                                                                                   │ │
+  │ │                                       < >   Cadence Watchdog Timer                                                                                  │ │
+  │ │                                       < >   Synopsys DesignWare watchdog                                                                            │ │
+  │ │                                       < >   Max63xx watchdog                                                                                        │ │
+  │ │                                       < >   Acquire SBC Watchdog Timer                                                                              │ │
+  │ │                                       < >   Advantech SBC Watchdog Timer                                                                            │ │
+  │ │                                       < >   ALi M1535 PMU Watchdog Timer                                                                            │ │
+  │ │                                       < >   ALi M7101 PMU Computer Watchdog                                                                         │ │
+  │ │                                       < >   WinSystems EBC-C384 Watchdog Timer                                                                      │ │
+  │ │                                       < >   Fintek F718xx, F818xx Super I/O Watchdog                                                                │ │
+  │ │                                       < >   AMD/ATI SP5100 TCO Timer/Watchdog                                                                       │ │
+  │ │                                       < >   Compulab SBC-FITPC2 watchdog                                                                            │ │
+  │ │                                       < >   Eurotech CPU-1220/1410 Watchdog Timer                                                                   │ │
+  │ │                                       < >   IB700 SBC Watchdog Timer                                                                                │ │
+  │ │                                       < >   IBM Automatic Server Restart                                                                            │ │
+  │ │                                       < >   ICP Single Board Computer Watchdog Timer                                                                │ │
+  │ │                                       < >   Intel 6300ESB Timer/Watchdog                                                                            │ │
+  │ │                                       < >   Intel Atom E6xx Watchdog                                                                                │ │
+  │ │                                       < >   Intel TCO Timer/Watchdog                                                                                │ │
+  │ │                                       < >   IT8712F (Smart Guardian) Watchdog Timer                                                                 │ │
+  │ │                                       < >   IT87 Watchdog Timer                                                                                     │ │
+  │ │                                       < >   HP ProLiant iLO2+ Hardware Watchdog Timer                                                               │ │
+  │ │                                       < >   National Semiconductor PC87307/PC97307 (ala SC1200) Watchdog                                            │ │
+  │ │                                       < >   NS PC87413 watchdog                                                                                     │ │
+  │ │                                       < >   nVidia TCO Timer/Watchdog                                                                               │ │
+  │ │                                       < >   SBC-60XX Watchdog Timer                                                                                 │ │
+  │ │                                       < >   SMA CPU5 Watchdog                                                                                       │ │
+  │ │                                       < >   SMSC SCH311X Watchdog Timer                                                                             │ │
+  │ │                                       < >   Winbond SMsC37B787 Watchdog Timer                                                                       │ │
+  │ │                                       < >   TQ-Systems TQMX86 Watchdog Timer                                                                        │ │
+  │ │                                       < >   VIA Watchdog Timer                                                                                      │ │
+  │ │                                       < >   Watchdog timer for W83627HF/W83627DHG and compatibles                                                   │ │
+  │ │                                       < >   W83877F (EMACS) Watchdog Timer                                                                          │ │
+  │ │                                       < >   W83977F (PCM-5335) Watchdog Timer                                                                       │ │
+  │ │                                       < >   ZF MachZ Watchdog                                                                                       │ │
+  │ │                                       < >   Winsystems SBC EPX-C3 watchdog                                                                          │ │
+  │ └───────────────────────────────────────↓(+)──────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

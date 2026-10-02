@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Device Drivers → Input device support → Joysticks/Gamepads ─────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌────────────────────────────────────────────────────────────────── Joysticks/Gamepads ───────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- Joysticks/Gamepads                                                                                        │ │
+  │ │                                       < >   Classic PC analog joysticks and gamepads                                                                │ │
+  │ │                                       < >   Assassin 3D and MadCatz Panther devices                                                                 │ │
+  │ │                                       < >   Logitech ADI digital joysticks and gamepads                                                             │ │
+  │ │                                       < >   Creative Labs Blaster Cobra gamepad                                                                     │ │
+  │ │                                       < >   Genius Flight2000 Digital joysticks and gamepads                                                        │ │
+  │ │                                       < >   Gravis GrIP joysticks and gamepads                                                                      │ │
+  │ │                                       < >   Gravis GrIP MultiPort                                                                                   │ │
+  │ │                                       < >   Guillemot joysticks and gamepads                                                                        │ │
+  │ │                                       < >   InterAct digital joysticks and gamepads                                                                 │ │
+  │ │                                       < >   Microsoft SideWinder digital joysticks and gamepads                                                     │ │
+  │ │                                       < >   ThrustMaster DirectConnect joysticks and gamepads                                                       │ │
+  │ │                                       < >   I-Force devices                                                                                         │ │
+  │ │                                       < >   Logitech WingMan Warrior joystick                                                                       │ │
+  │ │                                       < >   LogiCad3d Magellan/SpaceMouse 6dof controllers                                                          │ │
+  │ │                                       < >   SpaceTec SpaceOrb/Avenger 6dof controllers                                                              │ │
+  │ │                                       < >   SpaceTec SpaceBall 6dof controllers                                                                     │ │
+  │ │                                       < >   Gravis Stinger gamepad                                                                                  │ │
+  │ │                                       < >   Twiddler as a joystick                                                                                  │ │
+  │ │                                       < >   5-byte Zhenhua RC transmitter                                                                           │ │
+  │ │                                       < >   Gameport data dumper                                                                                    │ │
+  │ │                                       < >   X-Box gamepad support                                                                                   │ │
+  │ │                                       < >   PhoenixRC Flight Controller Adapter                                                                     │ │
+  │ │                                       < >   FlySky FS-iA6B RC Receiver                                                                              │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

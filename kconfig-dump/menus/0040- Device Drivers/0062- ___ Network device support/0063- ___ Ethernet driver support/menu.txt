@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Device Drivers → Network device support → Ethernet driver support ──────────────────────────────────────────────────────────────────────────────────────────
+  ┌──────────────────────────────────────────────────────────────── Ethernet driver support ────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- Ethernet driver support                                                                                   │ │
+  │ │                                       [*]   3Com devices                                                                                            │ │
+  │ │                                       < >     3Com 3c574 PCMCIA support                                                                             │ │
+  │ │                                       < >     3Com 3c589 PCMCIA support                                                                             │ │
+  │ │                                       < >     3c590/3c900 series (592/595/597) "Vortex/Boomerang" support                                           │ │
+  │ │                                       < >     3cr990 series "Typhoon" support                                                                       │ │
+  │ │                                       [*]   Adaptec devices                                                                                         │ │
+  │ │                                       < >     Adaptec Starfire/DuraLAN support                                                                      │ │
+  │ │                                       [*]   Agere devices                                                                                           │ │
+  │ │                                       < >     Agere ET-1310 Gigabit Ethernet support                                                                │ │
+  │ │                                       [*]   Alacritech devices                                                                                      │ │
+  │ │                                       < >     Alacritech Slicoss support                                                                            │ │
+  │ │                                       [*]   Alteon devices                                                                                          │ │
+  │ │                                       < >     Alteon AceNIC/3Com 3C985/NetGear GA620 Gigabit support                                                │ │
+  │ │                                       < >   Altera Triple-Speed Ethernet MAC support                                                                │ │
+  │ │                                       [*]   Amazon Devices                                                                                          │ │
+  │ │                                       < >     Elastic Network Adapter (ENA) support                                                                 │ │
+  │ │                                       [*]   AMD devices                                                                                             │ │
+  │ │                                       < >     AMD 8111 (new PCI LANCE) support                                                                      │ │
+  │ │                                       < >     AMD PCnet32 PCI support                                                                               │ │
+  │ │                                       < >     New Media PCMCIA support                                                                              │ │
+  │ │                                       < >     AMD 10GbE Ethernet driver                                                                             │ │
+  │ │                                       [*]   aQuantia devices                                                                                        │ │
+  │ │                                       < >     aQuantia AQtion(tm) Support                                                                           │ │
+  │ │                                       [*]   ARC devices                                                                                             │ │
+  │ │                                       [*]   Atheros devices                                                                                         │ │
+  │ │                                       < >     Atheros L2 Fast Ethernet support                                                                      │ │
+  │ │                                       < >     Atheros/Attansic L1 Gigabit Ethernet support                                                          │ │
+  │ │                                       < >     Atheros L1E Gigabit Ethernet support                                                                  │ │
+  │ │                                       < >     Atheros L1C Gigabit Ethernet support                                                                  │ │
+  │ │                                       < >     Qualcomm Atheros AR816x/AR817x support                                                                │ │
+  │ │                                       [*]   Aurora VLSI devices                                                                                     │ │
+  │ │                                       < >     Aurora AU-NB8800 support                                                                              │ │
+  │ │                                       [*]   Broadcom devices                                                                                        │ │
+  │ │                                       < >     Broadcom 440x/47xx ethernet support                                                                   │ │
+  │ │                                       < >     Broadcom GENET internal MAC support                                                                   │ │
+  │ │                                       < >     QLogic bnx2 support                                                                                   │ │
+  │ │                                       < >     QLogic CNIC support                                                                                   │ │
+  │ │                                       <*>     Broadcom Tigon3 support                                                                               │ │
+  │ │                                       [*]       Broadcom Tigon3 HWMON support                                                                       │ │
+  │ │                                       < >     Broadcom NetXtremeII 10Gb support                                                                     │ │
+  │ │                                       < >     Broadcom SYSTEMPORT internal MAC support                                                              │ │
+  │ │                                       < >     Broadcom NetXtreme-C/E support                                                                        │ │
+  │ │                                       [*]   QLogic BR-series devices                                                                                │ │
+  │ │                                       < >     QLogic BR-series 1010/1020/1860 10Gb Ethernet Driver support                                          │ │
+  │ │                                       [*]   Cadence devices                                                                                         │ │
+  │ └───────────────────────────────────────↓(+)──────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

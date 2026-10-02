@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Networking support → Networking options → TCP: advanced congestion control ─────────────────────────────────────────────────────────────────────────────────
+  ┌─────────────────────────────────────────────────────────── TCP: advanced congestion control ────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- TCP: advanced congestion control                                                                          │ │
+  │ │                                       < >   Binary Increase Congestion (BIC) control                                                                │ │
+  │ │                                       <*>   CUBIC TCP                                                                                               │ │
+  │ │                                       < >   TCP Westwood+                                                                                           │ │
+  │ │                                       < >   H-TCP                                                                                                   │ │
+  │ │                                       < >   High Speed TCP                                                                                          │ │
+  │ │                                       < >   TCP-Hybla congestion control algorithm                                                                  │ │
+  │ │                                       < >   TCP Vegas                                                                                               │ │
+  │ │                                       < >   TCP NV                                                                                                  │ │
+  │ │                                       < >   Scalable TCP                                                                                            │ │
+  │ │                                       < >   TCP Low Priority                                                                                        │ │
+  │ │                                       < >   TCP Veno                                                                                                │ │
+  │ │                                       < >   YeAH TCP                                                                                                │ │
+  │ │                                       < >   TCP Illinois                                                                                            │ │
+  │ │                                       < >   DataCenter TCP (DCTCP)                                                                                  │ │
+  │ │                                       < >   CAIA Delay-Gradient (CDG)                                                                               │ │
+  │ │                                       < >   BBR TCP                                                                                                 │ │
+  │ │                                             Default TCP congestion control (Cubic)  --->                                                            │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

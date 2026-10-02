@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Device Drivers → Multiple devices driver support (RAID and LVM) ────────────────────────────────────────────────────────────────────────────────────────────
+  ┌──────────────────────────────────────────────────── Multiple devices driver support (RAID and LVM) ─────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- Multiple devices driver support (RAID and LVM)                                                            │ │
+  │ │                                       <*>   RAID support                                                                                            │ │
+  │ │                                       [*]     Autodetect RAID arrays during kernel boot                                                             │ │
+  │ │                                       < >     Linear (append) mode                                                                                  │ │
+  │ │                                       < >     RAID-0 (striping) mode                                                                                │ │
+  │ │                                       < >     RAID-1 (mirroring) mode                                                                               │ │
+  │ │                                       < >     RAID-10 (mirrored striping) mode                                                                      │ │
+  │ │                                       < >     RAID-4/RAID-5/RAID-6 mode                                                                             │ │
+  │ │                                       < >     Multipath I/O support                                                                                 │ │
+  │ │                                       < >     Faulty test module for MD                                                                             │ │
+  │ │                                       < >   Block device as cache                                                                                   │ │
+  │ │                                       <*>   Device mapper support                                                                                   │ │
+  │ │                                       [ ]     Device mapper debugging support                                                                       │ │
+  │ │                                       < >     Unstriped target                                                                                      │ │
+  │ │                                       < >     Crypt target support                                                                                  │ │
+  │ │                                       < >     Snapshot target                                                                                       │ │
+  │ │                                       < >     Thin provisioning target                                                                              │ │
+  │ │                                       < >     Cache target (EXPERIMENTAL)                                                                           │ │
+  │ │                                       < >     Writecache target                                                                                     │ │
+  │ │                                       < >     Emulated block size target (EXPERIMENTAL)                                                             │ │
+  │ │                                       < >     Era target (EXPERIMENTAL)                                                                             │ │
+  │ │                                       < >     Clone target (EXPERIMENTAL)                                                                           │ │
+  │ │                                       <*>     Mirror target                                                                                         │ │
+  │ │                                       < >       Mirror userspace logging                                                                            │ │
+  │ │                                       < >     RAID 1/4/5/6/10 target                                                                                │ │
+  │ │                                       <*>     Zero target                                                                                           │ │
+  │ │                                       < >     Multipath target                                                                                      │ │
+  │ │                                       < >     I/O delaying target                                                                                   │ │
+  │ │                                       < >     Bad sector simulation target                                                                          │ │
+  │ │                                       [ ]     DM "dm-mod.create=" parameter support                                                                 │ │
+  │ │                                       [ ]     DM uevents                                                                                            │ │
+  │ │                                       < >     Flakey target                                                                                         │ │
+  │ │                                       < >     Verity target support                                                                                 │ │
+  │ │                                       < >     Switch target support (EXPERIMENTAL)                                                                  │ │
+  │ │                                       < >     Log writes target support                                                                             │ │
+  │ │                                       < >     Integrity target support                                                                              │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

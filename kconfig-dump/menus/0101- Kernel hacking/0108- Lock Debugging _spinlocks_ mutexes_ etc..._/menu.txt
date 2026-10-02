@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Kernel hacking → Lock Debugging (spinlocks, mutexes, etc...) ───────────────────────────────────────────────────────────────────────────────────────────────
+  ┌────────────────────────────────────────────────────── Lock Debugging (spinlocks, mutexes, etc...) ──────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       [ ] Lock debugging: prove locking correctness                                                                 │ │
+  │ │                                       [ ] Lock usage statistics                                                                                     │ │
+  │ │                                       [ ] RT Mutex debugging, deadlock detection                                                                    │ │
+  │ │                                       [ ] Spinlock and rw-lock debugging: basic checks                                                              │ │
+  │ │                                       [ ] Mutex debugging: basic checks                                                                             │ │
+  │ │                                       [ ] Wait/wound mutex debugging: Slowpath testing                                                              │ │
+  │ │                                       [ ] RW Semaphore debugging: basic checks                                                                      │ │
+  │ │                                       [ ] Lock debugging: detect incorrect freeing of live locks                                                    │ │
+  │ │                                       [ ] Sleep inside atomic section checking                                                                      │ │
+  │ │                                       [ ] Locking API boot-time self-tests                                                                          │ │
+  │ │                                       < > torture tests for locking                                                                                 │ │
+  │ │                                       < > Wait/wound mutex selftests                                                                                │ │
+  │ │                                       < > torture tests for smp_call_function*()                                                                    │ │
+  │ │                                       [ ] Debugging for csd_lock_wait(), called from smp_call_function*()                                           │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

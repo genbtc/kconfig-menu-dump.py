@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Power management and ACPI options ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌─────────────────────────────────────────────────────────── Power management and ACPI options ───────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       [*] Suspend to RAM and standby                                                                                │ │
+  │ │                                       [*] Hibernation (aka 'suspend to disk')                                                                       │ │
+  │ │                                       [*]   Userspace snapshot device                                                                               │ │
+  │ │                                       ()    Default resume partition                                                                                │ │
+  │ │                                       [ ] Opportunistic sleep                                                                                       │ │
+  │ │                                       [ ] User space wakeup sources interface                                                                       │ │
+  │ │                                       -*- Device power management core functionality                                                                │ │
+  │ │                                       [*]   Power Management Debug Support                                                                          │ │
+  │ │                                       [ ]     Extra PM attributes in sysfs for low-level debugging/testing                                          │ │
+  │ │                                       [ ]     Test suspend/resume and wakealarm during bootup                                                       │ │
+  │ │                                       [*] Suspend/resume event tracing                                                                              │ │
+  │ │                                       [ ] Enable workqueue power-efficient mode by default                                                          │ │
+  │ │                                       [ ] Energy Model for CPUs                                                                                     │ │
+  │ │                                       [*] ACPI (Advanced Configuration and Power Interface) Support  --->                                           │ │
+  │ │                                       [ ] SFI (Simple Firmware Interface) Support  ----                                                             │ │
+  │ │                                           CPU Frequency scaling  --->                                                                               │ │
+  │ │                                           CPU Idle  --->                                                                                            │ │
+  │ │                                       [ ] Cpuidle Driver for Intel Processors                                                                       │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

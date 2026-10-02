@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Device Drivers ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌──────────────────────────────────────────────────────────────────── Device Drivers ─────────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       [*] PCI support  --->                                                                                         │ │
+  │ │                                       <*> PCCard (PCMCIA/CardBus) support  --->                                                                     │ │
+  │ │                                       < > RapidIO support  ----                                                                                     │ │
+  │ │                                           Generic Driver Options  --->                                                                              │ │
+  │ │                                           Bus devices  --->                                                                                         │ │
+  │ │                                       <*> Connector - unified userspace <-> kernelspace linker  --->                                                │ │
+  │ │                                       < > GNSS receiver support  ----                                                                               │ │
+  │ │                                       < > Memory Technology Device (MTD) support  ----                                                              │ │
+  │ │                                       [ ] Device Tree and Open Firmware support  ----                                                               │ │
+  │ │                                       < > Parallel port support  ----                                                                               │ │
+  │ │                                       -*- Plug and Play support  --->                                                                               │ │
+  │ │                                       [*] Block devices  --->                                                                                       │ │
+  │ │                                           NVME Support  --->                                                                                        │ │
+  │ │                                           Misc devices  --->                                                                                        │ │
+  │ │                                       < > ATA/ATAPI/MFM/RLL support (DEPRECATED)  ----                                                              │ │
+  │ │                                           SCSI device support  --->                                                                                 │ │
+  │ │                                       <*> Serial ATA and Parallel ATA drivers (libata)  --->                                                        │ │
+  │ │                                       [*] Multiple devices driver support (RAID and LVM)  --->                                                      │ │
+  │ │                                       < > Generic Target Core Mod (TCM) and ConfigFS Infrastructure  ----                                           │ │
+  │ │                                       [ ] Fusion MPT device support  ----                                                                           │ │
+  │ │                                           IEEE 1394 (FireWire) support  --->                                                                        │ │
+  │ │                                       [*] Macintosh device drivers  --->                                                                            │ │
+  │ │                                       [*] Network device support  --->                                                                              │ │
+  │ │                                           Input device support  --->                                                                                │ │
+  │ │                                           Character devices  --->                                                                                   │ │
+  │ │                                           I2C support  --->                                                                                         │ │
+  │ │                                       < > I3C support  ----                                                                                         │ │
+  │ │                                       [ ] SPI support  ----                                                                                         │ │
+  │ │                                       < > SPMI support  ----                                                                                        │ │
+  │ │                                       < > HSI support  ----                                                                                         │ │
+  │ │                                       -*- PPS support  --->                                                                                         │ │
+  │ │                                           PTP clock support  --->                                                                                   │ │
+  │ │                                       [ ] Pin controllers  ----                                                                                     │ │
+  │ │                                       [ ] GPIO Support  ----                                                                                        │ │
+  │ │                                       < > Dallas's 1-wire support  ----                                                                             │ │
+  │ │                                       [ ] Board level reset or power off  ----                                                                      │ │
+  │ │                                       -*- Power supply class support  --->                                                                          │ │
+  │ │                                       -*- Hardware Monitoring support  --->                                                                         │ │
+  │ │                                       -*- Thermal drivers  --->                                                                                     │ │
+  │ │                                       [*] Watchdog Timer Support  --->                                                                              │ │
+  │ │                                       < > Sonics Silicon Backplane support  ----                                                                    │ │
+  │ │                                       < > Broadcom specific AMBA  ----                                                                              │ │
+  │ │                                           Multifunction device drivers  --->                                                                        │ │
+  │ │                                       [ ] Voltage and Current Regulator Support  ----                                                               │ │
+  │ │                                       < > Remote Controller support  ----                                                                           │ │
+  │ │                                       [ ] HDMI CEC drivers  ----                                                                                    │ │
+  │ └───────────────────────────────────────↓(+)──────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

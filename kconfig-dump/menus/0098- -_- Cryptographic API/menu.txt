@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Cryptographic API ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌─────────────────────────────────────────────────────────────────── Cryptographic API ───────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- Cryptographic API                                                                                         │ │
+  │ │                                             *** Crypto core or helper ***                                                                           │ │
+  │ │                                       -*-   Cryptographic algorithm manager                                                                         │ │
+  │ │                                       < >   Userspace cryptographic algorithm configuration                                                         │ │
+  │ │                                       [*]   Disable run-time self tests                                                                             │ │
+  │ │                                       -*-   Null algorithms                                                                                         │ │
+  │ │                                       < >   Parallel crypto engine                                                                                  │ │
+  │ │                                       < >   Software async crypto daemon                                                                            │ │
+  │ │                                       -*-   Authenc support                                                                                         │ │
+  │ │                                       < >   Testing module                                                                                          │ │
+  │ │                                             *** Public-key cryptography ***                                                                         │ │
+  │ │                                       -*-   RSA algorithm                                                                                           │ │
+  │ │                                       < >   Diffie-Hellman algorithm                                                                                │ │
+  │ │                                       < >   ECDH algorithm                                                                                          │ │
+  │ │                                       < >   EC-RDSA (GOST 34.10) algorithm                                                                          │ │
+  │ │                                       < >   SM2 algorithm                                                                                           │ │
+  │ │                                       < >   Curve25519 algorithm                                                                                    │ │
+  │ │                                       < >   x86_64 accelerated Curve25519 scalar multiplication library                                             │ │
+  │ │                                             *** Authenticated Encryption with Associated Data ***                                                   │ │
+  │ │                                       -*-   CCM support                                                                                             │ │
+  │ │                                       -*-   GCM/GMAC support                                                                                        │ │
+  │ │                                       < >   ChaCha20-Poly1305 AEAD support                                                                          │ │
+  │ │                                       < >   AEGIS-128 AEAD algorithm                                                                                │ │
+  │ │                                       < >   AEGIS-128 AEAD algorithm (x86_64 AESNI+SSE2 implementation)                                             │ │
+  │ │                                       -*-   Sequence Number IV Generator                                                                            │ │
+  │ │                                       -*-   Encrypted Chain IV Generator                                                                            │ │
+  │ │                                             *** Block modes ***                                                                                     │ │
+  │ │                                       -*-   CBC support                                                                                             │ │
+  │ │                                       < >   CFB support                                                                                             │ │
+  │ │                                       -*-   CTR support                                                                                             │ │
+  │ │                                       < >   CTS support                                                                                             │ │
+  │ │                                       < >   ECB support                                                                                             │ │
+  │ │                                       < >   LRW support                                                                                             │ │
+  │ │                                       < >   OFB support                                                                                             │ │
+  │ │                                       < >   PCBC support                                                                                            │ │
+  │ │                                       < >   XTS support                                                                                             │ │
+  │ │                                       < >   Key wrapping support                                                                                    │ │
+  │ │                                       < >   NHPoly1305 hash function (x86_64 SSE2 implementation)                                                   │ │
+  │ │                                       < >   NHPoly1305 hash function (x86_64 AVX2 implementation)                                                   │ │
+  │ │                                       < >   Adiantum support                                                                                        │ │
+  │ │                                       < >   ESSIV support for block encryption                                                                      │ │
+  │ │                                             *** Hash modes ***                                                                                      │ │
+  │ │                                       -*-   CMAC support                                                                                            │ │
+  │ │                                       -*-   HMAC support                                                                                            │ │
+  │ │                                       < >   XCBC support                                                                                            │ │
+  │ │                                       < >   VMAC support                                                                                            │ │
+  │ └───────────────────────────────────────↓(+)──────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

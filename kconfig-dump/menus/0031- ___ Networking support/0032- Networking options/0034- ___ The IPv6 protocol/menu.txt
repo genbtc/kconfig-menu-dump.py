@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Networking support → Networking options → The IPv6 protocol ────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌─────────────────────────────────────────────────────────────────── The IPv6 protocol ───────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- The IPv6 protocol                                                                                         │ │
+  │ │                                       [ ]   IPv6: Router Preference (RFC 4191) support                                                              │ │
+  │ │                                       [ ]   IPv6: Enable RFC 4429 Optimistic DAD                                                                    │ │
+  │ │                                       <*>   IPv6: AH transformation                                                                                 │ │
+  │ │                                       <*>   IPv6: ESP transformation                                                                                │ │
+  │ │                                       < >     IPv6: ESP transformation offload                                                                      │ │
+  │ │                                       [ ]     IPv6: ESP in TCP encapsulation (RFC 8229)                                                             │ │
+  │ │                                       < >   IPv6: IPComp transformation                                                                             │ │
+  │ │                                       < >   IPv6: Mobility                                                                                          │ │
+  │ │                                       < >   IPv6: Identifier Locator Addressing (ILA)                                                               │ │
+  │ │                                       < >   Virtual (secure) IPv6: tunneling                                                                        │ │
+  │ │                                       <*>   IPv6: IPv6-in-IPv4 tunnel (SIT driver)                                                                  │ │
+  │ │                                       [ ]     IPv6: IPv6 Rapid Deployment (6RD)                                                                     │ │
+  │ │                                       < >   IPv6: IP-in-IPv6 tunnel (RFC2473)                                                                       │ │
+  │ │                                       [ ]   IPv6: Multiple Routing Tables                                                                           │ │
+  │ │                                       [ ]   IPv6: multicast routing                                                                                 │ │
+  │ │                                       [ ]   IPv6: Segment Routing Header encapsulation support                                                      │ │
+  │ │                                       [ ]   IPv6: Segment Routing HMAC support                                                                      │ │
+  │ │                                       [ ]   IPv6: RPL Source Routing Header support                                                                 │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

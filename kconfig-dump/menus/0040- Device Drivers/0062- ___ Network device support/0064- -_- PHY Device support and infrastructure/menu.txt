@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Device Drivers → Network device support → PHY Device support and infrastructure ────────────────────────────────────────────────────────────────────────────
+  ┌───────────────────────────────────────────────────────── PHY Device support and infrastructure ─────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- PHY Device support and infrastructure                                                                     │ │
+  │ │                                       [ ]   Support LED triggers for tracking link state                                                            │ │
+  │ │                                       < >   MDIO Bus/PHY emulation with fixed speed/link PHYs                                                       │ │
+  │ │                                             *** MII PHY device drivers ***                                                                          │ │
+  │ │                                       < >   AMD PHYs                                                                                                │ │
+  │ │                                       < >   Analog Devices Industrial Ethernet PHYs                                                                 │ │
+  │ │                                       < >   Aquantia PHYs                                                                                           │ │
+  │ │                                       < >   Asix PHYs                                                                                               │ │
+  │ │                                       < >   Broadcom 54XX PHYs                                                                                      │ │
+  │ │                                       < >   Broadcom BCM54140 PHY                                                                                   │ │
+  │ │                                       < >   Broadcom 7xxx SOCs internal PHYs                                                                        │ │
+  │ │                                       < >   Broadcom BCM84881 PHY                                                                                   │ │
+  │ │                                       < >   Broadcom BCM8706 and BCM8727 PHYs                                                                       │ │
+  │ │                                       < >   Cicada PHYs                                                                                             │ │
+  │ │                                       < >   Cortina EDC CDR 10G Ethernet PHY                                                                        │ │
+  │ │                                       < >   Davicom PHYs                                                                                            │ │
+  │ │                                       < >   ICPlus PHYs                                                                                             │ │
+  │ │                                       < >   Intel LXT PHYs                                                                                          │ │
+  │ │                                       < >   Intel XWAY PHYs                                                                                         │ │
+  │ │                                       < >   LSI ET1011C PHY                                                                                         │ │
+  │ │                                       < >   Marvell Alaska PHYs                                                                                     │ │
+  │ │                                       < >   Marvell Alaska 10Gbit PHYs                                                                              │ │
+  │ │                                       < >   Micrel PHYs                                                                                             │ │
+  │ │                                       < >   Microchip PHYs                                                                                          │ │
+  │ │                                       < >   Microchip T1 PHYs                                                                                       │ │
+  │ │                                       < >   Microsemi PHYs                                                                                          │ │
+  │ │                                       < >   National Semiconductor PHYs                                                                             │ │
+  │ │                                       < >   NXP TJA11xx PHYs support                                                                                │ │
+  │ │                                       < >   Quality Semiconductor PHYs                                                                              │ │
+  │ │                                       -*-   Realtek PHYs                                                                                            │ │
+  │ │                                       < >   Renesas PHYs                                                                                            │ │
+  │ │                                       < >   Rockchip Ethernet PHYs                                                                                  │ │
+  │ │                                       < >   SMSC PHYs                                                                                               │ │
+  │ │                                       < >   STMicroelectronics STe10Xp PHYs                                                                         │ │
+  │ │                                       < >   Teranetics PHYs                                                                                         │ │
+  │ │                                       < >   Texas Instruments DP83822/825/826 PHYs                                                                  │ │
+  │ │                                       < >   Texas Instruments DP83TC811 PHY                                                                         │ │
+  │ │                                       < >   Texas Instruments DP83848 PHY                                                                           │ │
+  │ │                                       < >   Texas Instruments DP83867 Gigabit PHY                                                                   │ │
+  │ │                                       < >   Texas Instruments DP83869 Gigabit PHY                                                                   │ │
+  │ │                                       < >   Vitesse PHYs                                                                                            │ │
+  │ │                                       < >   Xilinx GMII2RGMII converter driver                                                                      │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

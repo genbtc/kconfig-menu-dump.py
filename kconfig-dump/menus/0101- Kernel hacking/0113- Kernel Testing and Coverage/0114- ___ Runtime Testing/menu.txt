@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Kernel hacking → Kernel Testing and Coverage → Runtime Testing ─────────────────────────────────────────────────────────────────────────────────────────────
+  ┌──────────────────────────────────────────────────────────────────── Runtime Testing ────────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- Runtime Testing                                                                                           │ │
+  │ │                                       < >   Linux Kernel Dump Test Tool Module                                                                      │ │
+  │ │                                       < >   Linked list sorting test                                                                                │ │
+  │ │                                       < >   Min heap test                                                                                           │ │
+  │ │                                       < >   Array-based sort test                                                                                   │ │
+  │ │                                       [ ]   Kprobes sanity tests                                                                                    │ │
+  │ │                                       < >   Self test for the backtrace code                                                                        │ │
+  │ │                                       < >   Red-Black tree test                                                                                     │ │
+  │ │                                       < >   Reed-Solomon library test                                                                               │ │
+  │ │                                       < >   Interval tree test                                                                                      │ │
+  │ │                                       < >   Per cpu operations test                                                                                 │ │
+  │ │                                       < >   Perform an atomic64_t self-test                                                                         │ │
+  │ │                                       < >   Test functions located in the hexdump module at runtime                                                 │ │
+  │ │                                       < >   Test functions located in the string_helpers module at runtime                                          │ │
+  │ │                                       < >   Test strscpy*() family of functions at runtime                                                          │ │
+  │ │                                       < >   Test kstrto*() family of functions at runtime                                                           │ │
+  │ │                                       < >   Test printf() family of functions at runtime                                                            │ │
+  │ │                                       < >   Test bitmap_*() family of functions at runtime                                                          │ │
+  │ │                                       < >   Test functions located in the uuid module at runtime                                                    │ │
+  │ │                                       < >   Test the XArray code at runtime                                                                         │ │
+  │ │                                       < >   Test check_*_overflow() functions at runtime                                                            │ │
+  │ │                                       < >   Perform selftest on resizable hash table                                                                │ │
+  │ │                                       < >   Perform selftest on hash functions                                                                      │ │
+  │ │                                       < >   Perform selftest on IDA functions                                                                       │ │
+  │ │                                       < >   Test module loading with 'hello world' module                                                           │ │
+  │ │                                       < >   Test module for compilation of bitops operations                                                        │ │
+  │ │                                       < >   Test module for stress/performance analysis of vmalloc allocator                                        │ │
+  │ │                                       < >   Test user/kernel boundary protections                                                                   │ │
+  │ │                                       < >   Test BPF filter functionality                                                                           │ │
+  │ │                                       < >   Test blackhole netdev functionality                                                                     │ │
+  │ │                                       < >   Test find_bit functions                                                                                 │ │
+  │ │                                       < >   Test firmware loading via userspace interface                                                           │ │
+  │ │                                       < >   sysctl test driver                                                                                      │ │
+  │ │                                       < >   udelay test driver                                                                                      │ │
+  │ │                                       < >   Test static keys                                                                                        │ │
+  │ │                                       < >   kmod stress tester                                                                                      │ │
+  │ │                                       < >   Test memcat_p() helper function                                                                         │ │
+  │ │                                       < >   Test level of stack variable initialization                                                             │ │
+  │ │                                       < >   Test heap/page initialization                                                                           │ │
+  │ │                                       < >   Test freeing pages                                                                                      │ │
+  │ │                                       < >   Test floating point operations in kernel space                                                          │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

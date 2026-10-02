@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Device Drivers → Serial ATA and Parallel ATA drivers (libata) ──────────────────────────────────────────────────────────────────────────────────────────────
+  ┌───────────────────────────────────────────────────── Serial ATA and Parallel ATA drivers (libata) ──────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- Serial ATA and Parallel ATA drivers (libata)                                                              │ │
+  │ │                                       [*]   Verbose ATA error reporting                                                                             │ │
+  │ │                                       [*]   ATA ACPI Support                                                                                        │ │
+  │ │                                       [ ]     SATA Zero Power Optical Disc Drive (ZPODD) support                                                    │ │
+  │ │                                       [*]   SATA Port Multiplier support                                                                            │ │
+  │ │                                             *** Controllers with non-SFF native interface ***                                                       │ │
+  │ │                                       <*>   AHCI SATA support                                                                                       │ │
+  │ │                                       (0)     Default SATA Link Power Management policy for mobile chipsets                                         │ │
+  │ │                                       < >   Platform AHCI SATA support                                                                              │ │
+  │ │                                       < >   Initio 162x SATA support (Very Experimental)                                                            │ │
+  │ │                                       < >   ACard AHCI variant (ATP 8620)                                                                           │ │
+  │ │                                       < >   Silicon Image 3124/3132 SATA support                                                                    │ │
+  │ │                                       [*]   ATA SFF support (for legacy IDE and PATA)                                                               │ │
+  │ │                                               *** SFF controllers with custom DMA interface ***                                                     │ │
+  │ │                                       < >     Pacific Digital ADMA support                                                                          │ │
+  │ │                                       < >     Pacific Digital SATA QStor support                                                                    │ │
+  │ │                                       < >     Promise SATA SX4 support (Experimental)                                                               │ │
+  │ │                                       [*]     ATA BMDMA support                                                                                     │ │
+  │ │                                                 *** SATA SFF controllers with BMDMA ***                                                             │ │
+  │ │                                       <*>       Intel ESB, ICH, PIIX3, PIIX4 PATA/SATA support                                                      │ │
+  │ │                                       < >       DesignWare Cores SATA support                                                                       │ │
+  │ │                                       < >       Marvell SATA support                                                                                │ │
+  │ │                                       < >       NVIDIA SATA support                                                                                 │ │
+  │ │                                       < >       Promise SATA TX2/TX4 support                                                                        │ │
+  │ │                                       < >       Silicon Image SATA support                                                                          │ │
+  │ │                                       < >       SiS 964/965/966/180 SATA support                                                                    │ │
+  │ │                                       < >       ServerWorks Frodo / Apple K2 SATA support                                                           │ │
+  │ │                                       < >       ULi Electronics SATA support                                                                        │ │
+  │ │                                       < >       VIA SATA support                                                                                    │ │
+  │ │                                       < >       VITESSE VSC-7174 / INTEL 31244 SATA support                                                         │ │
+  │ │                                                 *** PATA SFF controllers with BMDMA ***                                                             │ │
+  │ │                                       < >       ALi PATA support                                                                                    │ │
+  │ │                                       <*>       AMD/NVidia PATA support                                                                             │ │
+  │ │                                       < >       ARTOP 6210/6260 PATA support                                                                        │ │
+  │ │                                       < >       ATI PATA support                                                                                    │ │
+  │ │                                       < >       ARTOP/Acard ATP867X PATA support                                                                    │ │
+  │ │                                       < >       CMD64x PATA support                                                                                 │ │
+  │ │                                       < >       Cypress CY82C693 PATA support (Very Experimental)                                                   │ │
+  │ │                                       < >       EFAR SLC90E66 support                                                                               │ │
+  │ │                                       < >       HPT 366/368 PATA support                                                                            │ │
+  │ │                                       < >       HPT 370/370A/371/372/374/302 PATA support                                                           │ │
+  │ │                                       < >       HPT 371N/372N/302N PATA support                                                                     │ │
+  │ │                                       < >       HPT 343/363 PATA support                                                                            │ │
+  │ │                                       < >       IT8213 PATA support (Experimental)                                                                  │ │
+  │ │                                       < >       IT8211/2 PATA support                                                                               │ │
+  │ │                                       < >       JMicron PATA support                                                                                │ │
+  │ └───────────────────────────────────────↓(+)──────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

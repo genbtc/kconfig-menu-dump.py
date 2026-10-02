@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → File systems ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌───────────────────────────────────────────────────────────────────── File systems ──────────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       [ ] Validate filesystem parameter description                                                                 │ │
+  │ │                                       < > Second extended fs support                                                                                │ │
+  │ │                                       < > The Extended 3 (ext3) filesystem                                                                          │ │
+  │ │                                       <*> The Extended 4 (ext4) filesystem                                                                          │ │
+  │ │                                       [*]   Use ext4 for ext2 file systems                                                                          │ │
+  │ │                                       [*]   Ext4 POSIX Access Control Lists                                                                         │ │
+  │ │                                       [*]   Ext4 Security Labels                                                                                    │ │
+  │ │                                       [ ]   Ext4 debugging support                                                                                  │ │
+  │ │                                       [ ] JBD2 (ext4) debugging support                                                                             │ │
+  │ │                                       < > Reiserfs support                                                                                          │ │
+  │ │                                       < > JFS filesystem support                                                                                    │ │
+  │ │                                       < > XFS filesystem support                                                                                    │ │
+  │ │                                       < > GFS2 file system support                                                                                  │ │
+  │ │                                       < > Btrfs filesystem support                                                                                  │ │
+  │ │                                       < > NILFS2 file system support                                                                                │ │
+  │ │                                       < > F2FS filesystem support                                                                                   │ │
+  │ │                                       [ ] Direct Access (DAX) support                                                                               │ │
+  │ │                                       [ ] Enable filesystem export operations for block IO                                                          │ │
+  │ │                                       -*- Enable POSIX file locking API                                                                             │ │
+  │ │                                       [*]   Enable Mandatory file locking                                                                           │ │
+  │ │                                       [ ] FS Encryption (Per-file encryption)                                                                       │ │
+  │ │                                       [ ] FS Verity (read-only file-based authenticity protection)                                                  │ │
+  │ │                                       [*] Dnotify support                                                                                           │ │
+  │ │                                       -*- Inotify support for userspace                                                                             │ │
+  │ │                                       [ ] Filesystem wide access notification                                                                       │ │
+  │ │                                       [*] Quota support                                                                                             │ │
+  │ │                                       [*] Report quota messages through netlink interface                                                           │ │
+  │ │                                       [ ] Print quota warnings to console (OBSOLETE)                                                                │ │
+  │ │                                       [ ] Additional quota sanity checks                                                                            │ │
+  │ │                                       < > Old quota format support                                                                                  │ │
+  │ │                                       <*> Quota format vfsv0 and vfsv1 support                                                                      │ │
+  │ │                                       <*> Old Kconfig name for Kernel automounter support                                                           │ │
+  │ │                                       -*- Kernel automounter support (supports v3, v4 and v5)                                                       │ │
+  │ │                                       < > FUSE (Filesystem in Userspace) support                                                                    │ │
+  │ │                                       < > Overlay filesystem support                                                                                │ │
+  │ │                                           Caches  --->                                                                                              │ │
+  │ │                                           CD-ROM/DVD Filesystems  --->                                                                              │ │
+  │ │                                           DOS/FAT/EXFAT/NT Filesystems  --->                                                                        │ │
+  │ │                                           Pseudo filesystems  --->                                                                                  │ │
+  │ │                                       [*] Miscellaneous filesystems  --->                                                                           │ │
+  │ │                                       [*] Network File Systems  --->                                                                                │ │
+  │ │                                       -*- Native language support  --->                                                                             │ │
+  │ │                                       [ ] UTF-8 normalization and casefolding support                                                               │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

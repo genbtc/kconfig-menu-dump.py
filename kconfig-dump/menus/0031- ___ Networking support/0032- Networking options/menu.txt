@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Networking support → Networking options ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌────────────────────────────────────────────────────────────────── Networking options ───────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       <*> Packet socket                                                                                             │ │
+  │ │                                       < >   Packet: sockets monitoring interface                                                                    │ │
+  │ │                                       -*- Unix domain sockets                                                                                       │ │
+  │ │                                       < >   UNIX: socket monitoring interface                                                                       │ │
+  │ │                                       < > Transport Layer Security support                                                                          │ │
+  │ │                                       <*> Transformation user configuration interface                                                               │ │
+  │ │                                       < >   Compatible ABI support                                                                                  │ │
+  │ │                                       < > Transformation virtual interface                                                                          │ │
+  │ │                                       [ ] Transformation sub policy support                                                                         │ │
+  │ │                                       [ ] Transformation migrate database                                                                           │ │
+  │ │                                       [ ] Transformation statistics                                                                                 │ │
+  │ │                                       < > PF_KEY sockets                                                                                            │ │
+  │ │                                       [*] TCP/IP networking                                                                                         │ │
+  │ │                                       [*]   IP: multicasting                                                                                        │ │
+  │ │                                       [*]   IP: advanced router                                                                                     │ │
+  │ │                                       [ ]     FIB TRIE statistics                                                                                   │ │
+  │ │                                       [*]     IP: policy routing                                                                                    │ │
+  │ │                                       [*]     IP: equal cost multipath                                                                              │ │
+  │ │                                       [*]     IP: verbose route monitoring                                                                          │ │
+  │ │                                       [*]   IP: kernel level autoconfiguration                                                                      │ │
+  │ │                                       [*]     IP: DHCP support                                                                                      │ │
+  │ │                                       [*]     IP: BOOTP support                                                                                     │ │
+  │ │                                       [*]     IP: RARP support                                                                                      │ │
+  │ │                                       < >   IP: tunneling                                                                                           │ │
+  │ │                                       < >   IP: GRE demultiplexer                                                                                   │ │
+  │ │                                       [*]   IP: multicast routing                                                                                   │ │
+  │ │                                       [ ]     IP: multicast policy routing                                                                          │ │
+  │ │                                       [*]     IP: PIM-SM version 1 support                                                                          │ │
+  │ │                                       [*]     IP: PIM-SM version 2 support                                                                          │ │
+  │ │                                       [*]   IP: TCP syncookie support                                                                               │ │
+  │ │                                       < >   Virtual (secure) IP: tunneling                                                                          │ │
+  │ │                                       < >   IP: Foo (IP protocols) over UDP                                                                         │ │
+  │ │                                       [ ]   IP: FOU encapsulation of IP tunnels                                                                     │ │
+  │ │                                       < >   IP: AH transformation                                                                                   │ │
+  │ │                                       < >   IP: ESP transformation                                                                                  │ │
+  │ │                                       < >   IP: IPComp transformation                                                                               │ │
+  │ │                                       < >   INET: socket monitoring interface                                                                       │ │
+  │ │                                       [*]   TCP: advanced congestion control  --->                                                                  │ │
+  │ │                                       [*]   TCP: MD5 Signature Option support (RFC2385)                                                             │ │
+  │ │                                       [ ]   Enable TCP simultaneous connect                                                                         │ │
+  │ │                                       <*>   The IPv6 protocol  --->                                                                                 │ │
+  │ │                                       [*]   NetLabel subsystem support                                                                              │ │
+  │ │                                       [ ]   MPTCP: Multipath TCP                                                                                    │ │
+  │ │                                       -*- Security Marking                                                                                          │ │
+  │ │                                       [ ] Timestamping in PHY devices                                                                               │ │
+  │ │                                       [*] Network packet filtering framework (Netfilter)  --->                                                      │ │
+  │ └───────────────────────────────────────↓(+)──────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

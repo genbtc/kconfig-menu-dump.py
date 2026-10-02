@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌─────────────────────────────────────────────── Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration ────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                           General setup  --->                                                                                       │ │
+  │ │                                       [*] 64-bit kernel                                                                                             │ │
+  │ │                                           Processor type and features  --->                                                                         │ │
+  │ │                                       [*] Mitigations for CPU vulnerabilities  --->                                                                 │ │
+  │ │                                           Power management and ACPI options  --->                                                                   │ │
+  │ │                                           Bus options (PCI etc.)  --->                                                                              │ │
+  │ │                                           Binary Emulations  --->                                                                                   │ │
+  │ │                                           Firmware Drivers  --->                                                                                    │ │
+  │ │                                       [*] Virtualization  --->                                                                                      │ │
+  │ │                                           General architecture-dependent options  --->                                                              │ │
+  │ │                                       [*] Enable loadable module support  --->                                                                      │ │
+  │ │                                       -*- Enable the block layer  --->                                                                              │ │
+  │ │                                           IO Schedulers  --->                                                                                       │ │
+  │ │                                           Executable file formats  --->                                                                             │ │
+  │ │                                           Memory Management options  --->                                                                           │ │
+  │ │                                       [*] Networking support  --->                                                                                  │ │
+  │ │                                           Device Drivers  --->                                                                                      │ │
+  │ │                                           File systems  --->                                                                                        │ │
+  │ │                                           Security options  --->                                                                                    │ │
+  │ │                                       -*- Cryptographic API  --->                                                                                   │ │
+  │ │                                           Library routines  --->                                                                                    │ │
+  │ │                                           Kernel hacking  --->                                                                                      │ │
+  │ │                                           Gentoo Linux  --->                                                                                        │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

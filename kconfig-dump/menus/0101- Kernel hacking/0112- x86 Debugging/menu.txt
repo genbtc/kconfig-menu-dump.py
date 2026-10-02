@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Kernel hacking → x86 Debugging ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌───────────────────────────────────────────────────────────────────── x86 Debugging ─────────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       [*] Enable verbose x86 bootup info messages                                                                   │ │
+  │ │                                       -*- Early printk                                                                                              │ │
+  │ │                                       [*]   Early printk via EHCI debug port                                                                        │ │
+  │ │                                       [ ]   Early printk via the xHCI debug port                                                                    │ │
+  │ │                                       [ ] Dump the EFI pagetable                                                                                    │ │
+  │ │                                       [ ] Set upper limit of TLB entries to flush one-by-one                                                        │ │
+  │ │                                       [ ] x86 instruction decoder selftest                                                                          │ │
+  │ │                                           IO delay type (port 0x80 based port-IO delay [recommended])  --->                                         │ │
+  │ │                                       [*] Debug boot parameters                                                                                     │ │
+  │ │                                       [ ] CPA self-test code                                                                                        │ │
+  │ │                                       [ ] Debug low-level entry code                                                                                │ │
+  │ │                                       [ ] NMI Selftest                                                                                              │ │
+  │ │                                       [*] Debug the x86 FPU code                                                                                    │ │
+  │ │                                       < > ATOM Punit debug driver                                                                                   │ │
+  │ │                                           Choose kernel unwinder (ORC unwinder)  --->                                                               │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

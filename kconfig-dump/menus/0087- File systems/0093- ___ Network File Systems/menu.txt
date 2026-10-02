@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → File systems → Network File Systems ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌───────────────────────────────────────────────────────────────── Network File Systems ──────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- Network File Systems                                                                                      │ │
+  │ │                                       <*>   NFS client support                                                                                      │ │
+  │ │                                       <*>     NFS client support for NFS version 2                                                                  │ │
+  │ │                                       <*>     NFS client support for NFS version 3                                                                  │ │
+  │ │                                       [*]       NFS client support for the NFSv3 ACL protocol extension                                             │ │
+  │ │                                       <*>     NFS client support for NFS version 4                                                                  │ │
+  │ │                                       [ ]     Provide swap over NFS support                                                                         │ │
+  │ │                                       [ ]   NFS client support for NFSv4.1                                                                          │ │
+  │ │                                       [*]   Root file system on NFS                                                                                 │ │
+  │ │                                       [ ]   Use the legacy NFS DNS resolver                                                                         │ │
+  │ │                                       [*]   NFS: Disable NFS UDP protocol support                                                                   │ │
+  │ │                                       < >   NFS server support                                                                                      │ │
+  │ │                                       [ ]   RPC: Enable dprintk debugging                                                                           │ │
+  │ │                                       < >   Ceph distributed file system                                                                            │ │
+  │ │                                       < >   SMB3 and CIFS support (advanced network filesystem)                                                     │ │
+  │ │                                       < >   Coda file system support (advanced network fs)                                                          │ │
+  │ │                                       < >   Andrew File System support (AFS)                                                                        │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

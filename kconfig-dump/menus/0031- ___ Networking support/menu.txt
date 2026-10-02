@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Networking support ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌────────────────────────────────────────────────────────────────── Networking support ───────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- Networking support                                                                                        │ │
+  │ │                                             Networking options  --->                                                                                │ │
+  │ │                                       [ ]   Amateur Radio support  ----                                                                             │ │
+  │ │                                       < >   CAN bus subsystem support  ----                                                                         │ │
+  │ │                                       < >   Bluetooth subsystem support  ----                                                                       │ │
+  │ │                                       < >   RxRPC session sockets                                                                                   │ │
+  │ │                                       < >   KCM sockets                                                                                             │ │
+  │ │                                       -*-   Wireless  --->                                                                                          │ │
+  │ │                                       < >   WiMAX Wireless Broadband support  ----                                                                  │ │
+  │ │                                       <*>   RF switch subsystem support  ----                                                                       │ │
+  │ │                                       < >   Plan 9 Resource Sharing Support (9P2000)  ----                                                          │ │
+  │ │                                       < >   CAIF support  ----                                                                                      │ │
+  │ │                                       < >   Ceph core library                                                                                       │ │
+  │ │                                       < >   NFC subsystem support  ----                                                                             │ │
+  │ │                                       < >   Packet-sampling netlink channel  ----                                                                   │ │
+  │ │                                       < >   Inter-FE based on IETF ForCES InterFE LFB  ----                                                         │ │
+  │ │                                       [ ]   Network light weight tunnels                                                                            │ │
+  │ │                                       < >   Generic failover module                                                                                 │ │
+  │ │                                       [*]   Netlink interface for ethtool                                                                           │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

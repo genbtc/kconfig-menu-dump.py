@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Power management and ACPI options → ACPI (Advanced Configuration and Power Interface) Support ──────────────────────────────────────────────────────────────
+  ┌─────────────────────────────────────────────── ACPI (Advanced Configuration and Power Interface) Support ───────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- ACPI (Advanced Configuration and Power Interface) Support                                                 │ │
+  │ │                                       [ ]   AML debugger interface                                                                                  │ │
+  │ │                                       [*]   ACPI Serial Port Console Redirection Support                                                            │ │
+  │ │                                       [*]   Allow supported ACPI revision to be overridden                                                          │ │
+  │ │                                       < >   EC read/write access through /sys/kernel/debug/ec                                                       │ │
+  │ │                                       <*>   AC Adapter                                                                                              │ │
+  │ │                                       <*>   Battery                                                                                                 │ │
+  │ │                                       -*-   Button                                                                                                  │ │
+  │ │                                       -*-   Video                                                                                                   │ │
+  │ │                                       <*>   Fan                                                                                                     │ │
+  │ │                                       < >   ACPI Time and Alarm (TAD) Device Support                                                                │ │
+  │ │                                       [*]   Dock                                                                                                    │ │
+  │ │                                       -*-   Processor                                                                                               │ │
+  │ │                                       < >   Processor Aggregator                                                                                    │ │
+  │ │                                       <*>   Thermal Zone                                                                                            │ │
+  │ │                                       [*]   Allow upgrading ACPI tables via initrd                                                                  │ │
+  │ │                                       [ ]   Debug Statements                                                                                        │ │
+  │ │                                       [ ]   PCI slot detection driver                                                                               │ │
+  │ │                                       -*-   Container and Module Devices                                                                            │ │
+  │ │                                       < >   Smart Battery System                                                                                    │ │
+  │ │                                       [ ]   Hardware Error Device                                                                                   │ │
+  │ │                                       < >   Allow ACPI methods to be inserted/replaced at run time                                                  │ │
+  │ │                                       [*]   Boottime Graphics Resource Table support                                                                │ │
+  │ │                                       < >   ACPI NVDIMM Firmware Interface Table (NFIT)                                                             │ │
+  │ │                                       -*-   NUMA support                                                                                            │ │
+  │ │                                       [ ]     ACPI Heterogeneous Memory Attribute Table Support                                                     │ │
+  │ │                                       [ ]   ACPI Platform Error Interface (APEI)                                                                    │ │
+  │ │                                       [ ]   Intel DPTF (Dynamic Platform and Thermal Framework) Support  ----                                       │ │
+  │ │                                       < >   ACPI configfs support                                                                                   │ │
+  │ │                                       [ ]   PMIC (Power Management Integrated Circuit) operation region support  ----                               │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

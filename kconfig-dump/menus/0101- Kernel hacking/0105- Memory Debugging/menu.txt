@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Kernel hacking → Memory Debugging ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌─────────────────────────────────────────────────────────────────── Memory Debugging ────────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       [ ] Extend memmap on extra space for more information on page                                                 │ │
+  │ │                                       [ ] Debug page memory allocations                                                                             │ │
+  │ │                                       [ ] Track page owner                                                                                          │ │
+  │ │                                       [ ] Poison pages after freeing                                                                                │ │
+  │ │                                       [ ] Enable tracepoint to track down page reference manipulation                                               │ │
+  │ │                                       [ ] Testcase for the marking rodata read-only                                                                 │ │
+  │ │                                       [*] Warn on W+X mappings at boot                                                                              │ │
+  │ │                                       [ ] Export kernel pagetable layout to userspace via debugfs                                                   │ │
+  │ │                                       [ ] Debug object operations                                                                                   │ │
+  │ │                                       [ ] SLUB debugging on by default                                                                              │ │
+  │ │                                       [ ] Enable SLUB performance statistics                                                                        │ │
+  │ │                                       [ ] Kernel memory leak detector                                                                               │ │
+  │ │                                       [*] Stack utilization instrumentation                                                                         │ │
+  │ │                                       [ ] Detect stack corruption on calls to schedule()                                                            │ │
+  │ │                                       [ ] Debug VM                                                                                                  │ │
+  │ │                                       [ ] Debug arch page table for semantics compliance                                                            │ │
+  │ │                                       [ ] Debug VM translations                                                                                     │ │
+  │ │                                       [ ] Debug access to per_cpu maps                                                                              │ │
+  │ │                                       [ ] KASAN: runtime memory debugger  ----                                                                      │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Device Drivers → Network device support → Wireless LAN ─────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌───────────────────────────────────────────────────────────────────── Wireless LAN ──────────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- Wireless LAN                                                                                              │ │
+  │ │                                       [*]   ADMtek devices                                                                                          │ │
+  │ │                                       < >     ADMtek ADM8211 support                                                                                │ │
+  │ │                                       [*]   Atheros/Qualcomm devices                                                                                │ │
+  │ │                                       [ ]     Atheros wireless debugging                                                                            │ │
+  │ │                                       < >     Atheros 5xxx wireless cards support                                                                   │ │
+  │ │                                       [ ]     Atheros 5xxx PCI bus support                                                                          │ │
+  │ │                                       < >     Atheros 802.11n wireless cards support                                                                │ │
+  │ │                                       < >     Atheros HTC based wireless cards support                                                              │ │
+  │ │                                       < >     Linux Community AR9170 802.11n USB support                                                            │ │
+  │ │                                       < >     Atheros mobile chipsets support                                                                       │ │
+  │ │                                       < >     Atheros AR5523 wireless driver support                                                                │ │
+  │ │                                       < >     Wilocity 60g WiFi card wil6210 support                                                                │ │
+  │ │                                       < >     Atheros 802.11ac wireless cards support                                                               │ │
+  │ │                                       < >     Qualcomm Atheros WCN3660/3680 support                                                                 │ │
+  │ │                                       [*]   Atmel devices                                                                                           │ │
+  │ │                                       < >     Atmel at76c50x chipset  802.11b support                                                               │ │
+  │ │                                       < >     Atmel at76c503/at76c505/at76c505a USB cards                                                           │ │
+  │ │                                       [*]   Broadcom devices                                                                                        │ │
+  │ │                                       < >     Broadcom 43xx wireless support (mac80211 stack)                                                       │ │
+  │ │                                       < >     Broadcom 43xx-legacy wireless support (mac80211 stack)                                                │ │
+  │ │                                       < >     Broadcom IEEE802.11n PCIe SoftMAC WLAN driver                                                         │ │
+  │ │                                       < >     Broadcom FullMAC WLAN driver                                                                          │ │
+  │ │                                       [*]   Cisco devices                                                                                           │ │
+  │ │                                       < >     Cisco/Aironet 34X/35X/4500/4800 ISA and PCI cards                                                     │ │
+  │ │                                       < >     Cisco/Aironet 34X/35X/4500/4800 PCMCIA cards                                                          │ │
+  │ │                                       [*]   Intel devices                                                                                           │ │
+  │ │                                       < >     Intel PRO/Wireless 2100 Network Connection                                                            │ │
+  │ │                                       < >     Intel PRO/Wireless 2200BG and 2915ABG Network Connection                                              │ │
+  │ │                                       < >     Intel Wireless WiFi 4965AGN (iwl4965)                                                                 │ │
+  │ │                                       < >     Intel PRO/Wireless 3945ABG/BG Network Connection (iwl3945)                                            │ │
+  │ │                                       < >     Intel Wireless WiFi Next Gen AGN - Wireless-N/Advanced-N/Ultimate-N (iwlwifi)                         │ │
+  │ │                                       [*]   Intersil devices                                                                                        │ │
+  │ │                                       < >     IEEE 802.11 for Host AP (Prism2/2.5/3 and WEP/TKIP/CCMP)                                              │ │
+  │ │                                       < >     Hermes chipset 802.11b support (Orinoco/Prism2/Symbol)                                                │ │
+  │ │                                       < >     Softmac Prism54 support                                                                               │ │
+  │ │                                       < >     Intersil Prism GT/Duette/Indigo PCI/Cardbus (DEPRECATED)                                              │ │
+  │ │                                       [*]   Marvell devices                                                                                         │ │
+  │ │                                       < >     Marvell 8xxx Libertas WLAN driver support                                                             │ │
+  │ │                                       < >     Marvell 8xxx Libertas WLAN driver support with thin firmware                                          │ │
+  │ │                                       < >     Marvell WiFi-Ex Driver                                                                                │ │
+  │ │                                       < >     Marvell 88W8xxx PCI/PCIe Wireless support                                                             │ │
+  │ │                                       [*]   MediaTek devices                                                                                        │ │
+  │ │                                       < >     MediaTek MT7601U (USB) support                                                                        │ │
+  │ │                                       < >     MediaTek MT76x0U (USB) support                                                                        │ │
+  │ │                                       < >     MediaTek MT76x0E (PCIe) support                                                                       │ │
+  │ └───────────────────────────────────────↓(+)──────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

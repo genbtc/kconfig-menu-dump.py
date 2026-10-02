@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Device Drivers → Network device support ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌──────────────────────────────────────────────────────────────── Network device support ─────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       --- Network device support                                                                                    │ │
+  │ │                                       [*]   Network core driver support                                                                             │ │
+  │ │                                       < >     Bonding driver support                                                                                │ │
+  │ │                                       < >     Dummy net driver support                                                                              │ │
+  │ │                                       < >     WireGuard secure network tunnel                                                                       │ │
+  │ │                                       < >     EQL (serial line load balancing) support                                                              │ │
+  │ │                                       [ ]     Fibre Channel driver support                                                                          │ │
+  │ │                                       < >     Ethernet team driver support  ----                                                                    │ │
+  │ │                                       < >     MAC-VLAN support                                                                                      │ │
+  │ │                                       < >     IP-VLAN support                                                                                       │ │
+  │ │                                       < >     Virtual eXtensible Local Area Network (VXLAN)                                                         │ │
+  │ │                                       < >     Generic Network Virtualization Encapsulation                                                          │ │
+  │ │                                       < >     Bare UDP Encapsulation                                                                                │ │
+  │ │                                       < >     GPRS Tunneling Protocol datapath (GTP-U)                                                              │ │
+  │ │                                       < >     IEEE 802.1AE MAC-level encryption (MACsec)                                                            │ │
+  │ │                                       <*>     Network console logging support                                                                       │ │
+  │ │                                       < >     Universal TUN/TAP device driver support                                                               │ │
+  │ │                                       [ ]     Support for cross-endian vnet headers on little-endian kernels                                        │ │
+  │ │                                       < >     Virtual ethernet pair device                                                                          │ │
+  │ │                                       < >     Virtual netlink monitoring device                                                                     │ │
+  │ │                                       < >   ARCnet support  ----                                                                                    │ │
+  │ │                                             Distributed Switch Architecture drivers  ----                                                           │ │
+  │ │                                       [*]   Ethernet driver support  --->                                                                           │ │
+  │ │                                       < >   FDDI driver support                                                                                     │ │
+  │ │                                       [ ]   HIPPI driver support                                                                                    │ │
+  │ │                                       < >   General Instruments Surfboard 1000                                                                      │ │
+  │ │                                       -*-   PHY Device support and infrastructure  --->                                                             │ │
+  │ │                                       -*-   MDIO bus device drivers  --->                                                                           │ │
+  │ │                                             PCS device drivers  --->                                                                                │ │
+  │ │                                       < >   PPP (point-to-point protocol) support                                                                   │ │
+  │ │                                       < >   SLIP (serial line) support                                                                              │ │
+  │ │                                       <*>   USB Network Adapters  --->                                                                              │ │
+  │ │                                       [*]   Wireless LAN  --->                                                                                      │ │
+  │ │                                             *** Enable WiMAX (Networking options) to see the WiMAX drivers ***                                      │ │
+  │ │                                       [ ]   Wan interfaces support  ----                                                                            │ │
+  │ │                                       < >   VMware VMXNET3 ethernet driver                                                                          │ │
+  │ │                                       < >   FUJITSU Extended Socket Network Device driver                                                           │ │
+  │ │                                       < >   Simulated networking device                                                                             │ │
+  │ │                                       < >   Failover driver                                                                                         │ │
+  │ │                                       [ ]   ISDN support  ----                                                                                      │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

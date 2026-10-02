@@ -1,0 +1,58 @@
+ .config - Linux/x86 5.10.270-gentoo-hardened1 Kernel Configuration
+ → Device Drivers → Misc devices ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌───────────────────────────────────────────────────────────────────── Misc devices ──────────────────────────────────────────────────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty submenus ----).  Highlighted letters are hotkeys.  Pressing <Y> includes, <N>   │
+  │  excludes, <M> modularizes features.  Press <Esc><Esc> to exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ] excluded  <M> module  < >      │
+  │  module capable                                                                                                                                         │
+  │                                                                                                                                                         │
+  │ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+  │ │                                       < > Dummy IRQ handler                                                                                         │ │
+  │ │                                       < > Device driver for IBM RSA service processor                                                               │ │
+  │ │                                       < > Sensable PHANToM (PCI)                                                                                    │ │
+  │ │                                       < > TI Flash Media interface support                                                                          │ │
+  │ │                                       < > Enclosure Services                                                                                        │ │
+  │ │                                       < > Channel interface driver for the HP iLO processor                                                         │ │
+  │ │                                       [ ] Generic on-chip SRAM driver                                                                               │ │
+  │ │                                       < > PCI Endpoint Test driver                                                                                  │ │
+  │ │                                       < > Xilinx SDFEC 16                                                                                           │ │
+  │ │                                       < > pvpanic device support                                                                                    │ │
+  │ │                                       < > Silicon Labs C2 port support  ----                                                                        │ │
+  │ │                                           EEPROM support  --->                                                                                      │ │
+  │ │                                       < > ENE CB710/720 Flash memory card reader support                                                            │ │
+  │ │                                           Texas Instruments shared transport line discipline  ----                                                  │ │
+  │ │                                           *** Altera FPGA firmware download module (requires I2C) ***                                               │ │
+  │ │                                       < > Intel Management Engine Interface                                                                         │ │
+  │ │                                       < > ME Enabled Intel Chipsets                                                                                 │ │
+  │ │                                       < > Intel Trusted Execution Environment with ME Interface                                                     │ │
+  │ │                                       < > Intel HDCP2.2 services of ME Interface                                                                    │ │
+  │ │                                       < > VMware VMCI Driver                                                                                        │ │
+  │ │                                       < > GenWQE PCIe Accelerator  ----                                                                             │ │
+  │ │                                       < > Line Echo Canceller support                                                                               │ │
+  │ │                                       < > Alcor Micro/Alcor Link PCI-E card reader                                                                  │ │
+  │ │                                       < > Realtek PCI-E card reader                                                                                 │ │
+  │ │                                       < > Realtek USB card reader                                                                                   │ │
+  │ │                                       < > HabanaAI accelerators (habanalabs)                                                                        │ │
+  │ │                                       < > Accelerator Framework for User Land                                                                       │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ │                                                                                                                                                     │ │
+  │ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+  ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │                                                <Select>    < Exit >    < Help >    < Save >    < Load >                                                 │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
