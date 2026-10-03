@@ -69,8 +69,11 @@ class MenuConfigSession:
         self.session = f"kconfig-dump-{os.getpid()}"
 
     def log(self, message):
+        print(f"> {message}", file=sys.stderr)
+
+    def dbg(self, message):
         if self.debug:
-            print(f"> {message}", file=sys.stderr)
+            print(f"DBG> {message}", file=sys.stderr)
 
     def session_exists(self):
         return subprocess.run(
@@ -103,8 +106,8 @@ class MenuConfigSession:
             "menuconfig",
         ]
 
-        self.log("starting:")
-        self.log(" ".join(map(str, cmd)))
+        self.log("starting: tmux make menuconfig")
+        self.dbg(" ".join(map(str, cmd)))
 
         subprocess.run(cmd, check=True)
 
@@ -155,7 +158,7 @@ class MenuConfigSession:
             "-",
         ]
 
-        self.log("capture: " + " ".join(cmd))
+        self.dbg("capture: " + " ".join(cmd))
 
         result = subprocess.run(
             cmd,
@@ -173,14 +176,14 @@ class MenuConfigSession:
                 f"stderr: {result.stderr!r}"
             )
 
-        self.log(
-            f"capture returned {len(result.stdout)} bytes"
+        self.dbg(
+            f"captured! = {len(result.stdout)} bytes"
         )
 
         return result.stdout
 
     def key(self, key):
-        self.log(f"KEY {key}")
+        self.dbg(f"KEY {key}")
 
         subprocess.run(
             [
@@ -198,10 +201,9 @@ class ScreenParser:
     """
     Parse the visible mconf screen.
 
-    This intentionally does NOT inspect terminal attributes or cursor
-    position.
+    Intentionally does NOT inspect terminal attributes or cursor position.
 
-    The first version recognizes Kconfig menu rows primarily by their
+    This version recognizes Kconfig menu rows primarily by their
     visible checkbox/menu syntax and submenu suffixes.
     """
 
@@ -223,13 +225,6 @@ class ScreenParser:
     SUBMENU_RE = re.compile(
         r"^\s*(?P<text>.*?)\s+(?P<suffix>--->|----)\s*$"
     )
-
-    def __init__(self, debug=False):
-        self.debug = debug
-
-    def log(self, message):
-        if self.debug:
-            print(f"[parser] {message}", file=sys.stderr)
 
     def parse(self, screen):
         lines = screen.splitlines()
@@ -263,11 +258,8 @@ class MenuWalker:
     """
     Recursively walk mconf.
 
-    Important invariant:
-
-        selected_index
-
-    is maintained by us.  We do NOT determine the selected row by looking
+    Navigation and position is maintained by us.
+    We do NOT determine the selected row by looking
     at terminal cursor state or terminal attributes.
     """
 
@@ -279,8 +271,11 @@ class MenuWalker:
         self.menus = []
 
     def log(self, message):
+        print(f"[menu] {message}", file=sys.stderr)
+
+    def dbg(self, message):
         if self.debug:
-            print(f"[walker] {message}", file=sys.stderr)
+            print(f"DBG>[menu] {message}", file=sys.stderr)
 
     @staticmethod
     def menu_breadcrumb(screen):
@@ -289,10 +284,6 @@ class MenuWalker:
             if line.startswith("→"):
                 return line
         return ""
-
-#    def wait_for_stable_screen(self):
-#        time.sleep(0.05)
-#        return self.session.capture()
 
     def wait_for_stable_screen(self):
         previous = self.session.capture()
@@ -305,20 +296,12 @@ class MenuWalker:
             previous = current
         return previous
 
-    def walk(self, path=(), initial_screen=None):
+    def walk(self, path=(), screen=None):
         """
         Walk the current menu and recursively descend into submenus.
         """
 
-        self.log(f"ENTER MENU: /{'/'.join(path)}")
-
-        if initial_screen is None:
-#            self.session.key("HOME")
-            print("Initial screen is none")
-            screen = self.wait_for_stable_screen()
-        else:
-            print("Initial screen is here")
-            screen = initial_screen
+        self.log(f"WALK MENU: /{'/'.join(path)}")
 
         menu = Menu(
             path=path,
@@ -328,38 +311,41 @@ class MenuWalker:
         # This is the canonical top-of-menu rendering.
         menu.rendered_screen = screen
 
-        selected_index = 0
         known_entries = []
+        downs = 0
 
         while True:
             visible = self.parser.parse(screen)
 
-            self.log(
-                f"selection={selected_index} "
-                f"visible_entries={len(visible)} "
-                f"known_entries={len(known_entries)}"
-            )
-
             self.merge_entries(
                 known_entries,
                 visible,
-                selected_index,
             )
 
+            if self.has_more_entries(screen):
+                self.session.key('DOWN')
+                downs = downs + 1
+            else:
+                break
+
             new_screen = self.session.capture()
-            old_count = len(known_entries)
 
             new_visible = self.parser.parse(new_screen)
 
             self.merge_entries(
                 known_entries,
                 new_visible,
-                selected_index + 1,
             )
 
             screen = new_screen
-            selected_index += 1
-            break
+
+        self.log(
+            f"visible_entries={len(visible)} "
+            f"known_entries={len(known_entries)}"
+        )
+
+        for _ in range(downs):
+            self.session.key('UP')
 
         menu.entries = known_entries
 
@@ -367,8 +353,6 @@ class MenuWalker:
 
         current_index = 0
         last_index = 0
-#        #debug
-#        print(menu.entries)
 
         # Now recursively visit submenu entries.
         for entry in menu.entries:
@@ -378,23 +362,18 @@ class MenuWalker:
             if entry.empty_submenu:
                 continue
 
-            self.log(
-                f"POSITIONING FOR [{entry.index}]: {entry.text!r}"
-            )
-
             delta = entry.index - current_index
 
             for _ in range(delta):
                 self.session.key("DOWN")
-#                time.sleep(0.1)
 
             current_index = last_index + delta
 
             positioned_screen = self.wait_for_stable_screen()
 
             self.log(
-                f"POSITIONED SCREEN FOR [{entry.index}] by moving: last{last_index} curr{current_index} delta{delta} "
-                f"{entry.text!r}\n{positioned_screen}"
+                f"POSITIONED SCREEN for [{entry.index}]: {entry.text!r} "
+                f"by moving: delta:{delta} (prev:{last_index}, next:{current_index})"
             )
 
             last_index = entry.index
@@ -402,14 +381,13 @@ class MenuWalker:
             before = self.menu_breadcrumb(positioned_screen)
 
             self.session.key("ENTER")
-            time.sleep(0.05)
             child_screen = self.wait_for_stable_screen()
 
             after = self.menu_breadcrumb(child_screen)
 
             self.log(
-                f"CHILD SCREEN AFTER ENTER [{entry.index}]: "
-                f"{entry.text!r}\n{child_screen}"
+                f"CHILD SCREEN After ENTER [{entry.index}]: {entry.text!r}"
+                f"\n{child_screen}"
             )
 
             child_title = self.find_menu_title(child_screen)
@@ -417,9 +395,11 @@ class MenuWalker:
             child_breadcrumb = self.menu_breadcrumb(child_screen)
 
             if self.is_choice_dialog(child_screen):
-                self.log(
-                    f"SUBMENU [{entry.index}] opened an item dialog: "
-                    f"{entry.text!r}; - closing with exit_current_menu()"
+                screen = self.session.capture()
+                self.dbg(
+                    f"SUBMENU opened an item dialog: [{entry.index}]: {entry.text!r} "
+                    f"\n{screen}"
+                    f"closing with exit_current_menu()..."
                 )
                 screen = self.exit_current_menu(child_title, True)
 
@@ -438,35 +418,29 @@ class MenuWalker:
             screen = self.exit_current_menu(child_title, False)
 
             if child_title == menu.title:
-                self.log(
-                    f"SUBMENU [{entry.index}] stayed in same menu: "
-                    f"{entry.text}\n{child_screen}"
+                self.dbg(
+                    f"SUBMENU - stayed in same menu: [{entry.index}]: {entry.text!r}"
+                    f"\n{screen}"
                 )
             else:
-                self.log(
-                    f"RETURNED FROM [{entry.index}]: "
-                    f"{entry.text!r}\n{child_screen}"
+                self.dbg(
+                    f"RETURNED FROM [{entry.index}]: {entry.text!r}"
+                    f"\n{screen}"
                 )
-#            self.wait_for_stable_screen()
 
-    def merge_entries(self, known, visible, selected_index):
+    def merge_entries(self, known, visible):
         if not visible:
             return False
-
         changed = False
 
         for _, raw in visible:
             if any(entry.raw == raw for entry in known):
                 continue
 
-            entry = self.make_entry(
-                len(known),
-                raw,
-            )
-
+            entry = self.make_entry( len(known), raw )
             known.append(entry)
-            changed = True
 
+            changed = True
         return changed
 
     @staticmethod
@@ -519,7 +493,7 @@ class MenuWalker:
             if "Kernel Configuration" in line:
                 continue
 
-            return line
+            return line.replace('─','')
 
         return ""
 
@@ -531,47 +505,46 @@ class MenuWalker:
         )
 
     @staticmethod
+    def has_more_entries(screen):
+        return ('─↓(+)─' in screen)
+
+    @staticmethod
     def is_exitable(screen):
         return ("< Exit >" in screen)
 
     def exit_current_menu(self, parent_title, is_choice_dialog):
         if not is_choice_dialog:
-            self.log(f"EXIT MENU: waiting for parent {parent_title!r}")
-#            self.session.key("x")
-#"Exiting with the x key is not reliable if theres an entry starting with an X it will jump to it"
             self.session.key("TAB")
             self.session.key("ENTER")
 
             screen = self.wait_for_stable_screen()
 
             if self.find_menu_title(screen) == parent_title:
-                self.log("EXIT MENU: x to Exit, succeeded")
+                self.dbg(f"EXIT MENU: <Exit> button pressed, back to {parent_title!r}")
 
         else:
             screen = self.wait_for_stable_screen()
 
-            self.log("EXIT DIALOG: {self.find_menu_title(screen)}")
+            self.dbg(f"EXIT CHOICE DIALOG: {self.find_menu_title(screen)}")
 
             self.close_choice_dialog(screen, parent_title)
 
         return screen
 
     def close_choice_dialog(self, screen, parent_title):
-        self.log("CLOSE CHOICE DIALOG: sending ESC")
         self.session.key("Escape")
         self.session.key("Escape")
         screen = self.wait_for_stable_screen()
-        self.log("CLOSE CHOICE DIALOG: closed OK.")
         if self.find_menu_title(screen) == parent_title:
+            self.dbg(f"CLOSE DIALOG: <Esc><Esc> pressed, back to {parent_title!r}")
             return
 
         if self.is_exitable(screen):
-#            self.session.key("x")
             self.session.key("TAB")
             self.session.key("ENTER")
 
             screen = self.wait_for_stable_screen()
-            self.log("EXIT MENU: x to Exit, succeeded")
+            self.dbg(f"EXIT MENU: <Exit> button pressed, back to {parent_title!r}")
 
         if self.is_choice_dialog(screen):
             raise RuntimeError(
@@ -755,7 +728,7 @@ def main():
         debug=args.debug,
     )
 
-    parser = ScreenParser(debug=args.debug)
+    parser = ScreenParser()
     walker = MenuWalker(
         session=session,
         parser=parser,
@@ -781,7 +754,7 @@ def main():
                 "refusing to start menu walker"
             )
 
-        walker.walk(initial_screen=initial_screen)
+        walker.walk(screen=initial_screen)
 
         dumper = Dumper(
             menus=walker.menus,
