@@ -209,6 +209,7 @@ class ScreenParser:
 
     MENU_HEADING_RE = re.compile(
         r"^\s*---\s+.+\S\s*$"
+        r"|^\s*\*\*\*\s+.+\s+\*\*\*\s*$"
     )
 
     ITEM_RE = re.compile(
@@ -271,6 +272,8 @@ class MenuWalker:
         self.menus = []
 
     def log(self, message):
+        #Truncate empty lines.
+        message = re.sub(r"^  │ │ *│ │\n", "", message.strip('\n'), flags=re.MULTILINE)
         print(f"[menu] {message}", file=sys.stderr)
 
     def dbg(self, message):
@@ -613,6 +616,7 @@ class Dumper:
                 f.write("=" * 80 + "\n")
                 f.write(f"MENU: {logical_path}\n")
                 f.write("=" * 80 + "\n\n")
+                #Truncate the empty menu lines.
                 f.write(re.sub(r"^  │ │ *│ │\n", "", menu.rendered_screen.rstrip('\n'), flags=re.MULTILINE))
                 f.write("\n\n")
 
@@ -641,10 +645,11 @@ class Dumper:
 
             directory.mkdir(parents=True, exist_ok=True)
 
-            filename = directory / "menu.txt"
+            filename = directory / f"{number:04d}-menu.txt"
 
             filename.write_text(
-                menu.rendered_screen.rstrip("\n") + "\n",
+                #Truncate the empty menu lines
+                re.sub(r"^  │ │ *│ │\n", "", menu.rendered_screen.rstrip('\n'), flags=re.MULTILINE) + "\n",
                 encoding="utf-8",
             )
 
