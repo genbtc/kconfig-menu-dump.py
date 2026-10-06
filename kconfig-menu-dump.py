@@ -216,6 +216,7 @@ class ScreenParser:
         r"^\s*(?:"
         r"\[[ *M]\]"          # [ ], [*], [M]
         r"|<[*M ]>"           # < >, <*>, <M>
+        r"|\{[*M ]\}"         # { }, {*}, {M}
         r"|-\*-"              # -*- forced built-in
         r"|-\s*M\s-"          # -M- forced module
         r"|\(\([^()\r\n]*\)\)"  # ((value))
@@ -389,6 +390,9 @@ class MenuWalker:
             child_screen = self.wait_for_stable_screen()
 
             after = self.menu_breadcrumb(child_screen)
+
+            #Strip empty lines preceding content from menu dialog screen
+            child_screen = "\n".join(line for line in child_screen.splitlines() if line.strip())
 
             self.log(
                 f"CHILD SCREEN After ENTER [{entry.index}]: {entry.text!r}"
