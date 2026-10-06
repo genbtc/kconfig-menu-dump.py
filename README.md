@@ -1,4 +1,4 @@
-# kconfig-menu-dump.py - v0.5.4
+# kconfig-menu-dump.py - v0.5.5
 kconfig-menu-dump.py: Copies your current menuconfig to a series of text files and directory tree.
 Co-author: genBTC
 Co-author: chatGPT
