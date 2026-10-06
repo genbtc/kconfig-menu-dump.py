@@ -346,9 +346,11 @@ class MenuWalker:
             f"visible_entries={len(visible)} "
             f"known_entries={len(known_entries)}"
         )
+        print("\n")
 
         for _ in range(downs):
-            self.session.key('UP')
+            #Go back up.
+            self.session.key('PageUp')
 
         menu.entries = known_entries
 
@@ -615,7 +617,7 @@ class Dumper:
 
                 f.write("=" * 80 + "\n")
                 f.write(f"MENU: {logical_path}\n")
-                f.write("=" * 80 + "\n\n")
+                f.write("=" * 80 + "\n")
                 #Truncate the empty menu lines.
                 f.write(re.sub(r"^  │ │ *│ │\n", "", menu.rendered_screen.rstrip('\n'), flags=re.MULTILINE))
                 f.write("\n\n")
@@ -744,14 +746,12 @@ def main():
         session.run()
 
         # Let mconf finish its initial draw.
-        time.sleep(1.5)
+        time.sleep(1.3)
 
         initial_screen = session.wait_for_menu()
 
         if args.debug:
-            print("----- initial pane -----", file=sys.stderr)
             print(initial_screen, file=sys.stderr)
-            print("----- end initial pane -----", file=sys.stderr)
 
         if not initial_screen.strip():
             raise RuntimeError(
@@ -774,6 +774,8 @@ def main():
         )
 
     finally:
+        session.key("TAB")  #{
+        session.key("ENTER") # exit }
         session.kill()
 
 
